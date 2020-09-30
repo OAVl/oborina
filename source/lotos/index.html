@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Lotos</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/Geometria-Regular.woff" as="font">
+    <link rel="preload" href="fonts/Geometria-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/Geometria-Light.woff" as="font">
+    <link rel="preload" href="fonts/Geometria-Light.woff2" as="font">
+    <link rel="preload" href="fonts/Geometria-Medium.woff" as="font">
+    <link rel="preload" href="fonts/Geometria-Medium.woff2" as="font">
+  </head>
+  <body>
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__nav">
+        <input type="checkbox" id="hmt" class="page-header__button">
+        <label class="page-header__btn-menu" for="hmt">
+          <span class="page-header__first"></span>
+          <span class="page-header__second"></span>
+          <span class="page-header__third"></span>
+          <div class="page-header__text">Меню</div>
+        </label>
+        <nav class="main-nav">
+          <ul class="main-nav__wrapper">
+            <li class="main-nav__wrapper-item">
+              <img src="img/location-icon.svg" width="10" height="14" alt="location">
+              <a href="#">Москва</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a>Добро пожаловать</a></li>
+            <li class="main-nav__item"><a href="classes.html">Направления и классы</a></li>
+            <li class="main-nav__item"><a href="trial-lesson.html">Пробное занятие</a></li>
+            <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
+            <li class="main-nav__item"><a href="season-tickets.html">Абонементы</a></li>
+            <li class="main-nav__item"><a href="timetable.html">Расписание</a></li>
+            <li class="main-nav__item"><a href="reviews.html">Отзывы</a></li>
+            <li class="main-nav__item"><a href="discount.html">Скидки</a></li>
+            <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <picture class="page-header__logo">
+        <source type="image/webp" srcset="img/lotos-icon.webp, img/lotos-icon@2x.webp 2x, img/lotos-icon@3x.webp 3x">
+        <img src="img/lotos-icon.png" srcset="img/lotos-icon@2x.png 2x, img/lotos-icon@3x.png 3x" width="40" height="25" alt="logo">
+      </picture>
+      <div class="page-header__title">Добро пожаловать</div>
+      <div class="page-header__phone">+7 (812) 345-56-97</div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="welcome">
+      <div class="welcome__container">
+        <picture class="welcome__image">
+          <source type="image/webp" media="(min-width:1220px)" srcset="img/01-des.webp, img/01-des@2x.webp 2x, img/01-des@3x.webp 3x">
+          <source type="image/webp" srcset="img/01-foto.webp 1x, img/01-foto.webp 2x, img/01-foto@3x.webp 3x">
+          <source media="(min-width:1220px)" srcset="img/01-des.png, img/01-des@2x.png 2x, img/01-des@3x.png 3x">
+          <img src="img/01-foto.png" srcset="img/01-foto@2x.png 2x, img/01-foto@3x.png 3x" alt="foto-1">
+        </picture>
+        <div class="welcome__block">
+          <div class="welcome__header">
+            <h1 class="welcome__title">Lotos</h1>
+            <div class="welcome__item">Центр йоги</div>
+          </div>
+          <div class="welcome__wrapper">
+            <p class="welcome__description">Приглашаем вас и ваших друзей на бесплатное пробное занятие</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <section class="page">
+        <div class="page__current">01</div>
+        <div class="page__all">- 09</div>
+      </section>
+      <section class="social">
+        <div class="social__item social__item--instagram"><a href="#">vk</a></div>
+        <div class="social__item social__item--facebook"><a href="#">fb</a></div>
+        <div class="social__item social__item--twitter"><a href="#">inst</a></div>
+      </section>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__text"><a href="classes.html">Направления и классы</a></div>
+        <div class="page-footer__arrow"></div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

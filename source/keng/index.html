@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Кенгуру</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__container">
+        <div class="page-header__logo">
+          <img src="img/logo-mini.png" alt="logo">
+        </div>
+        <div class="page-header__wrapper">
+          <div class="page-header__search">
+            <a class="page-header__mobile">
+              <img src="img/search-icon.svg" width="45" height="45" alt="search">
+            </a>
+            <form method="get" action="search">
+              <input class="page-header__search-window" type="text" name="search" autocomplete="off">
+              <button class="page-header__button" type="submit">
+                <img src="img/search-icon.svg" width="45" height="45" alt="search">
+              </button>
+            </form>
+          </div>
+          <div class="page-header__user">
+            <a href="#modal">
+              <img src="img/user-icon.svg" width="24" height="40" alt="user">
+            </a>
+          </div>
+          <div class="page-header__favorites">
+            <img src="img/heart-icon.svg" width="20" height="40" alt="favorites">
+            <span>1</span>
+          </div>
+          <div class="page-header__basket">
+            <img src="img/basket-icon.svg" width="20" height="40" alt="basket">
+            <span>1</span>
+          </div>
+        </div>
+        <div class="page-header__nav">
+          <input type="checkbox" id="hmt" class="page-header__ticker">
+          <label class="page-header__btn-menu" for="hmt">
+            <span class="page-header__first"></span>
+            <span class="page-header__second"></span>
+            <span class="page-header__third"></span>
+          </label>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active"><a href="#">Женщины</a></li>
+              <li class="main-nav__item"><a href="#">Дети</a></li>
+              <li class="main-nav__item"><a href="#">Аксессуары</a></li>
+            </ul>
+            <div class="main-menu">
+              <ul class="main-menu__list main-menu__list--first main-menu__list--active main-menu__list--close">
+                <li class="main-menu__item"><a href="#">Бренды</a></li>
+                <li class="main-menu__item"><a href="#">Одежда для беременных</a></li>
+                <li class="main-menu__item"><a href="#">Одежда</a></li>
+                <li class="main-menu__item"><a href="#">Верхняя одежда</a></li>
+                <li class="main-menu__item"><a href="#">Одежда для сна</a></li>
+                <li class="main-menu__item"><a href="#">Обувь</a></li>
+                <li class="main-menu__item"><a href="#">Белье</a></li>
+                <li class="main-menu__item"><a href="#">Одежда для пляжа</a></li>
+              </ul>
+            </div>
+            <div class="new">
+              <ul class="new__list">
+                <li class="new__item">
+                  <a href="#" class="new__wrapper">
+                    <img src="img/school.jpg" width="150" height="90" alt="foto">
+                    <div class="new__description">
+                      <p class="new__text-title">Школьные коллекции</p>
+                      <p class="new__text">Back to school</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="new__item">
+                  <a href="#" class="new__wrapper">
+                    <img src="img/women.jpg" width="150" height="90" alt="foto">
+                    <div class="new__description">
+                      <p class="new__text-title">Коллекция pret-a-porter</p>
+                      <p class="new__text">Для будущих мам</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="info-menu">
+              <div class="info-menu__container">
+                <button type="button" class="info-menu__block info-menu__block--user">
+                  <img class="info-menu__image" src="img/user-icon.svg" width="22" height="22" alt="user">
+                  <p class="info-menu__text info-menu__text--user">Войти</p>
+                </button>
+                <div class="info-menu__block info-menu__block--city">
+                  <img class="info-menu__image" src="img/location-icon.svg" width="10" height="10" alt="location">
+                  <p class="info-menu__text info-menu__text--city">Петропавловск-Камчатский</p>
+                </div>
+                <div class="info-menu__wrapper">
+                  <div class="info-menu__block info-menu__block--address">
+                    <img class="info-menu__image info-menu__image--address" src="img/address-icon.svg" width="22" height="22" alt="address">
+                    <p class="info-menu__text info-menu__text--address">Адреса</p>
+                  </div>
+                  <div class="info-menu__block info-menu__block--help">
+                    <img class="info-menu__image" src="img/info-icon.svg" width="20" height="20" alt="info">
+                    <p class="info-menu__text">Помощь</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="modal-search" id="modal">
+        <div class="modal-search__container">
+          <div class="modal-search__main">
+            <div class="modal-search__wrapper">
+              <h2 class="modal-search__title">Возможно, вы искали:</h2>
+              <ul class="modal-search__list">
+                <li class="modal-search__item"><a href="#">Женская куртка</a></li>
+                <li class="modal-search__item"><a href="#">Детская куртка</a></li>
+                <li class="modal-search__item"><a href="#">Куртка на молнии</a></li>
+                <li class="modal-search__item"><a href="#">Длинная куртка</a></li>
+                <li class="modal-search__item"><a href="#">Мужская куртка</a></li>
+                <li class="modal-search__item"><a href="#">Кожаная куртка</a></li>
+              </ul>
+            </div>
+            <div class="modal-search__wrapper">
+              <h2 class="modal-search__title">Бренды:</h2>
+              <ul class="modal-search__list">
+                <li class="modal-search__item"><a href="#">Dior</a></li>
+                <li class="modal-search__item"><a href="#">Burberry</a></li>
+                <li class="modal-search__item"><a href="#">Dolce&Gabbana</a></li>
+              </ul>
+            </div>
+            <div class="modal-search__wrapper">
+              <h2 class="modal-search__title">Категории:</h2>
+              <ul class="modal-search__list">
+                <li class="modal-search__item"><a href="#">Девочки / Куртки</a></li>
+                <li class="modal-search__item"><a href="#">Мальчики / Куртки</a></li>
+                <li class="modal-search__item"><a href="#">Девочки / Школа</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-search__wrapper">
+            <h2 class="modal-search__title">Подходящие товары:</h2>
+            <ul class="modal-search__list modal-search__list--selection">
+              <li class="modal-search__item modal-search__item--selection">
+                <a href="#">
+                  <img src="img/foto.jpg" class="modal-search__image" alt="foto">
+                  <h3 class="modal-search__item-title">EMPORIO ARMANI</h3>
+                  <p class="modal-search__description">Куртка осенняя с карманами</p>
+                  <p class="modal-search__price">31490.-</p>
+                </a>
+              </li>
+              <li class="modal-search__item modal-search__item--selection">
+                <a href="#">
+                  <img src="img/foto.jpg" class="modal-search__image" alt="foto">
+                  <h3 class="modal-search__item-title">EMPORIO ARMANI</h3>
+                  <p class="modal-search__description">Пальто зимнее с карманами</p>
+                  <p class="modal-search__price">31490.-</p>
+                </a>
+              </li>
+              <li class="modal-search__item modal-search__item--selection">
+                <a href="#">
+                  <img src="img/foto.jpg" class="modal-search__image" alt="foto">
+                  <h3 class="modal-search__item-title">EMPORIO ARMANI</h3>
+                  <p class="modal-search__description">Куртка осенняя с карманами</p>
+                  <p class="modal-search__price">31490.-</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+
+    </main>
+
+    <footer class="page-footer">
+
+    </footer>
+
+    <script src="js/picturefill.js"></script>
+  </body>
+</html>
