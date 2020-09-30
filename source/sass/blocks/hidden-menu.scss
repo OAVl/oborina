@@ -1,0 +1,83 @@
+.hidden-menu {
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding: 10px;
+  padding-top: 50px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #eee;
+  height: 180px;
+  //top: -200px;
+  //right: -200px;
+  transition: top .23s;
+  z-index: 2;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  box-shadow: 0px -3px 9px #444;
+}
+
+.hidden-menu-ticker {
+  display: none;
+}
+
+.btn-menu {
+  padding: 5px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  transition: top .23s;
+  z-index: 3;
+  width: 40px;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.btn-menu span {
+  display: block;
+  height: 2px;
+  background-color: #444;
+  margin: 7px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+
+.btn-menu span.first {
+  margin-top: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu {
+  top: 28px;
+}
+
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  right: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  transform: rotate(45deg);
+  top: -8px;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  transform: rotate(-45deg);
+  top: -26px;
+}
+
+@media (min-width: $tablet-width) {
+  .hidden-menu-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hidden-menu-wrapper {
+    display: none;
+  }
+}

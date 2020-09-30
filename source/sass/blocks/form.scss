@@ -1,0 +1,113 @@
+.form {
+  width: 320px;
+}
+
+.form__wrapper {
+  margin-top: 30px;
+}
+
+.form__item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+.form__list {
+  padding: 0;
+  margin: 0;
+}
+
+.form__value {
+  padding-right: 20px;
+  @include font(14px, 20px, 300);
+}
+
+.form__window {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 225px;
+  @include font(14px, 20px, 300);
+
+  &--comment {
+    width: 320px;
+    min-height: 100px;
+  }
+
+  &--file {
+    width: 306px;
+    padding-left: 0;
+  }
+}
+
+.form__button-container {
+  padding-bottom: 50px;
+}
+
+.form__button {
+  border: none;
+  background-color: #707070;
+  color: #f2f2f2;
+  padding: 10px 25px 10px 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  @include font(14px, 20px, 300);
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 768px;
+  }
+
+  .form__window {
+    width: 674px;
+    @include font(18px, 30px, 300);
+
+    &--comment {
+      width: 768px;
+    }
+
+    &--file {
+      width: 754px;
+    }
+  }
+
+  .form__button {
+    @include font(18px, 30px, 300);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 600px;
+  }
+
+  .form__value {
+    padding-right: 20px;
+    @include font(18px, 30px, 300);
+
+    &--color {
+      font-weight: 700;
+    }
+  }
+
+  .form__window {
+    width: 490px;
+    @include font(18px, 30px, 300);
+
+    &--comment {
+      width: 586px;
+      min-height: 100px;
+    }
+
+    &--file {
+      padding-left: 0;
+    }
+  }
+
+  .form__button-container {
+    padding-bottom: 50px;
+  }
+}
+
