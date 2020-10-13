@@ -1,0 +1,13 @@
+<svg id="меню" xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e2e2e2;
+      }
+    </style>
+  </defs>
+  <rect id="Прямоугольник_скругл._углы_2_копия_2" data-name="Прямоугольник, скругл. углы 2 копия 2" class="cls-1" y="18" width="25" height="2" rx="1" ry="1"/>
+  <rect id="Прямоугольник_скругл._углы_2_копия" data-name="Прямоугольник, скругл. углы 2 копия" class="cls-1" y="9" width="19.72" height="2" rx="1" ry="1"/>
+  <rect id="Прямоугольник_скругл._углы_2" data-name="Прямоугольник, скругл. углы 2" class="cls-1" width="25" height="2" rx="1" ry="1"/>
+  <rect id="Прямоугольник_скругл._углы_2_копия_3" data-name="Прямоугольник, скругл. углы 2 копия 3" class="cls-1" y="9" width="25" height="2" rx="1" ry="1"/>
+</svg>
