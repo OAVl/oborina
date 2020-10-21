@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   </head>
   <body>
   <header class="page-header">
@@ -26,56 +29,8 @@
         </div>
         <nav class="page-header__nav nav">
           <div class="hidden-menu-wrapper">
-            <button class="js-open-modal btn show-modal-2 btn-desk" data-modal="1"></button>
-            <input type="checkbox" id="hmt" class="hidden-menu-ticker">
-            <label class="btn-menu btn-mob" for="hmt">
-              <span class="first"></span>
-              <span class="second"></span>
-              <span class="third"></span>
-            </label>
+            <button class="js-open-modal btn show-modal-2" id="hmt" data-modal="1"></button>
             <label class="btn-header" for="hmt">Меню</label>
-            <div class="hidden-menu">
-              <ul class="hidden-menu__site-list">
-                <li class="site-list__item">
-                  <a href="#">Главная</a>
-                </li>
-                <li class="site-list__item">
-                  <a href="#services">Услуги</a>
-                </li>
-                <li class="site-list__item">
-                  <a href="#advantages">Преимущества</a>
-                </li>
-                <li class="site-list__item">
-                  <a href="#schema">Схема работы</a>
-                </li>
-                <li class="site-list__item">
-                  <a href="#news">Новости</a>
-                </li>
-                <li class="site-list__item">
-                  <a href="#contacts">Контакты</a>
-                </li>
-              </ul>
-
-              <ul class="menu-description">
-                <li class="menu-description__item">
-                  <img src="img/адрес.png" alt="адрес" height="20" width="15">
-                  <p>Москва, Дмитровское шоссе, 102к2с3</p>
-                </li>
-                <li class="menu-description__item">
-                  <img src="img/696.png" alt="email" height="12" width="15">
-                  <p>support@sales-integra.ru</p>
-                </li>
-                <li class="menu-description__item menu-description__item--bottom">
-                  <img src="img/forma1.png" alt="phone" height="15" width="15">
-                  <a>+7 (499) 403-15-23</a>
-                </li>
-                <li class="menu-description__item menu-description__item--bottom">
-                  <img src="img/forma1.png" alt="phone" height="15" width="15">
-                  <a>+7 (903) 741-16-76</a>
-                </li>
-              </ul>
-              <button class="hidden-menu__button" type="button">Обратный звонок</button>
-            </div>
           </div>
         </nav>
       </div>
@@ -84,17 +39,12 @@
 
     <main class="page-main">
       <section class="start start--second">
-        <div class="start__wrapper">
-          <h1 class="start__header">Сайт рыбатекст поможет дизайнеру верстальщику</h1>
-          <p class="start__description">Сайт рыбатекст поможет дизайнеру верстальщику вебмастеру сгенерировать
-            несколько абзацев более менее осмысленного текста рыбы на русском языке а начинающему оратору отточить</p>
-          <button class="start__button" type="button">Подробнее</button>
-          <div class="start__container">
-            <div class="start__number start__container--second">
-              <span class="start__number-one start__number--color">01</span>
-              <span class="start__number-two">02</span>
-              <span class="start__number-tree start__number--color">03</span>
-            </div>
+        <div class="start__block start__block--second">
+          <div class="start__wrapper">
+            <h1 class="start__header">Сайт рыбатекст поможет дизайнеру верстальщику</h1>
+            <p class="start__description">Сайт рыбатекст поможет дизайнеру верстальщику вебмастеру сгенерировать
+              несколько абзацев более менее осмысленного текста рыбы на русском языке а начинающему оратору отточить</p>
+            <button class="start__button" type="button">Подробнее</button>
           </div>
         </div>
       </section>
@@ -137,7 +87,7 @@
               </svg></a>
             </li>
             <li class="services__item-two">
-              <p>Установка электропривода багажника</p>
+              <p class="services__block">Установка электропривода багажника</p>
               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="10" viewBox="0 0 21 10">
                 <image id="return" width="21" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAKCAYAAABblxXYAAAAhklEQVQoka3PsQpBcRTA4e/KbjJ6BRvdzSAWWTyFlKdR8h42MlgZPYWRF6BT/iXZzj3LqTN8/U5V17XE3HDHAs/CtDIizhjjiE5T6Bo7DHEocBZ9YfUFR3G3jT16Sbz67EEUZ0v/TpTOk0ZUbtHHFbNAmwCXuGCKR/b9zS8Yxyw6wgmTAsIbNA0WsVOkDe4AAAAASUVORK5CYII="></image>
               </svg></a>
@@ -210,87 +160,159 @@
           <h1 class="news__header">Новости</h1>
           <div class="news__desktop-block">
 
-            <div class="news__block-wrapper">
-              <div class="news__container">
-                <picture class="news-img">
-                  <source media="(min-width: 1170px)" srcset="img/изобр1-desk.png">
-                  <img src="img/изобр.png" alt="news">
-                </picture>
-                <div class="news__data">07.07.2020</div>
-                <div class="news__show">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
-                    <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
-                  </svg>
-                  <div class="news__number">500</div>
-                </div>
-              </div>
-              <div class="news__block-container">
-                <div class="news__block-header">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</div>
-                <p class="news__block-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
-                  текста снескольк абзацев более менее осмысленного...</p>
-              </div>
-              <button class="news__button" type="button">Читать полностью</button>
+            <div class="slider slider--news">
+              <ul>
+                <li>
+                  <div class="news__block-wrapper">
+                    <div class="news__container">
+                      <picture class="news-img">
+                        <source media="(min-width: 1170px)" srcset="img/изобр1-desk.png">
+                        <img src="img/изобр.png" width="291" height="216" alt="news">
+                      </picture>
+                      <div class="news__data">07.07.2020</div>
+                      <div class="news__show">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
+                          <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
+                        </svg>
+                        <div class="news__number">500</div>
+                      </div>
+                    </div>
+                    <div class="news__block-container">
+                      <div class="news__block-header">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</div>
+                      <p class="news__block-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                        текста снескольк абзацев более менее осмысленного...</p>
+                    </div>
+                    <button class="news__button" type="button">Читать полностью</button>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="news__block-wrapper news__block-wrapper-desk">
+                    <div class="news__container">
+                      <picture class="news-img">
+                        <source media="(min-width: 1170px)" srcset="img/изобр2.png">
+                        <img src="img/изобр2.png" width="291" height="216" alt="news">
+                      </picture>
+                      <div class="news__data">07.07.2020</div>
+                      <div class="news__show">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
+                          <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
+                        </svg>
+                        <div class="news__number">500</div>
+                      </div>
+                    </div>
+                    <div class="news__block-container">
+                      <div class="news__block-header">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</div>
+                      <p class="news__block-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                        текста снескольк абзацев более менее осмысленного...</p>
+                    </div>
+                    <button class="news__button" type="button">Читать полностью</button>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="news__block-wrapper news__block-wrapper-desk">
+                    <div class="news__container">
+                      <picture class="news-img">
+                        <source media="(min-width: 1170px)" srcset="img/изобр3.png">
+                        <img src="img/изобр3.png" width="291" height="216" alt="news">
+                      </picture>
+                      <div class="news__data">07.07.2020</div>
+                      <div class="news__show">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
+                          <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
+                        </svg>
+                        <div class="news__number">500</div>
+                      </div>
+                    </div>
+                    <div class="news__block-container">
+                      <div class="news__block-header">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</div>
+                      <p class="news__block-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                        текста снескольк абзацев более менее осмысленного...</p>
+                    </div>
+                    <button class="news__button" type="button">Читать полностью</button>
+                  </div>
+                </li>
+              </ul>
             </div>
 
-            <div class="news__block-wrapper news__block-wrapper-desk">
-              <div class="news__container">
-                <picture class="news-img">
-                  <source media="(min-width: 1170px)" srcset="img/изобр2.png">
-                  <img src="img/изобр.png" alt="news">
-                </picture>
-                <div class="news__data">07.07.2020</div>
-                <div class="news__show">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
-                    <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
-                  </svg>
-                  <div class="news__number">500</div>
+            <div class="news__block">
+              <div class="news__block-wrapper">
+                <div class="news__container">
+                  <picture class="news-img">
+                    <source media="(min-width: 1170px)" srcset="img/изобр1-desk.png">
+                    <img src="img/изобр.png" alt="news">
+                  </picture>
+                  <div class="news__data">07.07.2020</div>
+                  <div class="news__show">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
+                      <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
+                    </svg>
+                    <div class="news__number">500</div>
+                  </div>
                 </div>
-              </div>
-              <div class="news__block-container">
-                <div class="news__block-header">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</div>
-                <p class="news__block-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
-                  текста снескольк абзацев более менее осмысленного...</p>
-              </div>
-              <button class="news__button" type="button">Читать полностью</button>
-            </div>
-
-            <div class="news__block-wrapper news__block-wrapper-desk">
-              <div class="news__container">
-                <picture class="news-img">
-                  <source media="(min-width: 1170px)" srcset="img/изобр3.png">
-                  <img src="img/изобр.png" alt="news">
-                </picture>
-                <div class="news__data">07.07.2020</div>
-                <div class="news__show">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
-                    <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
-                  </svg>
-                  <div class="news__number">500</div>
+                <div class="news__block-container">
+                  <div class="news__block-header">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</div>
+                  <p class="news__block-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    текста снескольк абзацев более менее осмысленного...</p>
                 </div>
+                <button class="news__button" type="button">Читать полностью</button>
               </div>
-              <div class="news__block-container">
-                <div class="news__block-header">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</div>
-                <p class="news__block-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
-                  текста снескольк абзацев более менее осмысленного...</p>
-              </div>
-              <button class="news__button" type="button">Читать полностью</button>
-            </div>
 
+              <div class="news__block-wrapper news__block-wrapper-desk">
+                <div class="news__container">
+                  <picture class="news-img">
+                    <source media="(min-width: 1170px)" srcset="img/изобр2.png">
+                    <img src="img/изобр.png" alt="news">
+                  </picture>
+                  <div class="news__data">07.07.2020</div>
+                  <div class="news__show">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
+                      <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
+                    </svg>
+                    <div class="news__number">500</div>
+                  </div>
+                </div>
+                <div class="news__block-container">
+                  <div class="news__block-header">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</div>
+                  <p class="news__block-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    текста снескольк абзацев более менее осмысленного...</p>
+                </div>
+                <button class="news__button" type="button">Читать полностью</button>
+              </div>
+
+              <div class="news__block-wrapper news__block-wrapper-desk">
+                <div class="news__container">
+                  <picture class="news-img">
+                    <source media="(min-width: 1170px)" srcset="img/изобр3.png">
+                    <img src="img/изобр.png" alt="news">
+                  </picture>
+                  <div class="news__data">07.07.2020</div>
+                  <div class="news__show">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
+                      <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
+                    </svg>
+                    <div class="news__number">500</div>
+                  </div>
+                </div>
+                <div class="news__block-container">
+                  <div class="news__block-header">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</div>
+                  <p class="news__block-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    текста снескольк абзацев более менее осмысленного...</p>
+                </div>
+                <button class="news__button" type="button">Читать полностью</button>
+              </div>
+
+            </div>
           </div>
 
-          <div class="news__block-number start__number">
-            <span class="start__number-one start__number--color">01</span>
-            <span class="start__number-two">02</span>
-            <span class="start__number-tree start__number--color">03</span>
-          </div>
         </div>
       </section>
 
+
       <section class="form__application">
         <div class="form__block-wrapper">
-          <div class="form-logo">
-            <img src="img/techAngar-desktop.png" alt="logo">
-          </div>
+
           <div class="application__wrapper">
             <h1 class="application__header">Оставить заявку</h1>
             <div class="form__description">
@@ -298,6 +320,9 @@
               <div class="application__item">
                 <img src="img/forma1.png" alt="phone" height="19" width="19">
                 <a>+7 (499) 403 15 23</a>
+              </div>
+              <div class="form-logo">
+                <img src="img/techAngar-desktop.png" alt="logo">
               </div>
             </div>
 
@@ -322,9 +347,10 @@
               </div>
               <div class="form__block">
                 <div class="form__information">
-                  <input class="visually-hidden form-list__window" type="checkbox" name="sugar" id="sugar" checked="">
-                  <span class="form-list__check-box"></span>
-                  <label class="form-list__value" for="sugar">Отправляя заявку даю согласие на «Обработку персональных данных»</label>
+                  <div>
+                    <input type="checkbox" class="option-input checkbox" name="sugar" checked="">
+                    <label class="form-list__value">Отправляя заявку даю согласие на «Обработку персональных данных»</label>
+                  </div>
                 </div>
                 <div class="form__button-container">
                   <button class="form__button" type="submit">Подробнее</button>
@@ -337,10 +363,7 @@
 
       <section class="map">
         <div class="map__wrapper">
-          <iframe class="mob" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d139.86614871909012!2d37.552874353283876!3d55.88247119154645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5362397da7985%3A0xf12d26f3a63fee6c!2z0J_Rg9C90LrRgiDQv9GA0LjRkdC80LAg0LLRi9C00LDRh9C4INC30LDQutCw0LfQvtCyICLQodCU0JXQmiI!5e0!3m2!1sru!2sru!4v1602425367349!5m2!1sru!2sru" width="100%" height="375" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-          </iframe>
-          <iframe class="desk" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d139.86614871909012!2d37.552874353283876!3d55.88247119154645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5362397da7985%3A0xf12d26f3a63fee6c!2z0J_Rg9C90LrRgiDQv9GA0LjRkdC80LAg0LLRi9C00LDRh9C4INC30LDQutCw0LfQvtCyICLQodCU0JXQmiI!5e0!3m2!1sru!2sru!4v1602425367349!5m2!1sru!2sru" width="100%" height="867" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-          </iframe>
+          <div id="map"></div>
         </div>
       </section>
 
@@ -410,10 +433,61 @@
   </footer>
 
   <!-- Меню desktop  -->
-  <div class="modal" data-modal="1">
+  <div class="modal modal-mobile" data-modal="1">
     <div class="modal__backdrop">
-      <div class="modal__content">
+      <div class="modal__content modal__content-mobile">
         <div class="modal__wrapper">
+
+          <div class="hidden-menu">
+            <ul class="hidden-menu__site-list">
+              <li class="site-list__item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#services">Услуги</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#advantages">Преимущества</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#schema">Схема работы</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#news">Новости</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#contacts">Контакты</a>
+              </li>
+            </ul>
+            <div class="menu__block">
+
+              <ul class="menu-description">
+                <li class="menu-description__item">
+                  <img src="img/адрес.png" alt="адрес" height="20" width="15">
+                  <p>Москва, Дмитровское шоссе, 102к2с3</p>
+                </li>
+                <li class="menu-description__item">
+                  <img src="img/696.png" alt="email" height="12" width="15">
+                  <p>support@sales-integra.ru</p>
+                </li>
+                <li class="menu-description__item menu-description__item--bottom">
+                  <img src="img/forma1.png" alt="phone" height="15" width="15">
+                  <a>+7 (499) 403-15-23</a>
+                </li>
+                <li class="menu-description__item menu-description__item--bottom">
+                  <img src="img/forma1.png" alt="phone" height="15" width="15">
+                  <a>+7 (903) 741-16-76</a>
+                </li>
+              </ul>
+              <button class="hidden-menu__button" type="button">Обратный звонок</button>
+            </div>
+
+          </div>
+
+
+
+
+
           <div class="modal-menu">
             <ul class="hidden-menu__site-list modal-menu__site-list">
               <li class="site-list__item modal-menu-item">
@@ -484,7 +558,7 @@
               </ul>
             </div>
           </div>
-          <svg fill="white" class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
+          <svg fill="white" class="modal__cross js-modal-close modal-cross-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
           <span class="modal__btn-close modal__cross js-modal-close" data-dismiss="modal" title="Закрыть">×</span>
         </div>
       </div>
@@ -519,19 +593,34 @@
               <button class="form__button popup__button" type="submit">Подробнее</button>
             </div>
             <div class="form__information popup__information">
-              <input class="visually-hidden form-list__window" type="checkbox" name="sugar" id="chek" checked="">
-              <span class="form-list__check-box"></span>
-              <label class="form-list__value popup__value" for="chek">Отправляя заявку даю согласие на «Обработку персональных данных»</label>
+              <div>
+                <input type="checkbox" class="option-input checkbox" name="sugar" checked="">
+                <label class="form-list__value form-list__value--popup">Отправляя заявку даю согласие на «Обработку персональных данных»</label>
+              </div>
             </div>
           </div>
         </form>
       </div>
 
-      <svg fill="white" class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
+      <svg fill="white" class="js-modal-close modal-popup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
     </div>
   </div>
   <div class="overlay js-overlay-modal"></div>
 
+  <script>
+    $(document).ready(function(){
+      $('.slider ul').bxSlider({
+        pager: true,
+        controls: false,
+        auto: true,
+        pause: 10000,
+        minSlides: 1,
+        maxSlides: 1
+      });
+    });
+  </script>
+  <script src="js/map.js"></script>
   <script src="js/modal.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA2Hyz6X-HxF2v2APxDvnBB9ISgpEO3Po&signed_in=true&callback=initMap" async="" defer=""></script>
   </body>
 </html>
