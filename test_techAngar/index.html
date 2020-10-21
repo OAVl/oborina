@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
 
   </head>
   <body>
@@ -39,33 +42,121 @@
     <main class="page-main">
       <section class="start">
         <div class="start__block">
-          <div id="block-for-slider-start">
-            <div id="viewport-start">
-              <ul id="slidewrapper-start">
-                <li class="slide">
-                  <div class="start__wrapper">
-                    <h1 class="start__header">Сайт рыбатекст поможет дизайнеру верстальщику</h1>
-                    <p class="start__description">Сайт рыбатекст поможет дизайнеру верстальщику вебмастеру сгенерировать
-                      несколько абзацев более менее осмысленного текста рыбы на русском языке а начинающему оратору отточить</p>
-                    <button class="start__button" type="button">Подробнее</button>
-                    <div class="start__container">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="31" viewBox="0 0 22 31">
-                        <defs>
-                          <style>
-                            .cls-1 {
-                              fill: #fff;
-                              fill-rule: evenodd;
-                              opacity: 0.62;
-                            }
-                          </style>
-                        </defs>
-                        <path id="scroll" class="cls-1" d="M386,627a11.056,11.056,0,0,0-11,11.087v8.827a11,11,0,1,0,22,.034v-8.861A11.057,11.057,0,0,0,386,627Zm8.931,19.948a8.931,8.931,0,1,1-17.862-.034v-8.827a8.932,8.932,0,1,1,17.862,0v8.861ZM386,635.485a1.031,1.031,0,0,0-1.035,1.026V640.1a1.035,1.035,0,0,0,2.069,0v-3.593A1.03,1.03,0,0,0,386,635.485Z" transform="translate(-375 -627)"></path>
-                      </svg>
-                     <!-- <div class="start__number">
-                        <span class="start__number-one start__number--color">01</span>
-                        <span class="start__number-two">02</span>
-                        <span class="start__number-tree start__number--color">03</span>
-                      </div>-->
+          <div class="slider">
+            <ul>
+              <li class="slider__item">
+                <div class="start__wrapper">
+                  <h1 class="start__header">Сайт рыбатекст поможет дизайнеру верстальщику</h1>
+                  <p class="start__description">Сайт рыбатекст поможет дизайнеру верстальщику вебмастеру сгенерировать
+                    несколько абзацев более менее осмысленного текста рыбы на русском языке а начинающему оратору отточить</p>
+                  <button class="start__button" type="button">Подробнее</button>
+                  <div class="start__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="31" viewBox="0 0 22 31">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                            opacity: 0.62;
+                          }
+                        </style>
+                      </defs>
+                      <path id="scroll" class="cls-1" d="M386,627a11.056,11.056,0,0,0-11,11.087v8.827a11,11,0,1,0,22,.034v-8.861A11.057,11.057,0,0,0,386,627Zm8.931,19.948a8.931,8.931,0,1,1-17.862-.034v-8.827a8.932,8.932,0,1,1,17.862,0v8.861ZM386,635.485a1.031,1.031,0,0,0-1.035,1.026V640.1a1.035,1.035,0,0,0,2.069,0v-3.593A1.03,1.03,0,0,0,386,635.485Z" transform="translate(-375 -627)"></path>
+                    </svg>
+                    <!-- <div class="start__number">
+                       <span class="start__number-one start__number--color">01</span>
+                       <span class="start__number-two">02</span>
+                       <span class="start__number-tree start__number--color">03</span>
+                     </div>-->
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider__item">
+                <div class="start__wrapper">
+                  <h1 class="start__header">Сайт рыбатекст поможет дизайнеру верстальщику</h1>
+                  <p class="start__description">Сайт рыбатекст поможет дизайнеру верстальщику вебмастеру сгенерировать
+                    несколько абзацев более менее осмысленного текста рыбы на русском языке а начинающему оратору отточить</p>
+                  <button class="start__button" type="button">Подробнее</button>
+                  <div class="start__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="31" viewBox="0 0 22 31">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                            opacity: 0.62;
+                          }
+                        </style>
+                      </defs>
+                      <path id="scroll" class="cls-1" d="M386,627a11.056,11.056,0,0,0-11,11.087v8.827a11,11,0,1,0,22,.034v-8.861A11.057,11.057,0,0,0,386,627Zm8.931,19.948a8.931,8.931,0,1,1-17.862-.034v-8.827a8.932,8.932,0,1,1,17.862,0v8.861ZM386,635.485a1.031,1.031,0,0,0-1.035,1.026V640.1a1.035,1.035,0,0,0,2.069,0v-3.593A1.03,1.03,0,0,0,386,635.485Z" transform="translate(-375 -627)"></path>
+                    </svg>
+                    <!-- <div class="start__number">
+                       <span class="start__number-one start__number--color">01</span>
+                       <span class="start__number-two">02</span>
+                       <span class="start__number-tree start__number--color">03</span>
+                     </div>-->
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider__item">
+                <div class="start__wrapper">
+                  <h1 class="start__header">Сайт рыбатекст поможет дизайнеру верстальщику</h1>
+                  <p class="start__description">Сайт рыбатекст поможет дизайнеру верстальщику вебмастеру сгенерировать
+                    несколько абзацев более менее осмысленного текста рыбы на русском языке а начинающему оратору отточить</p>
+                  <button class="start__button" type="button">Подробнее</button>
+                  <div class="start__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="31" viewBox="0 0 22 31">
+                      <defs>
+                        <style>
+                          .cls-1 {
+                            fill: #fff;
+                            fill-rule: evenodd;
+                            opacity: 0.62;
+                          }
+                        </style>
+                      </defs>
+                      <path id="scroll" class="cls-1" d="M386,627a11.056,11.056,0,0,0-11,11.087v8.827a11,11,0,1,0,22,.034v-8.861A11.057,11.057,0,0,0,386,627Zm8.931,19.948a8.931,8.931,0,1,1-17.862-.034v-8.827a8.932,8.932,0,1,1,17.862,0v8.861ZM386,635.485a1.031,1.031,0,0,0-1.035,1.026V640.1a1.035,1.035,0,0,0,2.069,0v-3.593A1.03,1.03,0,0,0,386,635.485Z" transform="translate(-375 -627)"></path>
+                    </svg>
+                    <!-- <div class="start__number">
+                       <span class="start__number-one start__number--color">01</span>
+                       <span class="start__number-two">02</span>
+                       <span class="start__number-tree start__number--color">03</span>
+                     </div>-->
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div id="block-for-slider-start">
+             <div id="viewport-start">
+               <ul id="slidewrapper-start">
+                 <li class="slide">
+                   <div class="start__wrapper">
+                     <h1 class="start__header">Сайт рыбатекст поможет дизайнеру верстальщику</h1>
+                     <p class="start__description">Сайт рыбатекст поможет дизайнеру верстальщику вебмастеру сгенерировать
+                       несколько абзацев более менее осмысленного текста рыбы на русском языке а начинающему оратору отточить</p>
+                     <button class="start__button" type="button">Подробнее</button>
+                     <div class="start__container">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="31" viewBox="0 0 22 31">
+                         <defs>
+                           <style>
+                             .cls-1 {
+                               fill: #fff;
+                               fill-rule: evenodd;
+                               opacity: 0.62;
+                             }
+                           </style>
+                         </defs>
+                         <path id="scroll" class="cls-1" d="M386,627a11.056,11.056,0,0,0-11,11.087v8.827a11,11,0,1,0,22,.034v-8.861A11.057,11.057,0,0,0,386,627Zm8.931,19.948a8.931,8.931,0,1,1-17.862-.034v-8.827a8.932,8.932,0,1,1,17.862,0v8.861ZM386,635.485a1.031,1.031,0,0,0-1.035,1.026V640.1a1.035,1.035,0,0,0,2.069,0v-3.593A1.03,1.03,0,0,0,386,635.485Z" transform="translate(-375 -627)"/>
+                       </svg>
+                     <div class="start__number">
+                         <span class="start__number-one start__number--color">01</span>
+                         <span class="start__number-two">02</span>
+                         <span class="start__number-tree start__number--color">03</span>
+                       </div>
                     </div>
                   </div>
                 </li>
@@ -87,13 +178,13 @@
                             }
                           </style>
                         </defs>
-                        <path id="scroll" class="cls-1" d="M386,627a11.056,11.056,0,0,0-11,11.087v8.827a11,11,0,1,0,22,.034v-8.861A11.057,11.057,0,0,0,386,627Zm8.931,19.948a8.931,8.931,0,1,1-17.862-.034v-8.827a8.932,8.932,0,1,1,17.862,0v8.861ZM386,635.485a1.031,1.031,0,0,0-1.035,1.026V640.1a1.035,1.035,0,0,0,2.069,0v-3.593A1.03,1.03,0,0,0,386,635.485Z" transform="translate(-375 -627)"></path>
+                        <path id="scroll" class="cls-1" d="M386,627a11.056,11.056,0,0,0-11,11.087v8.827a11,11,0,1,0,22,.034v-8.861A11.057,11.057,0,0,0,386,627Zm8.931,19.948a8.931,8.931,0,1,1-17.862-.034v-8.827a8.932,8.932,0,1,1,17.862,0v8.861ZM386,635.485a1.031,1.031,0,0,0-1.035,1.026V640.1a1.035,1.035,0,0,0,2.069,0v-3.593A1.03,1.03,0,0,0,386,635.485Z" transform="translate(-375 -627)"/>
                       </svg>
                       <!-- <div class="start__number">
                          <span class="start__number-one start__number--color">01</span>
                          <span class="start__number-two">02</span>
                          <span class="start__number-tree start__number--color">03</span>
-                       </div>-->
+                       </div>
                     </div>
                   </div>
                 </li>
@@ -115,13 +206,13 @@
                             }
                           </style>
                         </defs>
-                        <path id="scroll" class="cls-1" d="M386,627a11.056,11.056,0,0,0-11,11.087v8.827a11,11,0,1,0,22,.034v-8.861A11.057,11.057,0,0,0,386,627Zm8.931,19.948a8.931,8.931,0,1,1-17.862-.034v-8.827a8.932,8.932,0,1,1,17.862,0v8.861ZM386,635.485a1.031,1.031,0,0,0-1.035,1.026V640.1a1.035,1.035,0,0,0,2.069,0v-3.593A1.03,1.03,0,0,0,386,635.485Z" transform="translate(-375 -627)"></path>
+                        <path id="scroll" class="cls-1" d="M386,627a11.056,11.056,0,0,0-11,11.087v8.827a11,11,0,1,0,22,.034v-8.861A11.057,11.057,0,0,0,386,627Zm8.931,19.948a8.931,8.931,0,1,1-17.862-.034v-8.827a8.932,8.932,0,1,1,17.862,0v8.861ZM386,635.485a1.031,1.031,0,0,0-1.035,1.026V640.1a1.035,1.035,0,0,0,2.069,0v-3.593A1.03,1.03,0,0,0,386,635.485Z" transform="translate(-375 -627)"/>
                       </svg>
                       <!-- <div class="start__number">
                          <span class="start__number-one start__number--color">01</span>
                          <span class="start__number-two">02</span>
                          <span class="start__number-tree start__number--color">03</span>
-                       </div>-->
+                       </div>
                     </div>
                   </div>
                 </li>
@@ -133,7 +224,7 @@
                 <span class="slide-nav-btn start__number-tree start__number--color">03</span>
               </div>
             </div>
-          </div>
+          </div> -->
 
           </div>
         
@@ -356,14 +447,89 @@
         </div>
       </section>
 
-      <section class="news">
+     <section class="news">
         <a name="news"></a>
         <div class="news__wrapper">
           <h1 class="news__header">Новости</h1>
           <div class="news__desktop-block">
 
+          <div class="slider slider--news">
+        <ul>
+          <li>
+            <div class="news__block-wrapper">
+            <div class="news__container">
+              <picture class="news-img">
+                <source media="(min-width: 1170px)" srcset="img/изобр1-desk.png">
+                <img src="img/изобр.png" width="291" height="216" alt="news">
+              </picture>
+              <div class="news__data">07.07.2020</div>
+              <div class="news__show">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
+                  <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
+                </svg>
+                <div class="news__number">500</div>
+              </div>
+            </div>
+            <div class="news__block-container">
+              <div class="news__block-header">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</div>
+              <p class="news__block-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                текста снескольк абзацев более менее осмысленного...</p>
+            </div>
+            <button class="news__button" type="button">Читать полностью</button>
+          </div>
+          </li>
 
-            <div id="block-for-slider">
+          <li>
+            <div class="news__block-wrapper news__block-wrapper-desk">
+            <div class="news__container">
+              <picture class="news-img">
+                <source media="(min-width: 1170px)" srcset="img/изобр2.png">
+                <img src="img/изобр2.png" width="291" height="216" alt="news">
+              </picture>
+              <div class="news__data">07.07.2020</div>
+              <div class="news__show">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
+                  <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
+                </svg>
+                <div class="news__number">500</div>
+              </div>
+            </div>
+            <div class="news__block-container">
+              <div class="news__block-header">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</div>
+              <p class="news__block-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                текста снескольк абзацев более менее осмысленного...</p>
+            </div>
+            <button class="news__button" type="button">Читать полностью</button>
+          </div>
+          </li>
+
+          <li>
+            <div class="news__block-wrapper news__block-wrapper-desk">
+            <div class="news__container">
+              <picture class="news-img">
+                <source media="(min-width: 1170px)" srcset="img/изобр3.png">
+                <img src="img/изобр3.png" width="291" height="216" alt="news">
+              </picture>
+              <div class="news__data">07.07.2020</div>
+              <div class="news__show">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
+                  <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
+                </svg>
+                <div class="news__number">500</div>
+              </div>
+            </div>
+            <div class="news__block-container">
+              <div class="news__block-header">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру</div>
+              <p class="news__block-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                текста снескольк абзацев более менее осмысленного...</p>
+            </div>
+            <button class="news__button" type="button">Читать полностью</button>
+          </div>
+          </li>
+        </ul>
+      </div>
+
+            <!--<div id="block-for-slider">
               <div id="viewport">
                 <ul id="slidewrapper">
                   <li class="slide">
@@ -376,7 +542,7 @@
                       <div class="news__data">07.07.2020</div>
                       <div class="news__show">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
-                          <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
+                          <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"/>
                         </svg>
                         <div class="news__number">500</div>
                       </div>
@@ -400,7 +566,7 @@
                         <div class="news__data">07.07.2020</div>
                         <div class="news__show">
                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
-                            <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
+                            <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"/>
                           </svg>
                           <div class="news__number">500</div>
                         </div>
@@ -424,7 +590,7 @@
                         <div class="news__data">07.07.2020</div>
                         <div class="news__show">
                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
-                            <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"></image>
+                            <image id="visibility" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAA1UlEQVQokaWSMUpDURBFjyns1DaNdjbpfpsV2Aqf4BaSxh0E3IPiFkQCaV1BsLMLgRRCsgLNAo5cmcgvQxwYuHPnzp3He+9EpRPXwBi4AS6K/gLegGdg/SfNoBqDqfqpTtR+8RSeVG9aWvYb43YF3AE74BIYlfcrsAXOgBdgk1P1gBZogNsaGgAL4LxyUdyuNM3vjLpSm87RntT7Th382KmjXfU4NtRWfVdPy3GgbtWHyuBw6UUTbZuNM+ADmNcFLIEh8F0ZHC69aKKd/fs59nHYBwB+AKEW3VJ6CQmGAAAAAElFTkSuQmCC"/>
                           </svg>
                           <div class="news__number">500</div>
                         </div>
@@ -439,13 +605,18 @@
                   </li>
                 </ul>
 
+                <div id="prev-next-btns">
+                  <div id="prev-btn"></div>
+                  <div id="next-btn"></div>
+                </div>
+
                 <div id="nav-btns" class="news__block-number start__number">
                   <span class="slide-nav-btn start__number-one start__number--color">01</span>
                   <span class="slide-nav-btn start__number-two">02</span>
                   <span class="slide-nav-btn start__number-tree start__number--color">03</span>
                 </div>
               </div>
-            </div>
+            </div>-->
 
             <div class="news__block">
               <div class="news__block-wrapper">
@@ -519,6 +690,23 @@
 
       </div>
         </section>
+
+
+
+
+
+      <script>
+        $(document).ready(function(){
+          $('.slider ul').bxSlider({
+            pager: true,
+            controls: false,
+            auto: true,
+            pause: 10000,
+            minSlides: 1,
+            maxSlides: 1
+          });
+        });
+      </script>
 
       <section class="form__application">
         <div class="form__block-wrapper">
@@ -823,7 +1011,7 @@
     <div class="overlay js-overlay-modal"></div>
 
     <script src="js/slider-news.js"></script>
-    <script src="js/slider-srart.js"></script>
+    <script src="js/slider-news.js"></script>
     <script src="js/map.js"></script>
     <script src="js/modal.js"></script>
     <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA2Hyz6X-HxF2v2APxDvnBB9ISgpEO3Po&signed_in=true&callback=initMap" async defer></script>-->
