@@ -26,7 +26,7 @@
             <li class="main-nav__item"><a href="#">Новости</a></li>
           </ul>
           <div class="main-nav__phone">
-            <img src="img/phone.svg" width="12" height="12">
+            <img src="img/phone.svg" width="12" height="12" alt="phone">
             <a href="#">8 (499) 390-50-55</a>
           </div>
         </div>
@@ -39,14 +39,15 @@
         </ul>
         <div class="page-header__search">
           <a href="#" class="page-header__mobile">
-            <img src="img/search 1.svg" width="24" height="24" alt="search">
+            <img src="img/search.svg" width="24" height="24" alt="search">
           </a>
         </div>
         <div class="page-header__logo">
           <a href="index.html">
             <picture>
-              <source media="(min-width: 1500px)" srcset="img/logo-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+              <source media="(min-width: 1085px)" srcset="img/logo-desktop.png 1x, img/logo-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.png 1x, img/logo-tablet@2x.png 2x">
+              <source srcset="img/logo@2x.png 2x, img/logo.png 1x">
               <img src="img/logo.png" alt="logo">
             </picture>
           </a>
@@ -60,19 +61,19 @@
           </div>
           <div class="page-header__chart">
             <a href="#">
-              <img src="img/Tempbar-chart 1.svg" width="24" height="24" alt="chart">
+              <img src="img/Tempbar-chart.svg" width="24" height="24" alt="chart">
               <span class="page-header__number">3</span>
             </a>
           </div>
           <div class="page-header__basket">
             <a href="#">
-              <img src="img/shopping-bag 1.svg" width="24" height="24" alt="basket">
+              <img src="img/shopping-bag.svg" width="24" height="24" alt="basket">
               <span class="page-header__number">6</span>
             </a>
           </div>
           <div class="page-header__user">
             <a href="#">
-              <img src="img/user 1.svg" width="24" height="24" alt="user">
+              <img src="img/user.svg" width="24" height="24" alt="user">
             </a>
           </div>
         </div>
@@ -89,7 +90,7 @@
   </header>
 
     <main class="page-main">
-      <section class="breadcrumbs">
+      <div class="breadcrumbs">
         <ul class="breadcrumbs__wrapper">
           <li class="breadcrumbs__item">
             <a href="index.html">Главная</a>
@@ -101,7 +102,7 @@
           </li>
           <li class="breadcrumbs__current">Условия оплаты</li>
         </ul>
-      </section>
+      </div>
 
       <div class="page-main__wrapper">
         <section class="conditions-pay">
@@ -109,25 +110,25 @@
           <ul class="conditions-pay__list">
             <li class="conditions-pay__item">
               <button class="conditions-pay__button conditions-pay__button--first" type="button">
-                <div class="conditions-pay__button-wrapper conditions-pay__button-wrapper--first">
+                <a class="conditions-pay__button-wrapper conditions-pay__button-wrapper--first">
                   <svg width="20" height="15" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.5065 1H2.85065C1.82856 1 1 1.83947 1 2.875V14.125C1 15.1605 1.82856 16 2.85065 16H19.5065C20.5286 16 21.3571 15.1605 21.3571 14.125V2.875C21.3571 1.83947 20.5286 1 19.5065 1Z" stroke="#F2F2F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M1 6.35718H21.3571" stroke="#F2F2F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>
                   <p class="conditions-pay__button-header conditions-pay__button-header--first">Условия оплаты</p>
-                </div>
+                </a>
               </button>
             </li>
             <li class="conditions-pay__item">
               <button class="conditions-pay__button conditions-pay__button--second" type="button">
-                <div class="conditions-pay__button-wrapper conditions-pay__button-wrapper--second">
+                <a class="conditions-pay__button-wrapper conditions-pay__button-wrapper--second">
                   <svg width="22" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 16V8.00002C20.9996 7.6493 20.9071 7.30483 20.7315 7.00119C20.556 6.69754 20.3037 6.44539 20 6.27002L13 2.27002C12.696 2.09449 12.3511 2.00208 12 2.00208C11.6489 2.00208 11.304 2.09449 11 2.27002L4 6.27002C3.69626 6.44539 3.44398 6.69754 3.26846 7.00119C3.09294 7.30483 3.00036 7.6493 3 8.00002V16C3.00036 16.3508 3.09294 16.6952 3.26846 16.9989C3.44398 17.3025 3.69626 17.5547 4 17.73L11 21.73C11.304 21.9056 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9056 13 21.73L20 17.73C20.3037 17.5547 20.556 17.3025 20.7315 16.9989C20.9071 16.6952 20.9996 16.3508 21 16Z" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M3.27002 6.95996L12 12.01L20.73 6.95996" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M12 22.08V12" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>
                   <p class="conditions-pay__button-header conditions-pay__button-header--second">Условия доставки</p>
-                </div>
+                </a>
               </button>
             </li>
           </ul>
@@ -151,32 +152,32 @@
                 <ul class="pay-system__list">
                   <li class="pay-system__item">
                     <a href="#">
-                      <img src="img/Group.png">
+                      <img src="img/Group.png" alt="pay">
                     </a>
                   </li>
                   <li class="pay-system__item">
                     <a href="#">
-                      <img src="img/Group 172.png">
+                      <img src="img/Group172.png" alt="pay">
                     </a>
                   </li>
                   <li class="pay-system__item">
                     <a href="#">
-                      <img src="img/Group 246.png">
+                      <img src="img/Group246.png" alt="pay">
                     </a>
                   </li>
                   <li class="pay-system__item">
                     <a href="#">
-                      <img src="img/Group 245.png">
+                      <img src="img/Group245.png" alt="pay">
                     </a>
                   </li>
                   <li class="pay-system__item">
                     <a href="#">
-                      <img src="img/Group 173.png">
+                      <img src="img/Group173.png" alt="pay">
                     </a>
                   </li>
                   <li class="pay-system__item pay-system__item--margin">
                     <a href="#">
-                      <img src="img/Group 174.png">
+                      <img src="img/Group174.png" alt="pay">
                     </a>
                   </li>
                 </ul>
@@ -227,8 +228,9 @@
                 <div class="page-footer__logo">
                   <a href="index.html">
                     <picture>
-                      <source media="(min-width: 1500px)" srcset="img/logo-footer-desktop.png">
-                      <source media="(min-width: 768px)" srcset="img/lofo-footer-tablet.png">
+                      <source media="(min-width: 1500px)" srcset="img/logo-footer-desktop.png 1x, img/logo-footer-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/logo-footer-tablet.png 1x, img/logo-footer-tablet@2x.png 2x">
+                      <source srcset="img/logo-footer@2x.png 2x, img/logo-footer.png 1x">
                       <img src="img/logo-footer.png" alt="logo">
                     </picture>
                   </a>
@@ -250,49 +252,55 @@
 
           <section class="footer-nav">
             <div class="footer-nav__wrapper">
-              <ul class="footer-nav__list">
+              <div class="footer-nav__container">
                 <h3 class="footer-nav__title">Компания</h3>
-                <li class="footer-nav__item"><a href="#">Контакты</a></li>
-                <li class="footer-nav__item"><a href="#">Доставка и оплата</a></li>
-                <li class="footer-nav__item"><a href="#">Акции</a></li>
-                <li class="footer-nav__item"><a href="#">Новости</a></li>
-                <li class="footer-nav__item"><a href="#">Обмен и возврат</a></li>
-                <li class="footer-nav__item"><a href="#">Сравнение</a></li>
-              </ul>
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item"><a href="#">Контакты</a></li>
+                  <li class="footer-nav__item"><a href="#">Доставка и оплата</a></li>
+                  <li class="footer-nav__item"><a href="#">Акции</a></li>
+                  <li class="footer-nav__item"><a href="#">Новости</a></li>
+                  <li class="footer-nav__item"><a href="#">Обмен и возврат</a></li>
+                  <li class="footer-nav__item"><a href="#">Сравнение</a></li>
+                </ul>
+              </div>
 
-              <ul class="footer-nav__list">
+              <div class="footer-nav__container">
                 <h3 class="footer-nav__title">Продукция</h3>
-                <li class="footer-nav__item"><a href="#">Прицелы</a></li>
-                <li class="footer-nav__item"><a href="#">Бинокли</a></li>
-                <li class="footer-nav__item"><a href="#">Диагностические</a></li>
-                <li class="footer-nav__item"><a href="#">Для смартфона</a></li>
-                <li class="footer-nav__item"><a href="#">Монокуляры</a></li>
-                <li class="footer-nav__item"><a href="#">Насадки</a></li>
-                <li class="footer-nav__item"><a href="#">Аксессуары</a></li>
-              </ul>
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item"><a href="#">Прицелы</a></li>
+                  <li class="footer-nav__item"><a href="#">Бинокли</a></li>
+                  <li class="footer-nav__item"><a href="#">Диагностические</a></li>
+                  <li class="footer-nav__item"><a href="#">Для смартфона</a></li>
+                  <li class="footer-nav__item"><a href="#">Монокуляры</a></li>
+                  <li class="footer-nav__item"><a href="#">Насадки</a></li>
+                  <li class="footer-nav__item"><a href="#">Аксессуары</a></li>
+                </ul>
+              </div>
 
-              <ul class="footer-nav__list">
+              <div class="footer-nav__container">
                 <h3 class="footer-nav__title">Бренды</h3>
-                <li class="footer-nav__item"><a href="#">ATN</a></li>
-                <li class="footer-nav__item"><a href="#">Dedal</a></li>
-                <li class="footer-nav__item"><a href="#">Flir</a></li>
-                <li class="footer-nav__item"><a href="#">Fluke</a></li>
-                <li class="footer-nav__item"><a href="#">Fortuna</a></li>
-                <li class="footer-nav__item"><a href="#">Guide</a></li>
-                <li class="footer-nav__item"><a href="#">iRay</a></li>
-                <li class="footer-nav__item"><a href="#">Pulsar</a></li>
-              </ul>
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item"><a href="#">ATN</a></li>
+                  <li class="footer-nav__item"><a href="#">Dedal</a></li>
+                  <li class="footer-nav__item"><a href="#">Flir</a></li>
+                  <li class="footer-nav__item"><a href="#">Fluke</a></li>
+                  <li class="footer-nav__item"><a href="#">Fortuna</a></li>
+                  <li class="footer-nav__item"><a href="#">Guide</a></li>
+                  <li class="footer-nav__item"><a href="#">iRay</a></li>
+                  <li class="footer-nav__item"><a href="#">Pulsar</a></li>
+                </ul>
+              </div>
             </div>
           </section>
 
-          <section class="footer-desktop">
+          <div class="footer-desktop">
             <p>Задать вопрос<br> или оформить покупку</p>
             <a href="#" class="footer-address__tel">8 (499) 390-50-55</a>
             <button class="page-footer__button" type="button">Обратный звонок</button>
-          </section>
+          </div>
         </div>
       </div>
-      <section class="footer-social">
+      <div class="footer-social">
         <div class="footer-social__wrapper">
           <p class="footer-social__years">© 2012-2020, «Точка-М»</p>
 
@@ -338,7 +346,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </div>
 
       <div class="page-footer__agreement">
         <p class="page-footer__agreement__title">Пользовательское соглашение</p>
