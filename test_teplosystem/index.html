@@ -7,6 +7,10 @@
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
 
   </head>
   <body class="container">
@@ -79,7 +83,7 @@
         </div>
       </div>
       <div class="page-header__nav">
-        <input type="checkbox" id="hmt" class="page-header__ticker js-open-modal btn show-modal-2" data-modal="1">
+        <input type="checkbox" id="hmt" class="mobile_menu page-header__ticker js-open-modal btn show-modal-2" data-modal="1">
         <label class="page-header__btn-menu" for="hmt">
           <span class="page-header__first"></span>
           <span class="page-header__second"></span>
@@ -358,37 +362,497 @@
     </footer>
 
 
-  <!-- Меню desktop  -->
-  <div class="modal modal-mobile" data-modal="1">
-    <div class="modal__backdrop">
-      <div class="modal__content modal__content-mobile">
-        <div class="modal__wrapper">
-
-          <div class="hidden-menu">
-
-            <div class="menu__block">
-
-
+  <!-- Меню -->
+  <div class="mobile_menu_container">
+    <div class="mobile_menu_content">
+      <ul>
+        <li>
+          <div class="mobile_menu__city">
+            <a href="#">г. Москва</a>
+            <span class="mobile_menu__arrow"></span>
+          </div>
+          <div class="mobile_menu__phone">
+            <div class="mobile_menu__container">
+              <img src="img/phone_mobile.svg" width="16" height="16" alt="phone">
+              <a href="#">8 (499) 390-50-55</a>
             </div>
-            <svg fill="white" class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
-            <span class="modal__btn-close modal__cross js-modal-close" data-dismiss="modal" title="Закрыть">×</span>
           </div>
-
-
-
-
-
-         <div class="modal-menu">
-
-
+          <a href="#" class="mobile_menu__header parent">Тепловизоры</a>
+          <ul>
+            <li><div class="mobile_menu__city">
+              <a href="#">г. Москва</a>
+              <span class="mobile_menu__arrow"></span>
+            </div></li>
+            <li><a href="#" class="mobile_menu__header back">Тепловизоры</a></li>
+            <li class="second-page">
+              <a href="#" class="parent">
+                <div class="mobile_menu__second-page">
+                <picture>
+                  <source srcset="img/binoculars@2x.png 2x, img/binoculars.png 1x">
+                  <img src="img/binoculars.png" alt="binoculars">
+                </picture>
+                <p>Бинокли</p>
+                </div>
+              </a>
+              <ul>
+                <li><div class="mobile_menu__city">
+                  <a href="#">г. Москва</a>
+                  <span class="mobile_menu__arrow"></span>
+                </div></li>
+                <li class="mobile_menu__third-page">
+                  <a href="#" class="back">
+                    <div class="mobile_menu__second-page mobile_menu__second-page--third">
+                      <picture>
+                        <source srcset="img/binoculars@2x.png 2x, img/binoculars.png 1x">
+                        <img src="img/binoculars.png" alt="binoculars">
+                      </picture>
+                      <p>Бинокли</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="third-page"><a href="#">ATN</a></li>
+                <li class="third-page"><a href="#">Dedal</a></li>
+                <li class="third-page"><a href="#">Fortuna</a></li>
+                <li class="third-page"><a href="#">Pulsar</a></li>
+                <li class="third-page"><a href="#">Flir</a></li>
+                <li class="third-page"><a href="#">Fluke</a></li>
+                <li class="third-page"><a href="#">Guide</a></li>
+                <li class="third-page"><a href="#">iRay</a></li>
+                <li>
+                  <a href="#">
+                    <div class="mobile_menu__third-arrow">
+                      <p>Смотреть все</p>
+                      <img src="img/arrow-right_mobile.svg" width="16" height="16" alt="arrow-right">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="second-page">
+              <a href="#" class="parent">
+                <div class="mobile_menu__second-page mobile_menu__second-page--padding">
+                  <picture>
+                    <source srcset="img/removebg@2x.png 2x, img/removebg.png 1x">
+                    <img src="img/removebg.png" alt="removebg">
+                  </picture>
+                  <p>Диагностические</p>
+                </div>
+              </a>
+              <ul>
+                <li><div class="mobile_menu__city">
+                  <a href="#">г. Москва</a>
+                  <span class="mobile_menu__arrow"></span>
+                </div></li>
+                <li class="mobile_menu__third-page">
+                  <a href="#" class="back">
+                    <div class="mobile_menu__second-page mobile_menu__second-page--padding mobile_menu__second-page--third">
+                      <picture>
+                        <source srcset="img/removebg@2x.png 2x, img/removebg.png 1x">
+                        <img src="img/removebg.png" alt="removebg">
+                      </picture>
+                      <p>Диагностические</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="third-page"><a href="#">ATN</a></li>
+                <li class="third-page"><a href="#">Dedal</a></li>
+                <li class="third-page"><a href="#">Fortuna</a></li>
+                <li class="third-page"><a href="#">Pulsar</a></li>
+                <li class="third-page"><a href="#">Flir</a></li>
+                <li class="third-page"><a href="#">Fluke</a></li>
+                <li class="third-page"><a href="#">Guide</a></li>
+                <li class="third-page"><a href="#">iRay</a></li>
+                <li>
+                  <a href="#">
+                    <div class="mobile_menu__third-arrow">
+                      <p>Смотреть все</p>
+                      <img src="img/arrow-right_mobile.svg" width="16" height="16" alt="arrow-right">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="second-page">
+              <a href="#" class="parent">
+                <div class="mobile_menu__second-page">
+                  <picture>
+                    <source srcset="img/smart@2x.png 2x, img/smart.png 1x">
+                    <img src="img/smart.png" alt="smart">
+                  </picture>
+                  <p>Для смартфона</p>
+                </div>
+              </a>
+              <ul>
+                <li><div class="mobile_menu__city">
+                  <a href="#">г. Москва</a>
+                  <span class="mobile_menu__arrow"></span>
+                </div></li>
+                <li class="mobile_menu__third-page">
+                  <a href="#" class="back">
+                    <div class="mobile_menu__second-page mobile_menu__second-page--third">
+                      <picture>
+                        <source srcset="img/smart@2x.png 2x, img/smart.png 1x">
+                        <img src="img/smart.png" alt="smart">
+                      </picture>
+                      <p>Для смартфона</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="third-page"><a href="#">ATN</a></li>
+                <li class="third-page"><a href="#">Dedal</a></li>
+                <li class="third-page"><a href="#">Fortuna</a></li>
+                <li class="third-page"><a href="#">Pulsar</a></li>
+                <li class="third-page"><a href="#">Flir</a></li>
+                <li class="third-page"><a href="#">Fluke</a></li>
+                <li class="third-page"><a href="#">Guide</a></li>
+                <li class="third-page"><a href="#">iRay</a></li>
+                <li>
+                  <a href="#">
+                    <div class="mobile_menu__third-arrow">
+                      <p>Смотреть все</p>
+                      <img src="img/arrow-right_mobile.svg" width="16" height="16" alt="arrow-right">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="second-page">
+              <a href="#" class="parent">
+                <div class="mobile_menu__second-page">
+                  <picture>
+                    <source srcset="img/axion@2x.png 2x, img/axion.png 1x">
+                    <img src="img/axion.png" alt="axion">
+                  </picture>
+                  <p>Монокуляры</p>
+                </div>
+              </a>
+              <ul>
+                <li><div class="mobile_menu__city">
+                  <a href="#">г. Москва</a>
+                  <span class="mobile_menu__arrow"></span>
+                </div></li>
+                <li class="mobile_menu__third-page">
+                  <a href="#" class="back">
+                    <div class="mobile_menu__second-page mobile_menu__second-page--third">
+                      <picture>
+                        <source srcset="img/axion@2x.png 2x, img/axion.png 1x">
+                        <img src="img/axion.png" alt="axion">
+                      </picture>
+                      <p>Монокуляры</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="third-page"><a href="#">ATN</a></li>
+                <li class="third-page"><a href="#">Dedal</a></li>
+                <li class="third-page"><a href="#">Fortuna</a></li>
+                <li class="third-page"><a href="#">Pulsar</a></li>
+                <li class="third-page"><a href="#">Flir</a></li>
+                <li class="third-page"><a href="#">Fluke</a></li>
+                <li class="third-page"><a href="#">Guide</a></li>
+                <li class="third-page"><a href="#">iRay</a></li>
+                <li>
+                  <a href="#">
+                    <div class="mobile_menu__third-arrow">
+                      <p>Смотреть все</p>
+                      <img src="img/arrow-right_mobile.svg" width="16" height="16" alt="arrow-right">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="second-page">
+              <a href="#" class="parent">
+                <div class="mobile_menu__second-page mobile_menu__second-page--padding">
+                  <picture>
+                    <source srcset="img/core@2x.png 2x, img/core.png 1x">
+                    <img src="img/core.png" alt="core">
+                  </picture>
+                  <p>Насадки</p>
+                </div>
+              </a>
+              <ul>
+                <li><div class="mobile_menu__city">
+                  <a href="#">г. Москва</a>
+                  <span class="mobile_menu__arrow"></span>
+                </div></li>
+                <li class="mobile_menu__third-page">
+                  <a href="#" class="back">
+                    <div class="mobile_menu__second-page mobile_menu__second-page--padding mobile_menu__second-page--third">
+                      <picture>
+                        <source srcset="img/core@2x.png 2x, img/core.png 1x">
+                        <img src="img/core.png" alt="core">
+                      </picture>
+                      <p>Насадки</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="third-page"><a href="#">ATN</a></li>
+                <li class="third-page"><a href="#">Dedal</a></li>
+                <li class="third-page"><a href="#">Fortuna</a></li>
+                <li class="third-page"><a href="#">Pulsar</a></li>
+                <li class="third-page"><a href="#">Flir</a></li>
+                <li class="third-page"><a href="#">Fluke</a></li>
+                <li class="third-page"><a href="#">Guide</a></li>
+                <li class="third-page"><a href="#">iRay</a></li>
+                <li>
+                  <a href="#">
+                    <div class="mobile_menu__third-arrow">
+                      <p>Смотреть все</p>
+                      <img src="img/arrow-right_mobile.svg" width="16" height="16" alt="arrow-right">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="second-page">
+              <a href="#" class="parent">
+                <div class="mobile_menu__second-page">
+                  <picture>
+                    <source srcset="img/digisight@2x.png 2x, img/digisight.png 1x">
+                    <img src="img/digisight.png" alt="digisight">
+                  </picture>
+                  <p>Прицелы ночного видения</p>
+                </div>
+              </a>
+              <ul>
+                <li><div class="mobile_menu__city">
+                  <a href="#">г. Москва</a>
+                  <span class="mobile_menu__arrow"></span>
+                </div></li>
+                <li class="mobile_menu__third-page">
+                  <a href="#" class="back">
+                    <div class="mobile_menu__second-page mobile_menu__second-page--third">
+                      <picture>
+                        <source srcset="img/digisight@2x.png 2x, img/digisight.png 1x">
+                        <img src="img/digisight.png" alt="digisight">
+                      </picture>
+                      <p>Прицелы ночного видения</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="third-page"><a href="#">ATN</a></li>
+                <li class="third-page"><a href="#">Dedal</a></li>
+                <li class="third-page"><a href="#">Fortuna</a></li>
+                <li class="third-page"><a href="#">Pulsar</a></li>
+                <li class="third-page"><a href="#">Flir</a></li>
+                <li class="third-page"><a href="#">Fluke</a></li>
+                <li class="third-page"><a href="#">Guide</a></li>
+                <li class="third-page"><a href="#">iRay</a></li>
+                <li>
+                  <a href="#">
+                    <div class="mobile_menu__third-arrow">
+                      <p>Смотреть все</p>
+                      <img src="img/arrow-right_mobile.svg" width="16" height="16" alt="arrow-right">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="second-page">
+              <a href="#" class="parent">
+                <div class="mobile_menu__second-page">
+                  <picture>
+                    <source srcset="img/digisight-ultra@2x.png 2x, img/digisight-ultra.png 1x">
+                    <img src="img/digisight-ultra.png" alt="digisight-ultra">
+                  </picture>
+                  <p>Прицелы</p>
+                </div>
+              </a>
+              <ul>
+                <li><div class="mobile_menu__city">
+                  <a href="#">г. Москва</a>
+                  <span class="mobile_menu__arrow"></span>
+                </div></li>
+                <li class="mobile_menu__third-page">
+                  <a href="#" class="back">
+                    <div class="mobile_menu__second-page mobile_menu__second-page--third">
+                      <picture>
+                        <source srcset="img/digisight-ultra@2x.png 2x, img/digisight-ultra.png 1x">
+                        <img src="img/digisight-ultra.png" alt="digisight-ultra">
+                      </picture>
+                      <p>Прицелы</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="third-page"><a href="#">ATN</a></li>
+                <li class="third-page"><a href="#">Dedal</a></li>
+                <li class="third-page"><a href="#">Fortuna</a></li>
+                <li class="third-page"><a href="#">Pulsar</a></li>
+                <li class="third-page"><a href="#">Flir</a></li>
+                <li class="third-page"><a href="#">Fluke</a></li>
+                <li class="third-page"><a href="#">Guide</a></li>
+                <li class="third-page"><a href="#">iRay</a></li>
+                <li>
+                  <a href="#">
+                    <div class="mobile_menu__third-arrow">
+                      <p>Смотреть все</p>
+                      <img src="img/arrow-right_mobile.svg" width="16" height="16" alt="arrow-right">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="second-page">
+              <a href="#" class="parent">
+                <div class="mobile_menu__second-page">
+                  <picture>
+                    <source srcset="img/battery@2x.png 2x, img/battery.png 1x">
+                    <img src="img/battery.png" alt="battery">
+                  </picture>
+                  <p>Аксессуары</p>
+                </div>
+              </a>
+              <ul>
+                <li><div class="mobile_menu__city">
+                  <a href="#">г. Москва</a>
+                  <span class="mobile_menu__arrow"></span>
+                </div></li>
+                <li class="mobile_menu__third-page">
+                  <a href="#" class="back">
+                    <div class="mobile_menu__second-page mobile_menu__second-page--third">
+                      <picture>
+                        <source srcset="img/battery@2x.png 2x, img/battery.png 1x">
+                        <img src="img/battery.png" alt="battery">
+                      </picture>
+                      <p>Аксессуары</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="third-page"><a href="#">ATN</a></li>
+                <li class="third-page"><a href="#">Dedal</a></li>
+                <li class="third-page"><a href="#">Fortuna</a></li>
+                <li class="third-page"><a href="#">Pulsar</a></li>
+                <li class="third-page"><a href="#">Flir</a></li>
+                <li class="third-page"><a href="#">Fluke</a></li>
+                <li class="third-page"><a href="#">Guide</a></li>
+                <li class="third-page"><a href="#">iRay</a></li>
+                <li>
+                  <a href="#">
+                    <div class="mobile_menu__third-arrow">
+                      <p>Смотреть все</p>
+                      <img src="img/arrow-right_mobile.svg" width="16" height="16" alt="arrow-right">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile_menu__bottom mobile_menu__bottom--second"></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="mobile_menu__header parent">Бренды</a>
+          <ul>
+            <li><div class="mobile_menu__city">
+              <a href="#">г. Москва</a>
+              <span class="mobile_menu__arrow"></span>
+            </div></li>
+            <li><a href="#" class="mobile_menu__header back">Бренды</a></li>
+            <li class="second-page">
+              <a href="#">
+                <div class="mobile_menu__brand">
+                  <p>ATN</p>
+                  <img src="img/atn.svg" width="90" height="50" alt="atn">
+                </div>
+              </a>
+            </li>
+            <li class="second-page">
+              <a href="#">
+                <div class="mobile_menu__brand">
+                  <p>Dedal</p>
+                  <img src="img/dedal.svg" width="90" height="50" alt="dedal">
+                </div>
+              </a>
+            </li>
+            <li class="second-page">
+              <a href="#">
+                <div class="mobile_menu__brand">
+                  <p>Flir</p>
+                  <img src="img/flir.svg" width="90" height="50" alt="flir">
+                </div>
+              </a>
+            </li>
+            <li class="second-page">
+              <a href="#">
+                <div class="mobile_menu__brand">
+                  <p>Fluke</p>
+                  <img src="img/fluke.svg" width="90" height="50" alt="fluke">
+                </div>
+              </a>
+            </li>
+            <li class="second-page">
+              <a href="#">
+                <div class="mobile_menu__brand">
+                  <p>Fortuna</p>
+                  <img src="img/gortuna.svg" width="90" height="50" alt="gortuna">
+                </div>
+              </a>
+            </li>
+            <li class="second-page">
+              <a href="#">
+                <div class="mobile_menu__brand">
+                  <p>Guide</p>
+                  <img src="img/guide.svg" width="90" height="50" alt="guide">
+                </div>
+              </a>
+            </li>
+            <li class="second-page">
+              <a href="#">
+                <div class="mobile_menu__brand">
+                  <p>iRay</p>
+                  <img src="img/iray.svg" width="90" height="50" alt="iray">
+                </div>
+              </a>
+            </li>
+            <li class="second-page">
+              <a href="#">
+                <div class="mobile_menu__brand">
+                  <p>Pulsar</p>
+                  <img src="img/pulsar.svg" width="90" height="50" alt="pulsar">
+                </div>
+              </a>
+            </li>
+            <li class="second-page">
+              <a href="#">
+                <div class="mobile_menu__brand">
+                  <p>Seek Thermal</p>
+                  <img src="img/seek.svg" width="90" height="50" alt="seek">
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile_menu__item"><a href="#">Новости</a></li>
+        <li class="mobile_menu__item"><a href="#">Контакты</a></li>
+        <li class="mobile_menu__item"><a href="#">Доставка и оплата</a></li>
+        <li class="mobile_menu__item"><a href="#">Скидки</a></li>
+        <li class="mobile_menu__item mobile_menu__item--border"><a href="#">Обмен и возврат</a></li>
+        <li class="mobile_menu__icon">
+          <div class="mobile_menu__icon-wrapper">
+            <img src="img/chart_mobile.svg" width="16" height="16" alt="chart">
+            <a href="#">Сравнение</a>
+            <span>10</span>
           </div>
-          <svg fill="white" class="modal__cross js-modal-close modal-cross-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
-          <span class="modal__btn-close modal__cross js-modal-close" data-dismiss="modal" title="Закрыть">×</span>
-        </div>
-      </div>
-    </div></div>
-    <div class="overlay js-overlay-modal"></div>
+        </li>
+        <li class="mobile_menu__icon">
+          <div class="mobile_menu__icon-wrapper">
+            <img src="img/favorites_mobile.svg" width="16" height="16" alt="favorites">
+            <a href="#">Избранное</a>
+            <span>10</span>
+          </div>
+        </li>
+        <li class="mobile_menu__icon mobile_menu__icon--border">
+          <div class="mobile_menu__icon-wrapper mobile_menu__icon-wrapper--border">
+            <img src="img/user_mobile.svg" width="16" height="16" alt="user">
+            <a href="#">Личный кабинет</a>
+          </div>
+        </li>
+        <li class="mobile_menu__bottom"></li>
+      </ul>
+    </div>
+  </div>
 
-    <script src="js/modal.js"></script>
+  <div class="mobile_menu_overlay"></div>
+
+  <script src="js/menu.js"></script>
   </body>
 </html>
