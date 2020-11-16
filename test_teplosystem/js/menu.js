@@ -14,9 +14,18 @@ $(function() {
     e.preventDefault();
     $(".mobile_menu_container").addClass("loaded");
     $(".mobile_menu_overlay").fadeIn();
+    $(".mobile_menu__city img").fadeIn();
   });
   $(document).on("click", ".mobile_menu_overlay", function(e) {
     $(".mobile_menu_container").removeClass("loaded");
+    $(this).fadeOut(function() {
+      $(".mobile_menu_container .loaded").removeClass("loaded");
+      $(".mobile_menu_container .activity").removeClass("activity");
+    });
+  });
+  $(document).on("click", ".mobile_menu__city img", function(e) {
+    $(".mobile_menu_container").removeClass("loaded");
+    $(".mobile_menu_overlay").fadeOut();
     $(this).fadeOut(function() {
       $(".mobile_menu_container .loaded").removeClass("loaded");
       $(".mobile_menu_container .activity").removeClass("activity");
