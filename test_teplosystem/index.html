@@ -24,7 +24,12 @@
         </div>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#">Контакты</a></li>
-          <li class="main-nav__item"><a href="conditions-pay.html">Доставка и оплата</a></li>
+          <li class="main-nav__item menu__wrapper">
+            <a>Доставка и оплата</a>
+            <ul class="menu__list menu__list--pay">
+              <li class="menu__item menu__item--pay menu__item--pay-first"><a href="delivery.html">Доставка</a> </li>
+              <li class="menu__item menu__item--pay"><a href="conditions-pay.html">Условия оплаты</a> </li>
+            </ul></li>
           <li class="main-nav__item"><a href="#">Обмен и возврат</a></li>
           <li class="main-nav__item"><a href="#">Скидки</a></li>
           <li class="main-nav__item"><a href="#">Новости</a></li>
@@ -38,7 +43,8 @@
     </nav>
     <div class="page-header__wrapper">
       <ul class="menu page-header__list">
-        <li class="menu__wrapper"><a class="page-header__item" href="#">Тепловизоры</a>
+        <li class="menu__wrapper">
+          <a class="page-header__item" href="#">Тепловизоры</a>
           <ul class="menu__list menu__list--first">
             <li class="menu__item menu__item--first">
               <ul class="menu__item-container">
@@ -1297,7 +1303,7 @@
 <footer class="page-footer">
   <div class="page-footer__border">
     <div class="page-footer__wrapper-nav">
-      <div class="page-footer__logo">
+      <div class="page-footer__logo page-footer__logo--top">
         <div class="page-footer__wrapper">
           <div class="page-footer__container">
             <section class="form__application">
@@ -1919,11 +1925,23 @@
           </li>
         </ul>
       </li>
-      <li class="mobile_menu__item"><a href="#">Новости</a></li>
-      <li class="mobile_menu__item"><a href="#">Контакты</a></li>
-      <li class="mobile_menu__item"><a href="conditions-pay.html">Доставка и оплата</a></li>
-      <li class="mobile_menu__item"><a href="#">Скидки</a></li>
-      <li class="mobile_menu__item mobile_menu__item--border"><a href="#">Обмен и возврат</a></li>
+      <li class="mobile_menu__item"><a class="mobile_menu__item-title" href="#">Новости</a></li>
+      <li class="mobile_menu__item"><a class="mobile_menu__item-title" href="#">Контакты</a></li>
+      <li class="mobile_menu__item">
+        <a class="mobile_menu__item-title parent">Доставка и оплата</a>
+        <ul>
+          <li><div class="mobile_menu__city">
+            <a href="#">г. Москва</a>
+            <span class="mobile_menu__arrow"></span>
+            <img src="img/close_mobile.svg" width="12" height="12" alt="close">
+          </div></li>
+          <li><a href="#" class="mobile_menu__header back">Доставка и оплата</a></li>
+          <li class="second-page"><a class="mobile_menu__delivery" href="delivery.html">Доставка</a> </li>
+          <li class="second-page"><a class="mobile_menu__delivery" href="conditions-pay.html">Условия оплаты</a> </li>
+        </ul>
+      </li>
+      <li class="mobile_menu__item"><a class="mobile_menu__item-title" href="#">Скидки</a></li>
+      <li class="mobile_menu__item mobile_menu__item--border"><a class="mobile_menu__item-title" href="#">Обмен и возврат</a></li>
       <li class="mobile_menu__icon">
         <div class="mobile_menu__icon-wrapper">
           <img src="img/chart_mobile.svg" width="16" height="16" alt="chart">
