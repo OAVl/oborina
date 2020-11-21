@@ -374,8 +374,12 @@
                 </li>
               </ul>
               <div class="contacts__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10452.074926530086!2d37.65180397287485!3d55.84540503790505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b536906b92062f%3A0xe619d2ceda06b823!2z0L_RgC3QtCDQodC10YDQtdCx0YDRj9C60L7QstCwLCAxNCDRgdGC0YDQvtC10L3QuNC1IDIzLCDQnNC-0YHQutCy0LAsIDEyOTM0Mw!5e0!3m2!1sru!2sru!4v1605905988313!5m2!1sru!2sru" width="346" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-                </iframe>
+                <picture>
+                <!--  <source media="(min-width: 1085px)" srcset="img/1-desktop.png 1x, img/1-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/1-tablet.png 1x, img/1-tablet@2x.png 2x">-->
+                  <source srcset="img/map-mobile@2x.png 2x, img/map-mobile.png 1x">
+                  <img class="contacts__map-img" src="img/map-mobile.png" alt="map">
+                </picture>
               </div>
               <h3 class="contact-info__title">Режим работы</h3>
               <p class="contacts-info__description contacts-info__description--1"><b>Пн-Пт.</b> — с 9:00 до 18:00 без перерывов</p>
@@ -447,7 +451,32 @@
 
           <ul class="contacts__list-second">
             <li>
-
+                <ul class="contacts-advantages__list">
+                  <li class="contacts-advantages__item contacts-advantages__item--top">
+                    <img src="img/delivery.svg" width="77" height="77" alt="delivery">
+                    <div class="contacts-advantages__container">
+                      <h3 class="contacts-advantages__title">Быстрая доставка</h3>
+                      <p class="contacts-advantages__description">У нас собственная курьерская служба по Москве,
+                        поэтому возможна доставка в день обращения! Доставка по России осуществляется с помощью транспортных компаний</p>
+                    </div>
+                  </li>
+                  <li class="contacts-advantages__item">
+                    <img src="img/garanty.svg" width="77" height="77" alt="garanty">
+                    <div class="contacts-advantages__container">
+                      <h3 class="contacts-advantages__title">Официальная гарантия</h3>
+                      <p class="contacts-advantages__description">На все товары от магазина 1 год со дня получения.
+                        Гарантия осуществляется по гарантийному талону или товарному чеку или по номеру телефона на который был оформлен заказ.</p>
+                    </div>
+                  </li>
+                  <li class="contacts-advantages__item">
+                    <img src="img/pay.svg" width="77" height="77" alt="pay">
+                    <div class="contacts-advantages__container">
+                      <h3 class="contacts-advantages__title">Оплата</h3>
+                      <p class="contacts-advantages__description">Мы предоставляем все необходимые
+                        финансовые документы на оплаченный товар как физическим, так и юридическим лицам. </p>
+                    </div>
+                  </li>
+                </ul>
             </li>
           </ul>
         </li>
@@ -458,13 +487,23 @@
 
           <ul class="contacts__list-second">
             <li>
-
+              <ul class="requisites">
+                <li class="requisites__item"><b>Компания:</b>	 ООО "Teplovizorro"</li>
+                <li class="requisites__item"><b>Адрес офиса:</b> 	129343, Москва, пр. Серебрякова, 14, стр. 23</li>
+                <li class="requisites__item"><b>Юридический адрес:</b> 	129343, Москва, пр. Серебрякова, 14, стр. 23</li>
+                <li class="requisites__item"><b>КПП:</b> 	773301001</li>
+                <li class="requisites__item"><b>ОГРН:</b> 	5087746033920</li>
+                <li class="requisites__item"><b>Банк:</b> 	ПАО Сбербанк г. Москва</li>
+                <li class="requisites__item"><b>Р/с:</b> 	40702810638000074887</li>
+                <li class="requisites__item"><b>К/с:</b> 	30101810400000000225</li>
+                <li class="requisites__item"><b>БИК:</b> 	044525225</li>
+              </ul>
             </li>
           </ul>
         </li>
       </ul>
     </div>
-    
+
   </main>
 
   <footer class="page-footer">
