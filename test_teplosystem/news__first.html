@@ -7,7 +7,10 @@
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
 
   </head>
   <body class="container">
@@ -345,154 +348,428 @@
           <span class="breadcrumbs__arrow"></span>
         </li>
         <li class="breadcrumbs__item">
-          <a href="#">Доставка и оплата</a>
+          <a href="news.html">Новости</a>
           <span class="breadcrumbs__arrow"></span>
         </li>
-        <li class="breadcrumbs__current">Условия доставки</li>
+        <li class="breadcrumbs__current">Выявление высокой температуры с тепловизорами testo 890</li>
       </ul>
     </div>
 
-    <div class="page-main__wrapper">
-      <section class="conditions-pay">
-        <h1 class="conditions-pay__header">Условия доставки</h1>
-        <ul class="conditions-pay__list conditions-pay__list--delivery">
-          <li class="conditions-pay__item conditions-pay__item--first">
-            <a href="conditions-pay.html" class="conditions-pay__button conditions-pay__button--first">
-              <div class="conditions-pay__button-wrapper conditions-pay__button-wrapper--first conditions-pay__button-wrapper--delivery-first">
-                <svg class="svg-first" width="20" height="15" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19.5065 1H2.85065C1.82856 1 1 1.83947 1 2.875V14.125C1 15.1605 1.82856 16 2.85065 16H19.5065C20.5286 16 21.3571 15.1605 21.3571 14.125V2.875C21.3571 1.83947 20.5286 1 19.5065 1Z" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M1 6.35718H21.3571" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-                <p class="conditions-pay__button-header conditions-pay__button-header--first conditions-pay__button-header--delivery-first">Условия оплаты</p>
-              </div>
-            </a>
-          </li>
-          <li class="conditions-pay__item">
-            <a href="#" class="conditions-pay__button conditions-pay__button--second">
-              <div class="conditions-pay__button-wrapper conditions-pay__button-wrapper--second conditions-pay__button-wrapper--delivery-second">
-                <svg class="svg-second" width="22" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 16V8.00002C20.9996 7.6493 20.9071 7.30483 20.7315 7.00119C20.556 6.69754 20.3037 6.44539 20 6.27002L13 2.27002C12.696 2.09449 12.3511 2.00208 12 2.00208C11.6489 2.00208 11.304 2.09449 11 2.27002L4 6.27002C3.69626 6.44539 3.44398 6.69754 3.26846 7.00119C3.09294 7.30483 3.00036 7.6493 3 8.00002V16C3.00036 16.3508 3.09294 16.6952 3.26846 16.9989C3.44398 17.3025 3.69626 17.5547 4 17.73L11 21.73C11.304 21.9056 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9056 13 21.73L20 17.73C20.3037 17.5547 20.556 17.3025 20.7315 16.9989C20.9071 16.6952 20.9996 16.3508 21 16Z" stroke="#F2F2F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M3.27002 6.95996L12 12.01L20.73 6.95996" stroke="#F2F2F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M12 22.08V12" stroke="#F2F2F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-                <p class="conditions-pay__button-header conditions-pay__button-header--second conditions-pay__button-header--delivery-second">Условия доставки</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section>
+    <div class="news-first__wrapper">
+      <h1 class="news-first__header">Выявление высокой температуры с тепловизорами testo 890</h1>
+      <p class="news-first__data">13 августа 2020</p>
 
-      <section class="payment">
-        <div class="payment__wrapper">
-          <p class="payment__description payment__description--first">Мы доставим ваш заказ в любой регион России.
-            Оперативную доставку «до двери» клиента мы осуществляем в сотрудничестве с курьерской службой СДЭК.</p>
+      <picture>
+        <source media="(min-width: 1110px)" srcset="img/news-desktop-1@2x.png 2x, img/news-desktop-1.png 1x">
+        <source media="(min-width: 768px)" srcset="img/news-tablet-1@2x.png 2x, img/news-tablet-1.png 1x">
+        <source srcset="img/news-1@2x.png 2x, img/news-1.png 1x">
+        <img class="news-first__img" src="img/news-1.png" alt="photo">
+      </picture>
 
-          <h2 class="payment__header">Способы доставки</h2>
-          <h3 class="payment__title payment__title--tablet">Самовывоз</h3>
-          <p class="payment__description">Для жителей Москвы и Подмосковья — самовывоз по адресу:
-            г. Москва, пр-д Серебрякова,  д. 14 стр. 23.</p>
+      <ul class="news-first__list">
+        <li class="news-first__item">
+          <h2 class="news-first__title">Для чего нужно обнаружение людей с высокой температурой?</h2>
+          <p class="news-first__description">На фоне возросшей мобильности человечества распространение вирусов не сдерживается границами государств.
+            Последняя из таких опасностей - коронавирус.</p>
           <pre></pre>
-          <p class="payment__description payment__description--bottom">Вы можете забрать заказ из нашего офиса с понедельника по пятницу с 09 до 18 часов.
-            Выходные: суббота, воскресенье. Индивидуальная доставка оговаривается отдельно.
-            Пожалуйста, уточняйте наличие товаров в офисе перед приездом.</p>
+          <p class="news-first__description">Инфекция, вызванная новым видом коронавируса, продолжает распространяться не только в Китае,
+            но и за его пределами. Случаи заболевания уже были выявлены в Австралии, Вьетнаме, Республике Корея, Малайзии, Непале,
+            Сингапуре, США, Таиланде, Франции и Японии.</p>
+          <pre></pre>
+          <p class="news-first__description">Очень важно на ранней стадии идентифицировать людей с риском заболевания среди других людей. </p>
+        </li>
 
-          <ul class="payment__list">
-            <li class="payment__item">
-              <h3 class="payment__title payment__title--first payment__title-delivery">Доставка по Москве и Московской области</h3>
-              <p class="payment__description">Доставка производится в течение суток с момента подтверждения заказа менеджером.</p>
-              <ul class="payment__block-list payment__block-list--delivery">
-                <li class="payment__block-item">При заказе на сумму от 20 000 рублей по Москве – <b>бесплатно.</b></li>
-                <li class="payment__block-item">При заказе на сумму до 20 000 рублей по Москве – <b>300 рублей.</b></li>
-                <li class="payment__block-item">Доставка по Московской области – <b>от 500 рублей.</b></li>
-              </ul>
+        <li class="news-first__item">
+          <h2 class="news-first__title">Почему высокую температуру идентифицируют с тепловизором?</h2>
+          <p class="news-first__description">Важным индикатором инфицированного человека является повышенная температура его
+            тела (по сравнению с окружающими людьми), также известная как жар. </p>
+        </li>
 
-              <div class="payment__wrapper-block-list">
-                <ul class="payment__block-list-prev">
-                  <li class="payment__block-item">При заказе на сумму от 20 000 рублей по Москве</li>
-                  <li class="payment__block-item payment__block-item--color">При заказе на сумму до 20 000 рублей по Москве</li>
-                  <li class="payment__block-item">Доставка по Московской области</li>
-                </ul>
-                <ul class="payment__block-list-left">
-                  <li class="payment__block-item payment__block-item--left">Бесплатно</li>
-                  <li class="payment__block-item payment__block-item--left payment__block-item--color">300 рублей</li>
-                  <li class="payment__block-item payment__block-item--left">от 500 рублей</li>
-                </ul>
-              </div>
+        <li class="news-first__item">
+          <h2 class="news-first__title">Как тепловизоры Testo могут помочь в идентификации жара?</h2>
+          <p class="news-first__description">Благодаря специальному ассистенту testo FeverDetection, тепловизоры
+            testo 890 идеальны для идентификации потенциально инфицированных людей:
+          </p>
 
+          <ul class="guarantee__list">
+            <li class="guarantee__item guarantee__item--news">Надёжность: разрешение детектора до 1280 x 960 пикселей (с testo SuperResolution) и хорошая тепловая чувствительность;</li>
+            <li class="guarantee__item guarantee__item--news">Удобство: благодаря HDMI-интерфейсу для передачи данных на внешний экран тепловизоры могут
+              установлены в полустационарных пунктах, например, проверки безопасности;</li>
+            <li class="guarantee__item guarantee__item--news">Простота в работе: могут использоваться сотрудниками с разным уровнем подготовки.</li>
+          </ul>
 
-            </li>
-            <li class="payment__item">
-              <div class="payment__header-block">
-                <h3 class="payment__title">Служба доставки СДЭК</h3>
-                <img src="img/cdek-mobile.svg" width="72" height="20" alt="cdek">
-              </div>
-              <p class="payment__description">Получение заказа курьерами или в пунктах выдачи заказов компании СДЭК.
-                Служба доставки СДЭК имеет более 1500 пунктов выдачи заказов в более чем 400 городах России.
-                Информацию об адресах пунктов выдачи заказов компании СДЭК Вы можете получить здесь,
-                либо при оформлении заказа в нашем интернет-магазине.</p>
-              <pre></pre>
-              <p class="payment__description">Данный способ доставки имеет ограничения по весу до 25 кг,
-                и сумма трёх сторон посылки не должна превышать 150 см. </p>
-              <div class="payment__warning">
-                <div class="payment__warning-wrapper">
-                  <p class="payment__warning-den">!</p>
-                  <p class="payment__warning-title">Внимание! </p>
+          <p class="news-first__title news-first__title--tablet">Подробнее о тепловизоре Testo 890 с функцией Testo FeverDetection</p>
+          <div class="news-first__video">
+            <picture>
+              <source media="(min-width: 1110px)" srcset="img/video-3.png">
+              <source media="(min-width: 768px)" srcset="img/video-2.png">
+              <img class="news-first__video-img" src="img/video-1.png" alt="photo">
+            </picture>
+          </div>
+        </li>
+      </ul>
+
+      <a class="news-first__back" href="news.html">
+        <img src="img/arrow-left_mobile.svg" width="6" height="12" alt="arrow">
+        <p>Назад к новостям</p>
+      </a>
+    </div>
+
+    <section class="recently-watched-block">
+      <h2 class="recently-watched__title">Вы недавно смотрели</h2>
+      <div class="recently-watched">
+        <div class="slider slider--recently-watched">
+          <ul>
+            <li class="slider__item">
+              <div class="recently-watched__background">
+                <picture>
+                  <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                  <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+                </picture>
+                <div class="recently-watched__stars-list">
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item">
+                      <img src="img/star.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
                 </div>
-                <p class="payment__warning-description">За оплату при получении берется комиссия,
-                  полная информация доступна во время заказа.</p>
-              </div>
-              <ul class="payment__block-list payment__block-list--delivery">
-                <li class="payment__block-item">Доставка СДЭК до вашего города – <b>от 175 рублей.</b></li>
-              </ul>
-              <div class="payment__wrapper-block-list">
-                <ul class="payment__block-list-prev">
-                  <li class="payment__block-item payment__block-item--2">Доставка СДЭК до вашего города</li>
-                </ul>
-                <ul class="payment__block-list-left">
-                  <li class="payment__block-item payment__block-item--left">от 175 рублей</li>
-                </ul>
+                <div class="recently-watched__wrapper">
+                  <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                  <div class="recently-watched__container">
+                    <img src="img/stock.svg" width="16" height="16" alt="stock">
+                    <p class="recently-watched__stock">В наличии</p>
+                  </div>
+                  <p class="recently-watched__cost">879 000 руб.</p>
+                </div>
               </div>
             </li>
-            <li class="payment__item payment__item--bottom">
-              <div class="payment__header-block">
-                <h3 class="payment__title">Доставка почтой России </h3>
-                <img src="img/Russian_Post.svg" width="52" height="26" alt="post">
-              </div>
-              <p class="payment__description">Доставка по России в производится по тарифам на почтовую пересылку АО «Почта России».
-                Контрольные сроки доставки и стоимость пересылки вы можете уточнить на сайте «Почта России» или у наших менеджеров
-                позвонив по телефону <b>8 (499) 390-50-55.</b></p>
-              <pre></pre>
-              <p class="payment__description">Все необходимые финансовые документы вкладываются в отправление.
-                Почтовая доставка осуществляется только по территории Российской Федерации.</p>
-              <pre></pre>
-              <p class="payment__description">Данный способ доставки имеет ограничения по весу до 20 кг, сумма
-                трёх сторон посылки не должна превышать 120 см, а длина одной из сторон не более 60 см.</p>
-              <div class="payment__warning payment__warning--second">
-                <div class="payment__warning-wrapper">
-                  <p class="payment__warning-den">!</p>
-                  <p class="payment__warning-title">Внимание! </p>
+            <li class="slider__item">
+              <div class="recently-watched__background">
+                <picture>
+                  <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                  <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+                </picture>
+                <div class="recently-watched__stars-list">
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item">
+                      <img src="img/star.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
                 </div>
-                <p class="payment__warning-description payment__warning-description--second">За наложенный платеж Почты России берется комиссия,
-                  полная информация доступна во время заказа.</p>
+                <div class="recently-watched__wrapper">
+                  <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                  <div class="recently-watched__container">
+                    <img src="img/stock.svg" width="16" height="16" alt="stock">
+                    <p class="recently-watched__stock">В наличии</p>
+                  </div>
+                  <p class="recently-watched__cost">879 000 руб.</p>
+                </div>
               </div>
-              <ul class="payment__block-list payment__block-list--delivery">
-                <li class="payment__block-item">Доставка Почтой России до вашего города – <b>от 200 рублей.</b></li>
-              </ul>
-              <div class="payment__wrapper-block-list">
-                <ul class="payment__block-list-prev">
-                  <li class="payment__block-item payment__block-item--3">Доставка Почтой России до вашего города</li>
-                </ul>
-                <ul class="payment__block-list-left">
-                  <li class="payment__block-item payment__block-item--left">от 200 рублей</li>
-                </ul>
+            </li>
+            <li class="slider__item">
+              <div class="recently-watched__background">
+                <picture>
+                  <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                  <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+                </picture>
+                <div class="recently-watched__stars-list">
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item">
+                      <img src="img/star.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                </div>
+                <div class="recently-watched__wrapper">
+                  <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                  <div class="recently-watched__container">
+                    <img src="img/stock.svg" width="16" height="16" alt="stock">
+                    <p class="recently-watched__stock">В наличии</p>
+                  </div>
+                  <p class="recently-watched__cost">879 000 руб.</p>
+                </div>
               </div>
             </li>
           </ul>
         </div>
-      </section>
-    </div>
-
-
+        <ul class="recently-watched__list">
+          <li class="recently-watched__item">
+            <div class="recently-watched__background">
+              <picture>
+                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+              </picture>
+              <div class="recently-watched__stars-list">
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item">
+                    <img src="img/star.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+              </div>
+              <div class="recently-watched__wrapper">
+                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                <div class="recently-watched__container">
+                  <img src="img/stock.svg" width="16" height="16" alt="stock">
+                  <p class="recently-watched__stock">В наличии</p>
+                </div>
+                <p class="recently-watched__cost">879 000 руб.</p>
+              </div>
+            </div>
+          </li>
+          <li class="recently-watched__item">
+            <div class="recently-watched__background">
+              <picture>
+                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+              </picture>
+              <div class="recently-watched__stars-list">
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item">
+                    <img src="img/star.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+              </div>
+              <div class="recently-watched__wrapper">
+                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                <div class="recently-watched__container">
+                  <img src="img/stock.svg" width="16" height="16" alt="stock">
+                  <p class="recently-watched__stock">В наличии</p>
+                </div>
+                <p class="recently-watched__cost">879 000 руб.</p>
+              </div>
+            </div>
+          </li>
+          <li class="recently-watched__item">
+            <div class="recently-watched__background">
+              <picture>
+                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+              </picture>
+              <div class="recently-watched__stars-list">
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item">
+                    <img src="img/star.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+              </div>
+              <div class="recently-watched__wrapper">
+                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                <div class="recently-watched__container">
+                  <img src="img/stock.svg" width="16" height="16" alt="stock">
+                  <p class="recently-watched__stock">В наличии</p>
+                </div>
+                <p class="recently-watched__cost">879 000 руб.</p>
+              </div>
+            </div>
+          </li>
+          <li class="recently-watched__item">
+            <div class="recently-watched__background">
+              <picture>
+                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+              </picture>
+              <div class="recently-watched__stars-list">
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item">
+                    <img src="img/star.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+              </div>
+              <div class="recently-watched__wrapper">
+                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                <div class="recently-watched__container">
+                  <img src="img/stock.svg" width="16" height="16" alt="stock">
+                  <p class="recently-watched__stock">В наличии</p>
+                </div>
+                <p class="recently-watched__cost">879 000 руб.</p>
+              </div>
+            </div>
+          </li>
+          <li class="recently-watched__item">
+            <div class="recently-watched__background">
+              <picture>
+                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+              </picture>
+              <div class="recently-watched__stars-list">
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="hit-slider__stars-item">
+                    <img src="img/star.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+              </div>
+              <div class="recently-watched__wrapper">
+                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                <div class="recently-watched__container">
+                  <img src="img/stock.svg" width="16" height="16" alt="stock">
+                  <p class="recently-watched__stock">В наличии</p>
+                </div>
+                <p class="recently-watched__cost">879 000 руб.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
   </main>
 
@@ -567,7 +844,7 @@
 
         <div class="footer-desktop">
           <p>Задать вопрос<br> или оформить покупку</p>
-          <a href="#" class="footer-address__tel">8-499-390-50-55</a>
+          <a href="#" class="footer-address__tel">8 (499) 390-50-55</a>
           <button class="page-footer__button" type="button">Обратный звонок</button>
         </div>
       </div>
@@ -1131,6 +1408,18 @@
 
   <div class="mobile_menu_overlay"></div>
 
+  <script>
+    $(document).ready(function(){
+      $('.slider ul').bxSlider({
+        pager: true,
+        pagerType: 'full',
+        controls: true,
+        auto: false,
+        minSlides: 0,
+        maxSlides: 0
+      });
+    });
+  </script>
   <script src="js/menu.js"></script>
   </body>
 </html>
