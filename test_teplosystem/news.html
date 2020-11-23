@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+
   </head>
   <body class="container">
   <header class="page-header">
@@ -344,97 +345,104 @@
           <a href="index.html">Главная</a>
           <span class="breadcrumbs__arrow"></span>
         </li>
-        <li class="breadcrumbs__item">
-          <a href="#">Обмен и возврат</a>
-          <span class="breadcrumbs__arrow"></span>
-        </li>
-        <li class="breadcrumbs__current">Обмен и возврат товара</li>
+        <li class="breadcrumbs__current">Новости</li>
       </ul>
     </div>
 
-    <div class="page-main__wrapper">
-      <section class="conditions-pay">
-        <h1 class="conditions-pay__header conditions-pay__header--return">Обмен и возврат товара</h1>
-        <ul class="conditions-pay__list conditions-pay__list--delivery">
-          <li class="conditions-pay__item conditions-pay__item--first">
-            <a href="garanty.html" class="conditions-pay__button conditions-pay__button--first">
-              <div class="conditions-pay__button-wrapper conditions-pay__button-wrapper--first conditions-pay__button-wrapper--delivery-first conditions-pay__button-wrapper--garanty-first conditions-pay__button-wrapper--return-first">
-                <svg class="svg-first" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 15C15.866 15 19 11.866 19 8C19 4.13401 15.866 1 12 1C8.13401 1 5 4.13401 5 8C5 11.866 8.13401 15 12 15Z" stroke="#F2F2F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M8.21 13.8899L7 22.9999L12 19.9999L17 22.9999L15.79 13.8799" stroke="#F2F2F2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-                <p class="conditions-pay__button-header conditions-pay__button-header--first conditions-pay__button-header--delivery-first conditions-pay__button-header--garanty-first conditions-pay__button-header--return-first">Гарантия</p>
-              </div>
-            </a>
-          </li>
-          <li class="conditions-pay__item">
-            <a href="#" class="conditions-pay__button conditions-pay__button--second">
-              <div class="conditions-pay__button-wrapper conditions-pay__button-wrapper--second conditions-pay__button-wrapper--delivery-second conditions-pay__button-wrapper--garanty-second conditions-pay__button-wrapper--return-second">
-                <svg class="svg-second" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15 10L20 15L15 20" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20" stroke="#4F4F4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-                <p class="conditions-pay__button-header conditions-pay__button-header--second conditions-pay__button-header--delivery-second conditions-pay__button-header--garanty-second conditions-pay__button-header--return-second">Обмен и возврат товара</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section>
+    <h1 class="news__header">Новости</h1>
 
-      <section class="payment">
-        <div class="payment__wrapper">
-          <p class="payment__description payment__description--first">Для начала процедуры возврата приобретенного у нас товара
-            обратитесь непосредственно в магазин с заявлением о возврате товара, товарным и/или кассовым чеком,
-            при себе обязательно иметь документ удостоверяющий личность, а также предоставьте товар в полной комплектации. </p>
+    <ul class="news__list">
+      <li class="news__item news__item--first">
+        <a href="news__testo.html">
+          <picture>
+            <source media="(min-width: 1110px)" srcset="img/news-desktop-1@2x.png 2x, img/news-desktop-1.png 1x">
+            <source media="(min-width: 768px)" srcset="img/news-tablet-2@2x.png 2x, img/news-tablet-2.png 1x">
+            <source srcset="img/news-1@2x.png 2x, img/news-1.png 1x">
+            <img class="news__img news__img--first" src="img/news-1.png" alt="photo">
+          </picture>
+          <p class="news__data">13 августа 2020</p>
+          <h2 class="news__title">Выявление высокой температуры с тепловизорами testo 890</h2>
+        </a>
+      </li>
+      <li class="news__item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/news-tablet-2@2x.png 2x, img/news-tablet-2.png 1x">
+            <source srcset="img/news-2@2x.png 2x, img/news-2.png 1x">
+            <img class="news__img" src="img/news-2.png" alt="photo">
+          </picture>
+          <p class="news__data">13 августа 2020</p>
+          <h2 class="news__title">Программное обновление Pulsar 4.0 (XQ)</h2>
+        </a>
+      </li>
+      <li class="news__item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/news-tablet-3@2x.png 2x, img/news-tablet-3.png 1x">
+            <source srcset="img/news-3@2x.png 2x, img/news-3.png 1x">
+            <img class="news__img" src="img/news-3.png" alt="photo">
+          </picture>
+          <p class="news__data">13 августа 2020</p>
+          <h2 class="news__title">Новинка! Новый ГНСС приемник SOKKIA GRX3</h2>
+        </a>
+      </li>
+      <li class="news__item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/news-tablet-4@2x.png 2x, img/news-tablet-4.png 1x">
+            <source srcset="img/news-4@2x.png 2x, img/news-4.png 1x">
+            <img class="news__img" src="img/news-4.png" alt="photo">
+          </picture>
+          <p class="news__data">13 августа 2020</p>
+          <h2 class="news__title">Программное обеспечения 4.0 для тепловизионных приборов Pulsar серии ХМ</h2>
+        </a>
+      </li>
+      <li class="news__item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/news-tablet-5@2x.png 2x, img/news-tablet-5.png 1x">
+            <source srcset="img/news-5@2x.png 2x, img/news-5.png 1x">
+            <img class="news__img" src="img/news-5.png" alt="photo">
+          </picture>
+          <p class="news__data">13 августа 2020</p>
+          <h2 class="news__title">Специальное предложение на роботизированный тахеометр IMAGING STATION</h2>
+        </a>
+      </li>
+      <li class="news__item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/news-tablet-3@2x.png 2x, img/news-tablet-3.png 1x">
+            <source srcset="img/news-3@2x.png 2x, img/news-3.png 1x">
+            <img class="news__img" src="img/news-3.png" alt="photo">
+          </picture>
+          <p class="news__data">13 августа 2020</p>
+          <h2 class="news__title">Новинка! Новый ГНСС приемник SOKKIA GRX3</h2>
+        </a>
+      </li>
+      <li class="news__item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/news-tablet-4@2x.png 2x, img/news-tablet-4.png 1x">
+            <source srcset="img/news-4@2x.png 2x, img/news-4.png 1x">
+            <img class="news__img" src="img/news-4.png" alt="photo">
+          </picture>
+          <p class="news__data">13 августа 2020</p>
+          <h2 class="news__title">Программное обеспечения 4.0 для тепловизионных приборов Pulsar серии ХМ</h2>
+        </a>
+      </li>
+      <li class="news__item">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/news-tablet-5@2x.png 2x, img/news-tablet-5.png 1x">
+            <source srcset="img/news-5@2x.png 2x, img/news-5.png 1x">
+            <img class="news__img" src="img/news-5.png" alt="photo">
+          </picture>
+          <p class="news__data">13 августа 2020</p>
+          <h2 class="news__title">Специальное предложение на роботизированный тахеометр IMAGING STATION</h2>
+        </a>
+      </li>
+    </ul>
 
-          <h2 class="payment__header">Процедура возврата товара</h2>
-
-          <ul class="payment__list">
-            <li class="payment__item">
-              <h3 class="payment__title payment__title--first payment__title-delivery">Товар надлежащего качества </h3>
-              <p class="payment__description">Вы вправе обменять приобретенный в магазине товар надлежащего качества
-                на аналогичный товар в течение 14 дней, не считая дня покупки.</p>
-              <pre></pre>
-              <p class="payment__description">Помимо права на обмен товара надлежащего качества, предусмотренного
-                Законом РФ от 07.02.1992 N 2300-1 О защите прав потребителей, вы вправе отказаться от товара, приобретенного
-                дистанционно, в любое время до его передачи, а также в течение семи дней после передачи товара.</p>
-              <pre></pre>
-              <p class="payment__description">Обращаем Ваше внимание, что наш ассортимент – технически сложные товары.</p>
-              <pre></pre>
-              <p class="payment__description">При возврате/обмене товара надлежащего качества должны быть сохранены товарный вид,
-                целостность упаковки, комплектация. Наличие следов эксплуатации может стать основанием для отказа в удовлетворении Ваших требований.</p>
-            </li>
-            <li class="payment__item payment__item--bottom">
-              <div class="payment__header-block">
-                <h3 class="payment__title">Товар ненадлежащего качества </h3>
-              </div>
-              <p class="payment__description">Если в приобретенном Вами товаре выявлен недостаток вы вправе по своему выбору заявить одно из
-                требований, указанных в ст.18 Закон РФ от 07.02.1992 N 2300-1 О защите прав потребителей.</p>
-              <pre></pre>
-              <p class="payment__description">Тем не менее, если указанный товар относится к технически сложным, утв. Постановлением
-                от 10 ноября 2011 г. N 924, то указанные в ст.18 требования могут быть заявлены только в течение 15 календарных дней с даты покупки.</p>
-              <ul class="guarantee__list">
-                <li class="guarantee__item">обнаружен существенный недостаток;</li>
-                <li class="guarantee__item">нарушены сроки устранения недостатков;</li>
-                <li class="guarantee__item">товар не может использоваться в совокупности более тридцати дней в течение каждого года
-                  гарантийного срока в связи с необходимостью устранения производственных недостатков.</li>
-              </ul>
-            </li>
-            <li class="payment__item payment__item--return">
-              <h3 class="payment__title payment__title--return">Товар надлежащего качества </h3>
-              <p class="payment__description payment__description--return">При предъявлении Вами претензии продавец вправе провести проверку качества товара.
-                В связи с этим напоминаем Вам о необходимости предоставить приобретенный товар вместе с претензией в магазин.
-                По результатам такой проверки качества Продавец предоставит Вам ответ на Вашу претензию.</p>
-              <pre></pre>
-              <p class="payment__description payment__description--return">Если Вы не согласны с результатами проведенной проверки качества, Вы вправе заявить письменное
-                требование о проведении независимой экспертизы товара. Экспертиза проводится за счет продавца. Вы вправе присутствовать
-                при проведении экспертизы. В случае если экспертиза установит наличие недостатков, возникших не по вине магазина или изготовителя,
-                вы обязаны возместить магазину расходы на проведение экспертизы, а также связанные с ее проведением расходы.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div>
 
 
 
@@ -511,7 +519,7 @@
 
         <div class="footer-desktop">
           <p>Задать вопрос<br> или оформить покупку</p>
-          <a href="#" class="footer-address__tel">8-499-390-50-55</a>
+          <a href="#" class="footer-address__tel">8 (499) 390-50-55</a>
           <button class="page-footer__button" type="button">Обратный звонок</button>
         </div>
       </div>
