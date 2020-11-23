@@ -337,7 +337,7 @@
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page-main--contacts">
     <div class="breadcrumbs">
       <ul class="breadcrumbs__wrapper">
         <li class="breadcrumbs__item">
@@ -348,112 +348,134 @@
       </ul>
     </div>
 
-    <div class="page-main__wrapper">
+    <div>
       <h1 class="contacts__header">Наши контакты</h1>
 
 
       <ul class="contacts__list animated">
         <li class="contacts__item">
           <input type="checkbox" name="group-1" id="group-1" checked="">
-          <label class="contacts__title" for="group-1">Контакты</label>
+          <label class="contacts__title contacts__title--1" for="group-1">Контакты</label>
 
           <ul class="contacts__list-second">
-            <li>
-              <ul class="contacts-info__list">
-                <li class="contacts-info__item">
-                  <img src="img/phone-contacts.svg" width="36" height="36" alt="phone">
-                  <p class="contacts-info__description contacts-info__description--top">8-499-390-50-55</p>
-                </li>
-                <li class="contacts-info__item contacts-info__item--second">
-                  <img class="contacts-info__img" src="img/pin-contacts.svg" width="16" height="16" alt="phone">
-                  <p class="contacts-info__description contacts-info__description--width">129343, Москва, пр. Серебрякова, 14, стр. 23</p>
-                </li>
-                <li class="contacts-info__item contacts-info__item--3">
-                  <img src="img/mail-contacts.svg" width="36" height="36" alt="phone">
-                  <p class="contacts-info__description contacts-info__description--top">teplovizorro@bk.ru</p>
-                </li>
-              </ul>
+            <li class="contacts__list--wrapper">
+              <div class="contacts__wrapper">
+                <ul class="contacts-info__list">
+                  <li class="contacts-info__item">
+                    <img src="img/phone-contacts.svg" width="36" height="36" alt="phone">
+                    <p class="contacts-info__description contacts-info__description--top">8-499-390-50-55</p>
+                  </li>
+                  <li class="contacts-info__item contacts-info__item--second">
+                    <img class="contacts-info__img" src="img/pin-contacts.svg" width="16" height="16" alt="phone">
+                    <p class="contacts-info__description contacts-info__description--width">129343, Москва, пр. Серебрякова, 14, стр. 23</p>
+                  </li>
+                  <li class="contacts-info__item contacts-info__item--3">
+                    <img src="img/mail-contacts.svg" width="36" height="36" alt="phone">
+                    <p class="contacts-info__description contacts-info__description--top">teplovizorro@bk.ru</p>
+                  </li>
+                </ul>
+
+                <div class="contacts__time contacts__time--tablet">
+                  <h3 class="contact-info__title">Режим работы</h3>
+                  <p class="contacts-info__description contacts-info__description--1"><b>Пн-Пт.</b> — с 9:00 до 18:00 без перерывов</p>
+                  <p class="contacts-info__description"><b>Сб, Вск</b> — выходные дни</p>
+                </div>
+              </div>
               <div class="contacts__map">
                 <picture>
-                <!--  <source media="(min-width: 1085px)" srcset="img/1-desktop.png 1x, img/1-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/1-tablet.png 1x, img/1-tablet@2x.png 2x">-->
+                  <source media="(min-width: 1085px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
                   <source srcset="img/map-mobile@2x.png 2x, img/map-mobile.png 1x">
                   <img class="contacts__map-img" src="img/map-mobile.png" alt="map">
                 </picture>
               </div>
-              <h3 class="contact-info__title">Режим работы</h3>
-              <p class="contacts-info__description contacts-info__description--1"><b>Пн-Пт.</b> — с 9:00 до 18:00 без перерывов</p>
-              <p class="contacts-info__description"><b>Сб, Вск</b> — выходные дни</p>
+              <div class="contacts__time contacts__time--mobile">
+                <h3 class="contact-info__title">Режим работы</h3>
+                <p class="contacts-info__description contacts-info__description--1"><b>Пн-Пт.</b> — с 9:00 до 18:00 без перерывов</p>
+                <p class="contacts-info__description"><b>Сб, Вск</b> — выходные дни</p>
+              </div>
             </li>
           </ul>
         </li>
 
-        <li class="contacts__item">
+        <li class="contacts__item contacts__item--desktop">
           <input type="checkbox" name="group-2" id="group-2">
           <label class="contacts__title" for="group-2">О компании</label>
 
           <ul class="contacts__list-second">
             <li>
-              <p class="contacts-info__description contacts-info__description--top-2">Компния Тепловизорро является ведущим импортером спортивных и
-                охотничьих оптических приборов в России, а так же крупнейшим дистрибьютором отечественных заводов.
-                В списке представляемых брендов значатся самые известные и уважаемые имена: </p>
+              <div class="contacts__list__container">
+                <div class="contacts__list-description">
+                  <p class="contacts-info__description contacts-info__description--top-2">Компния Тепловизорро является ведущим импортером спортивных и
+                    охотничьих оптических приборов в России, а так же крупнейшим дистрибьютором отечественных заводов.
+                    В списке представляемых брендов значатся самые известные и уважаемые имена: </p>
 
-              <div class="contacts__list__wrapper">
-                <ul class="guarantee__list">
-                  <li class="guarantee__item">ATN</li>
-                  <li class="guarantee__item">Dedal</li>
-                  <li class="guarantee__item">Flir</li>
-                  <li class="guarantee__item">Fluke</li>
-                  <li class="guarantee__item">Fortuna</li>
-                </ul>
-                <ul class="guarantee__list">
-                  <li class="guarantee__item">SeekThermal</li>
-                  <li class="guarantee__item">Guide</li>
-                  <li class="guarantee__item">iRay</li>
-                  <li class="guarantee__item">Pulsar</li>
-                  <li class="guarantee__item">и многие другие</li>
-                </ul>
-              </div>
+                  <div class="contacts__list__wrapper">
+                    <ul class="guarantee__list">
+                      <li class="guarantee__item">ATN</li>
+                      <li class="guarantee__item">Dedal</li>
+                      <li class="guarantee__item">Flir</li>
+                      <li class="guarantee__item">Fluke</li>
+                      <li class="guarantee__item">Fortuna</li>
+                    </ul>
+                    <ul class="guarantee__list">
+                      <li class="guarantee__item">SeekThermal</li>
+                      <li class="guarantee__item">Guide</li>
+                      <li class="guarantee__item">iRay</li>
+                      <li class="guarantee__item">Pulsar</li>
+                      <li class="guarantee__item">и многие другие</li>
+                    </ul>
+                  </div>
 
-              <p class="contacts-info__description">Уделяя много внимания инновациям в области охотничьего оборудования мы
-                стремимся предложить лучшие технологии в области ночного видения, тепловидения и другой современной экипировки.
-                Имея дилерскую сеть федерального уровня мы стремимся предоставить доступ к современному оборудованию для всех российских охотников. </p>
+                  <p class="contacts-info__description">Уделяя много внимания инновациям в области охотничьего оборудования мы
+                    стремимся предложить лучшие технологии в области ночного видения, тепловидения и другой современной экипировки.
+                    Имея дилерскую сеть федерального уровня мы стремимся предоставить доступ к современному оборудованию для всех российских охотников. </p>
 
-              <section class="contacts-form">
-                <div class="contacts-form__block-wrapper">
-                  <h2 class="contacts-form__header">Остались вопросы?</h2>
+                </div>
+                <section class="contacts-form">
+                  <div class="contacts-form__block-wrapper">
+                    <h2 class="contacts-form__header">Отправить сообщение</h2>
 
-                  <form class="contacts-form__form" id="form-contact" action=" " method="POST">
-                    <div class="contacts-form__container">
-                      <label class="contacts-form__wrapper" for="name">Ваше имя<span>*</span></label>
-                      <input class="contacts-form__window" type="text" name="name" id="name" placeholder="Иван">
-                    </div>
+                    <form class="contacts-form__form" id="form-contact" action=" " method="POST">
+                      <div class="contacts-form__container">
+                        <label class="contacts-form__wrapper" for="name">Ваше имя<span>*</span></label>
+                        <input class="contacts-form__window" type="text" name="name" id="name" placeholder="Иван">
+                      </div>
                       <div class="contacts-form__container">
                         <label class="contacts-form__wrapper" for="tel">Ваш e-mail</label>
                         <input class="contacts-form__window contacts-form__window--2" type="tel" name="tel" id="tel" placeholder="ivan@mail.ru">
                       </div>
-                    <div class="contacts-form__container">
-                      <label class="contacts-form__wrapper" for="review">Отзыв<span>*</span></label>
-                      <textarea class="contacts-form__window contacts-form__window--3" rows="10" name="review" id="review" placeholder="Напишите ваш отзыв"></textarea>
-                    </div>
-                    <button class="contacts-form__button" type="submit">Отправить</button>
+                      <div class="contacts-form__container">
+                        <label class="contacts-form__wrapper" for="review">Отзыв<span>*</span></label>
+                        <textarea class="contacts-form__window contacts-form__window--3" rows="10" name="review" id="review" placeholder="Напишите ваш отзыв"></textarea>
+                      </div>
+                      <button class="contacts-form__button" type="submit">Отправить</button>
 
-                  </form>
-                </div>
-              </section>
+                    </form>
+                  </div>
+                </section>
+              </div>
             </li>
           </ul>
         </li>
 
         <li class="contacts__item">
           <input type="checkbox" name="group-3" id="group-3">
-          <label class="contacts__title" for="group-3">Почему у нас выгодно</label>
+          <label class="contacts__title" for="group-3">
+            <span class="contacts__title--mobile">Почему у нас выгодно</span>
+            <span class="contacts__title--tablet">Почему выгодней покупать у нас:</span>
+          </label>
 
           <ul class="contacts__list-second">
             <li>
                 <ul class="contacts-advantages__list">
                   <li class="contacts-advantages__item contacts-advantages__item--top">
-                    <img src="img/delivery.svg" width="77" height="77" alt="delivery">
+                    <picture>
+                      <source media="(min-width: 1110px)" srcset="img/delivery.svg">
+                      <source media="(min-width: 768px)" srcset="img/delivery-tablet-icon.svg">
+                      <img src="img/delivery.svg" alt="delivery">
+                    </picture>
+
                     <div class="contacts-advantages__container">
                       <h3 class="contacts-advantages__title">Быстрая доставка</h3>
                       <p class="contacts-advantages__description">У нас собственная курьерская служба по Москве,
@@ -461,7 +483,12 @@
                     </div>
                   </li>
                   <li class="contacts-advantages__item">
-                    <img src="img/garanty.svg" width="77" height="77" alt="garanty">
+                    <picture>
+                      <source media="(min-width: 1110px)" srcset="img/garanty.svg">
+                      <source media="(min-width: 768px)" srcset="img/garan-tablet-icon.svg">
+                      <img src="img/garanty.svg" alt="garanty">
+                    </picture>
+
                     <div class="contacts-advantages__container">
                       <h3 class="contacts-advantages__title">Официальная гарантия</h3>
                       <p class="contacts-advantages__description">На все товары от магазина 1 год со дня получения.
@@ -469,7 +496,12 @@
                     </div>
                   </li>
                   <li class="contacts-advantages__item">
-                    <img src="img/pay.svg" width="77" height="77" alt="pay">
+                    <picture>
+                      <source media="(min-width: 1110px)" srcset="img/pay.svg">
+                      <source media="(min-width: 768px)" srcset="img/pay-tablet-icon.svg">
+                      <img src="img/pay.svg" alt="pay">
+                    </picture>
+
                     <div class="contacts-advantages__container">
                       <h3 class="contacts-advantages__title">Оплата</h3>
                       <p class="contacts-advantages__description">Мы предоставляем все необходимые
