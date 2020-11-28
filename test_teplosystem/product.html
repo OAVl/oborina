@@ -543,6 +543,7 @@
           <div class="product__wrapper-tablet-2">
             <img class="product__list-img" src="img/pulsar-tablet-prod.svg" width="150" height="30" alt="icon">
             <picture>
+              <source media="(min-width: 1110px)" srcset="img/image-16-desktop.png 1x">
               <source srcset="img/image16@2x.png 2x, img/image16.png 1x">
               <img class="product__img-header" src="img/image16.png" alt="accolade">
             </picture>
@@ -594,38 +595,28 @@
             </div>
 
             <div class="product__list-characteristics-wrapper">
-              <ul class="product__list-characteristics">
-                <li class="product__item-characteristics">
-                  <p class="product__description">Производство</p>
-                </li>
-                <li class="product__item-characteristics">
-                  <p class="product__description">Диаметр объектива (мм)</p>
-                </li>
-                <li class="product__item-characteristics">
-                  <p class="product__description">Фокусное расстояние, мм</p>
-                </li>
-                <li class="product__item-characteristics">
-                  <p class="product__description">Увеличение</p>
-                </li>
-              </ul>
-
-              <ul class="product__list-characteristics">
-                <li class="product__item-characteristics">
-                  <p class="product__description product__description--4">Россия</p>
-                </li>
-                <li class="product__item-characteristics">
-                  <p class="product__description product__description--4">32</p>
-                </li>
-                <li class="product__item-characteristics">
-                  <p class="product__description product__description--4">38</p>
-                </li>
-                <li class="product__item-characteristics">
-                  <p class="product__description product__description--4">3.1 - 12.4 </p>
-                </li>
-              </ul>
+              <table class="product__table">
+                <tr class="product__item-characteristics">
+                  <td class="product__description">Производство</td>
+                  <td class="product__description product__description--4">Россия</td>
+                </tr>
+                <tr class="product__item-characteristics">
+                  <td class="product__description">Диаметр объектива (мм)</td>
+                  <td class="product__description product__description--4">32</td>
+                </tr>
+                <tr class="product__item-characteristics">
+                  <td class="product__description">Фокусное расстояние, мм</td>
+                  <td class="product__description product__description--4">38</td>
+                </tr>
+                <tr class="product__item-characteristics">
+                  <td class="product__description">Увеличение</td>
+                  <td class="product__description product__description--4">3.1 - 12.4</td>
+                </tr>
+              </table>
             </div>
 
             <div class="product__wrapper-2">
+
               <div class="product__delivery">
                 <p class="product__delivery-header">Доставка в Санкт-Петербург</p>
                 <a class="product__delivery-button">Изменить</a>
@@ -798,7 +789,7 @@
 
             <ul class="product__list-second">
               <li>
-                <table>
+                <table class="requisites__table">
                   <tr class="requisites__item--product1">
                     <td class="requisites__item--product">Разрешение микроболометра:</td>
                     <td class="requisites__item--product2">384x288</td>
@@ -939,198 +930,203 @@
                   </li>
                 </ul>
 
-                <div class="reviews__container-6">
-                  <div class="reviews__wrapper">
-                    <p class="product__description-list">Общий рейтинг</p>
-                    <p class="reviews__number">4.0</p>
-                    <div class="sale__stars-list">
-                      <p>
-                        <a class="sale__stars-item sale__stars-item--active">
-                          <img src="img/star-active.svg" width="20" height="20" alt="star">
-                        </a>
-                      </p>
-                      <p>
-                        <a class="sale__stars-item sale__stars-item--active">
-                          <img src="img/star-active.svg" width="20" height="20" alt="star">
-                        </a>
-                      </p>
-                      <p>
-                        <a class="sale__stars-item sale__stars-item--active">
-                          <img src="img/star-active.svg" width="20" height="20" alt="star">
-                        </a>
-                      </p>
-                      <p>
-                        <a class="sale__stars-item sale__stars-item--active">
-                          <img src="img/star-active.svg" width="20" height="20" alt="star">
-                        </a>
-                      </p>
-                      <p>
-                        <a class="sale__stars-item">
-                          <img src="img/star.svg" width="20" height="20" alt="star">
-                        </a>
-                      </p>
+                <div class="reviews__container-8">
+                  <div class="reviews__container-6">
+                    <div class="reviews__wrapper">
+                      <p class="product__description-list">Общий рейтинг</p>
+                      <div class="reviews__container-9">
+                        <p class="reviews__number">4.0</p>
+                        <div class="sale__stars-list">
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item">
+                              <img src="img/star.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="reviews__container-button">
+                      <img class="reviews__img-button" src="img/review-button.svg" width="17" height="16" alt="button">
+                      <button class="reviews__button" type="button">Добавить отзыв</button>
                     </div>
                   </div>
 
-                  <div class="reviews__container-button">
-                    <img class="reviews__img-button" src="img/review-button.svg" width="17" height="16" alt="button">
-                    <button class="reviews__button" type="button">Добавить отзыв</button>
-                  </div>
+
+                  <ul class="reviews__list">
+                    <li class="reviews__item">
+                      <div class="reviews__container-1">
+                        <div class="sale__stars-list">
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item">
+                              <img src="img/star.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                        </div>
+                        <p class="reviews__data">16.10.2017</p>
+                      </div>
+                      <div class="reviews__container-2">
+                        <h3 class="reviews__name">Ирина</h3>
+                        <p class="reviews__data">г. Москва</p>
+                      </div>
+                      <p class="product__description-list">ИК разрешение 206х156, что сравнимо с качеством ОООчень дорогих моделей.
+                        Благодаря скидки любезно предоставленной магазином смог приобрести сей товар по довольно привлекательной для
+                        такого товара цене (1622499руб.)
+                        Недостатки: Ручная фокусировка далеко не идеал, необходимо очень нежно вращать колесо. В моем случае
+                        имеется полоса преломления изображения (не критично, но мало приятного). Давно мечтала о покупке подобного
+                        девайса. Просветил квартиру на предмет утечек тепла. При ремонте электроники и поиске неисправного элемента
+                        отпадает надобность в кассовой ленте и слепом тыкании ею в плату.
+                      </p>
+
+                      <div class="reviews__container-3">
+                        <p class="reviews__data reviews__data--color1">Этот отзыв полезен?</p>
+                        <a class="reviews__data reviews__data--color2">Да (5)</a>
+                        <a class="reviews__data reviews__data--color3">Нет (3)</a>
+                      </div>
+                    </li>
+                    <li class="reviews__item">
+                      <div class="reviews__container-1">
+                        <div class="sale__stars-list">
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item">
+                              <img src="img/star.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                        </div>
+                        <p class="reviews__data">16.10.2017</p>
+                      </div>
+                      <div class="reviews__container-2">
+                        <h3 class="reviews__name">Ирина</h3>
+                        <p class="reviews__data">г. Москва</p>
+                      </div>
+                      <p class="product__description-list">ИК разрешение 206х156, что сравнимо с качеством ОООчень дорогих моделей.
+                        Благодаря скидки любезно предоставленной магазином смог приобрести сей товар по довольно привлекательной для
+                        такого товара цене (1622499руб.)
+                        Недостатки: Ручная фокусировка далеко не идеал, необходимо очень нежно вращать колесо. В моем случае
+                        имеется полоса преломления изображения (не критично, но мало приятного). Давно мечтала о покупке подобного
+                        девайса. Просветил квартиру на предмет утечек тепла. При ремонте электроники и поиске неисправного элемента
+                        отпадает надобность в кассовой ленте и слепом тыкании ею в плату.
+                      </p>
+
+                      <div class="reviews__container-3">
+                        <p class="reviews__data reviews__data--color1">Этот отзыв полезен?</p>
+                        <a class="reviews__data reviews__data--color2">Да (5)</a>
+                        <a class="reviews__data reviews__data--color3">Нет (3)</a>
+                      </div>
+                    </li>
+                    <li class="reviews__item">
+                      <div class="reviews__container-1">
+                        <div class="sale__stars-list">
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item sale__stars-item--active">
+                              <img src="img/star-active.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                          <p>
+                            <a class="sale__stars-item">
+                              <img src="img/star.svg" width="20" height="20" alt="star">
+                            </a>
+                          </p>
+                        </div>
+                        <p class="reviews__data">16.10.2017</p>
+                      </div>
+                      <div class="reviews__container-2">
+                        <h3 class="reviews__name">Ирина</h3>
+                        <p class="reviews__data">г. Москва</p>
+                      </div>
+                      <p class="product__description-list">ИК разрешение 206х156, что сравнимо с качеством ОООчень дорогих моделей.
+                        Благодаря скидки любезно предоставленной магазином смог приобрести сей товар по довольно привлекательной для
+                        такого товара цене (1622499руб.)
+                        Недостатки: Ручная фокусировка далеко не идеал, необходимо очень нежно вращать колесо. В моем случае
+                        имеется полоса преломления изображения (не критично, но мало приятного). Давно мечтала о покупке подобного
+                        девайса. Просветил квартиру на предмет утечек тепла. При ремонте электроники и поиске неисправного элемента
+                        отпадает надобность в кассовой ленте и слепом тыкании ею в плату.
+                      </p>
+
+                      <div class="reviews__container-3">
+                        <p class="reviews__data reviews__data--color1">Этот отзыв полезен?</p>
+                        <a class="reviews__data reviews__data--color2">Да (5)</a>
+                        <a class="reviews__data reviews__data--color3">Нет (3)</a>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
 
-
-                <ul class="reviews__list">
-                  <li class="reviews__item">
-                    <div class="reviews__container-1">
-                      <div class="sale__stars-list">
-                        <p>
-                          <a class="sale__stars-item sale__stars-item--active">
-                            <img src="img/star-active.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                        <p>
-                          <a class="sale__stars-item sale__stars-item--active">
-                            <img src="img/star-active.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                        <p>
-                          <a class="sale__stars-item sale__stars-item--active">
-                            <img src="img/star-active.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                        <p>
-                          <a class="sale__stars-item sale__stars-item--active">
-                            <img src="img/star-active.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                        <p>
-                          <a class="sale__stars-item">
-                            <img src="img/star.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                      </div>
-                      <p class="reviews__data">16.10.2017</p>
-                    </div>
-                    <div class="reviews__container-2">
-                      <h3 class="reviews__name">Ирина</h3>
-                      <p class="reviews__data">г. Москва</p>
-                    </div>
-                    <p class="product__description-list">ИК разрешение 206х156, что сравнимо с качеством ОООчень дорогих моделей.
-                      Благодаря скидки любезно предоставленной магазином смог приобрести сей товар по довольно привлекательной для
-                      такого товара цене (1622499руб.)
-                      Недостатки: Ручная фокусировка далеко не идеал, необходимо очень нежно вращать колесо. В моем случае
-                      имеется полоса преломления изображения (не критично, но мало приятного). Давно мечтала о покупке подобного
-                      девайса. Просветил квартиру на предмет утечек тепла. При ремонте электроники и поиске неисправного элемента
-                      отпадает надобность в кассовой ленте и слепом тыкании ею в плату.
-                    </p>
-
-                    <div class="reviews__container-3">
-                      <p class="reviews__data reviews__data--color1">Этот отзыв полезен?</p>
-                      <a class="reviews__data reviews__data--color2">Да (5)</a>
-                      <a class="reviews__data reviews__data--color3">Нет (3)</a>
-                    </div>
-                  </li>
-                  <li class="reviews__item">
-                    <div class="reviews__container-1">
-                      <div class="sale__stars-list">
-                        <p>
-                          <a class="sale__stars-item sale__stars-item--active">
-                            <img src="img/star-active.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                        <p>
-                          <a class="sale__stars-item sale__stars-item--active">
-                            <img src="img/star-active.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                        <p>
-                          <a class="sale__stars-item sale__stars-item--active">
-                            <img src="img/star-active.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                        <p>
-                          <a class="sale__stars-item sale__stars-item--active">
-                            <img src="img/star-active.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                        <p>
-                          <a class="sale__stars-item">
-                            <img src="img/star.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                      </div>
-                      <p class="reviews__data">16.10.2017</p>
-                    </div>
-                    <div class="reviews__container-2">
-                      <h3 class="reviews__name">Ирина</h3>
-                      <p class="reviews__data">г. Москва</p>
-                    </div>
-                    <p class="product__description-list">ИК разрешение 206х156, что сравнимо с качеством ОООчень дорогих моделей.
-                      Благодаря скидки любезно предоставленной магазином смог приобрести сей товар по довольно привлекательной для
-                      такого товара цене (1622499руб.)
-                      Недостатки: Ручная фокусировка далеко не идеал, необходимо очень нежно вращать колесо. В моем случае
-                      имеется полоса преломления изображения (не критично, но мало приятного). Давно мечтала о покупке подобного
-                      девайса. Просветил квартиру на предмет утечек тепла. При ремонте электроники и поиске неисправного элемента
-                      отпадает надобность в кассовой ленте и слепом тыкании ею в плату.
-                    </p>
-
-                    <div class="reviews__container-3">
-                      <p class="reviews__data reviews__data--color1">Этот отзыв полезен?</p>
-                      <a class="reviews__data reviews__data--color2">Да (5)</a>
-                      <a class="reviews__data reviews__data--color3">Нет (3)</a>
-                    </div>
-                  </li>
-                  <li class="reviews__item">
-                    <div class="reviews__container-1">
-                      <div class="sale__stars-list">
-                        <p>
-                          <a class="sale__stars-item sale__stars-item--active">
-                            <img src="img/star-active.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                        <p>
-                          <a class="sale__stars-item sale__stars-item--active">
-                            <img src="img/star-active.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                        <p>
-                          <a class="sale__stars-item sale__stars-item--active">
-                            <img src="img/star-active.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                        <p>
-                          <a class="sale__stars-item sale__stars-item--active">
-                            <img src="img/star-active.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                        <p>
-                          <a class="sale__stars-item">
-                            <img src="img/star.svg" width="20" height="20" alt="star">
-                          </a>
-                        </p>
-                      </div>
-                      <p class="reviews__data">16.10.2017</p>
-                    </div>
-                    <div class="reviews__container-2">
-                      <h3 class="reviews__name">Ирина</h3>
-                      <p class="reviews__data">г. Москва</p>
-                    </div>
-                    <p class="product__description-list">ИК разрешение 206х156, что сравнимо с качеством ОООчень дорогих моделей.
-                      Благодаря скидки любезно предоставленной магазином смог приобрести сей товар по довольно привлекательной для
-                      такого товара цене (1622499руб.)
-                      Недостатки: Ручная фокусировка далеко не идеал, необходимо очень нежно вращать колесо. В моем случае
-                      имеется полоса преломления изображения (не критично, но мало приятного). Давно мечтала о покупке подобного
-                      девайса. Просветил квартиру на предмет утечек тепла. При ремонте электроники и поиске неисправного элемента
-                      отпадает надобность в кассовой ленте и слепом тыкании ею в плату.
-                    </p>
-
-                    <div class="reviews__container-3">
-                      <p class="reviews__data reviews__data--color1">Этот отзыв полезен?</p>
-                      <a class="reviews__data reviews__data--color2">Да (5)</a>
-                      <a class="reviews__data reviews__data--color3">Нет (3)</a>
-                    </div>
-                  </li>
-                </ul>
 
               </li>
             </ul>
@@ -1326,223 +1322,210 @@
             </li>
           </ul>
         </div>
-        <ul class="recently-watched__list">
-          <li class="recently-watched__item">
-            <div class="recently-watched__background">
-              <picture>
-                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
-                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
-              </picture>
-              <div class="recently-watched__stars-list">
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item">
-                    <img src="img/star.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-              </div>
-              <div class="recently-watched__wrapper">
-                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
-                <div class="recently-watched__container">
-                  <img src="img/stock.svg" width="16" height="16" alt="stock">
-                  <p class="recently-watched__stock">В наличии</p>
+        <div class="slider slider--none">
+          <ul>
+            <li class="slider__item  sort__item sort__item-1">
+              <div class="hit-slider__background hit-slider__background--1">
+                <picture>
+                  <source srcset="img/removebg-preview@2x.png 2x, img/removebg-preview.png 1x">
+                  <img class="hit-slider__img-header" src="img/removebg-preview.png" alt="removebg-preview">
+                </picture>
+                <div class="hit-slider__stars-list hit-slider__stars-list-1">
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item">
+                      <img src="img/star.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
                 </div>
-                <p class="recently-watched__cost">879 000 руб.</p>
-              </div>
-            </div>
-          </li>
-          <li class="recently-watched__item">
-            <div class="recently-watched__background">
-              <picture>
-                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
-                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
-              </picture>
-              <div class="recently-watched__stars-list">
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item">
-                    <img src="img/star.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-              </div>
-              <div class="recently-watched__wrapper">
-                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
-                <div class="recently-watched__container">
-                  <img src="img/stock.svg" width="16" height="16" alt="stock">
-                  <p class="recently-watched__stock">В наличии</p>
+                <div class="hit-slider__wrapper">
+                  <h1 class="hit-slider__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                  <p class="hit-slider__cost">879 000 руб.</p>
+                  <div class="hit-slider__container">
+                    <button class="hit-slider__button hit-slider__button-1" type="button">В корзину</button>
+                    <img class="hit-slider__img" src="img/plus.svg" width="16" height="16" alt="plus">
+                    <a class="hit-slider__favorites hit-slider__image">
+                      <img src="img/favorites_mobile.svg" width="16" height="16" alt="favorites">
+                    </a>
+                    <a class="hit-slider__chart hit-slider__image">
+                      <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
+                    </a>
+                  </div>
+                  <span></span>
                 </div>
-                <p class="recently-watched__cost">879 000 руб.</p>
               </div>
-            </div>
-          </li>
-          <li class="recently-watched__item">
-            <div class="recently-watched__background">
-              <picture>
-                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
-                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
-              </picture>
-              <div class="recently-watched__stars-list">
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item">
-                    <img src="img/star.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-              </div>
-              <div class="recently-watched__wrapper">
-                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
-                <div class="recently-watched__container">
-                  <img src="img/stock.svg" width="16" height="16" alt="stock">
-                  <p class="recently-watched__stock">В наличии</p>
+            </li>
+            <li class="slider__item  sort__item sort__item-1">
+              <div class="hit-slider__background hit-slider__background--1">
+                <picture>
+                  <source srcset="img/removebg-preview@2x.png 2x, img/removebg-preview.png 1x">
+                  <img class="hit-slider__img-header" src="img/removebg-preview.png" alt="removebg-preview">
+                </picture>
+                <div class="hit-slider__stars-list hit-slider__stars-list-1">
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item">
+                      <img src="img/star.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
                 </div>
-                <p class="recently-watched__cost">879 000 руб.</p>
-              </div>
-            </div>
-          </li>
-          <li class="recently-watched__item">
-            <div class="recently-watched__background">
-              <picture>
-                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
-                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
-              </picture>
-              <div class="recently-watched__stars-list">
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item">
-                    <img src="img/star.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-              </div>
-              <div class="recently-watched__wrapper">
-                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
-                <div class="recently-watched__container">
-                  <img src="img/stock.svg" width="16" height="16" alt="stock">
-                  <p class="recently-watched__stock">В наличии</p>
+                <div class="hit-slider__wrapper">
+                  <h1 class="hit-slider__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                  <p class="hit-slider__cost">879 000 руб.</p>
+                  <div class="hit-slider__container">
+                    <button class="hit-slider__button hit-slider__button-1" type="button">В корзину</button>
+                    <img class="hit-slider__img" src="img/plus.svg" width="16" height="16" alt="plus">
+                    <a class="hit-slider__favorites hit-slider__image">
+                      <img src="img/favorites_mobile.svg" width="16" height="16" alt="favorites">
+                    </a>
+                    <a class="hit-slider__chart hit-slider__image">
+                      <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
+                    </a>
+                  </div>
+                  <span></span>
                 </div>
-                <p class="recently-watched__cost">879 000 руб.</p>
               </div>
-            </div>
-          </li>
-          <li class="recently-watched__item">
-            <div class="recently-watched__background">
-              <picture>
-                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
-                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
-              </picture>
-              <div class="recently-watched__stars-list">
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item">
-                    <img src="img/star.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-              </div>
-              <div class="recently-watched__wrapper">
-                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
-                <div class="recently-watched__container">
-                  <img src="img/stock.svg" width="16" height="16" alt="stock">
-                  <p class="recently-watched__stock">В наличии</p>
+            </li>
+            <li class="slider__item  sort__item sort__item-1">
+              <div class="hit-slider__background hit-slider__background--1">
+                <picture>
+                  <source srcset="img/removebg-preview@2x.png 2x, img/removebg-preview.png 1x">
+                  <img class="hit-slider__img-header" src="img/removebg-preview.png" alt="removebg-preview">
+                </picture>
+                <div class="hit-slider__stars-list hit-slider__stars-list-1">
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item">
+                      <img src="img/star.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
                 </div>
-                <p class="recently-watched__cost">879 000 руб.</p>
+                <div class="hit-slider__wrapper">
+                  <h1 class="hit-slider__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                  <p class="hit-slider__cost">879 000 руб.</p>
+                  <div class="hit-slider__container">
+                    <button class="hit-slider__button hit-slider__button-1" type="button">В корзину</button>
+                    <img class="hit-slider__img" src="img/plus.svg" width="16" height="16" alt="plus">
+                    <a class="hit-slider__favorites hit-slider__image">
+                      <img src="img/favorites_mobile.svg" width="16" height="16" alt="favorites">
+                    </a>
+                    <a class="hit-slider__chart hit-slider__image">
+                      <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
+                    </a>
+                  </div>
+                  <span></span>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li class="slider__item  sort__item sort__item-1">
+              <div class="hit-slider__background hit-slider__background--1">
+                <picture>
+                  <source srcset="img/removebg-preview@2x.png 2x, img/removebg-preview.png 1x">
+                  <img class="hit-slider__img-header" src="img/removebg-preview.png" alt="removebg-preview">
+                </picture>
+                <div class="hit-slider__stars-list hit-slider__stars-list-1">
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                      <img src="img/star-active.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                  <p>
+                    <a class="hit-slider__stars-item">
+                      <img src="img/star.svg" width="14" height="14" alt="star">
+                    </a>
+                  </p>
+                </div>
+                <div class="hit-slider__wrapper">
+                  <h1 class="hit-slider__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                  <p class="hit-slider__cost">879 000 руб.</p>
+                  <div class="hit-slider__container">
+                    <button class="hit-slider__button hit-slider__button-1" type="button">В корзину</button>
+                    <img class="hit-slider__img" src="img/plus.svg" width="16" height="16" alt="plus">
+                    <a class="hit-slider__favorites hit-slider__image">
+                      <img src="img/favorites_mobile.svg" width="16" height="16" alt="favorites">
+                    </a>
+                    <a class="hit-slider__chart hit-slider__image">
+                      <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
+                    </a>
+                  </div>
+                  <span></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
       </div>
 
@@ -2089,223 +2072,6 @@
             </li>
           </ul>
         </div>
-        <ul class="recently-watched__list">
-          <li class="recently-watched__item">
-            <div class="recently-watched__background">
-              <picture>
-                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
-                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
-              </picture>
-              <div class="recently-watched__stars-list">
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item">
-                    <img src="img/star.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-              </div>
-              <div class="recently-watched__wrapper">
-                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
-                <div class="recently-watched__container">
-                  <img src="img/stock.svg" width="16" height="16" alt="stock">
-                  <p class="recently-watched__stock">В наличии</p>
-                </div>
-                <p class="recently-watched__cost">879 000 руб.</p>
-              </div>
-            </div>
-          </li>
-          <li class="recently-watched__item">
-            <div class="recently-watched__background">
-              <picture>
-                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
-                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
-              </picture>
-              <div class="recently-watched__stars-list">
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item">
-                    <img src="img/star.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-              </div>
-              <div class="recently-watched__wrapper">
-                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
-                <div class="recently-watched__container">
-                  <img src="img/stock.svg" width="16" height="16" alt="stock">
-                  <p class="recently-watched__stock">В наличии</p>
-                </div>
-                <p class="recently-watched__cost">879 000 руб.</p>
-              </div>
-            </div>
-          </li>
-          <li class="recently-watched__item">
-            <div class="recently-watched__background">
-              <picture>
-                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
-                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
-              </picture>
-              <div class="recently-watched__stars-list">
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item">
-                    <img src="img/star.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-              </div>
-              <div class="recently-watched__wrapper">
-                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
-                <div class="recently-watched__container">
-                  <img src="img/stock.svg" width="16" height="16" alt="stock">
-                  <p class="recently-watched__stock">В наличии</p>
-                </div>
-                <p class="recently-watched__cost">879 000 руб.</p>
-              </div>
-            </div>
-          </li>
-          <li class="recently-watched__item">
-            <div class="recently-watched__background">
-              <picture>
-                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
-                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
-              </picture>
-              <div class="recently-watched__stars-list">
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item">
-                    <img src="img/star.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-              </div>
-              <div class="recently-watched__wrapper">
-                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
-                <div class="recently-watched__container">
-                  <img src="img/stock.svg" width="16" height="16" alt="stock">
-                  <p class="recently-watched__stock">В наличии</p>
-                </div>
-                <p class="recently-watched__cost">879 000 руб.</p>
-              </div>
-            </div>
-          </li>
-          <li class="recently-watched__item">
-            <div class="recently-watched__background">
-              <picture>
-                <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
-                <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
-              </picture>
-              <div class="recently-watched__stars-list">
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item hit-slider__stars-item--active">
-                    <img src="img/star-active.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-                <p>
-                  <a class="hit-slider__stars-item">
-                    <img src="img/star.svg" width="14" height="14" alt="star">
-                  </a>
-                </p>
-              </div>
-              <div class="recently-watched__wrapper">
-                <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
-                <div class="recently-watched__container">
-                  <img src="img/stock.svg" width="16" height="16" alt="stock">
-                  <p class="recently-watched__stock">В наличии</p>
-                </div>
-                <p class="recently-watched__cost">879 000 руб.</p>
-              </div>
-            </div>
-          </li>
-        </ul>
       </div>
     </div>
   </main>
