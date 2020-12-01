@@ -294,8 +294,8 @@
         </li>
       </ul>
       <div class="page-header__search">
-        <a href="#" class="page-header__mobile">
-          <img src="img/search.svg" width="24" height="24" alt="search">
+        <a class="page-header__mobile">
+
         </a>
       </div>
       <div class="page-header__logo">
@@ -2095,7 +2095,7 @@
             </picture>
           </a>
         </li>
-        </ul>
+      </ul>
       <ul class="brand__block__list-second">
         <li class="brand__block__item ">
           <a class="brand__img">
@@ -2156,7 +2156,7 @@
             </section>
             <div class="page-footer__logo">
               <a href="index.html">
-                  <img class="page-footer__logo-header" src="img/Logotip_bely_3.svg" alt="logo">
+                <img class="page-footer__logo-header" src="img/Logotip_bely_3.svg" alt="logo">
               </a>
             </div>
             <button class="page-footer__button desktop-none" type="button">Обратный звонок</button>
@@ -2783,50 +2783,7 @@
 
 <div class="mobile_menu_overlay"></div>
 
-
-<div class="modal popup" data-modal="2">
-  <div class="application__wrapper popup__wrapper">
-    <div class="popup__background">
-      <h1 class="application__header popup__header">Оставить заявку</h1>
-      <div class="form__description popup__description">
-        <p class="application__description popup__description--color">Или позвоните по номеру телефона:</p>
-        <div class="application__item popup__item">
-          <img src="img/forma1.png" alt="phone" height="19" width="19">
-          <a>+7 (499) 403 15 23</a>
-        </div>
-      </div>
-
-      <form class="form" id="form" action=" " method="POST">
-        <div class="form__wrapper">
-          <ul class="form__list">
-            <li class="form__item form__item--1">
-              <input class="form__window" type="text" name="from_name" placeholder="Ваше имя">
-            </li>
-            <li class="form__item form__item--2 popup__item--2">
-              <input class="form__window" type="tel" name="tel" placeholder="Номер телефона">
-            </li>
-          </ul>
-        </div>
-        <div class="form__block popup__block">
-          <div class="form__button-container">
-            <button class="form__button popup__button" type="submit">Подробнее</button>
-          </div>
-          <div class="form__information popup__information">
-            <div>
-              <input type="checkbox" class="option-input checkbox" name="sugar" checked="">
-              <label class="form-list__value form-list__value--popup">Отправляя заявку даю согласие на «Обработку персональных данных»</label>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <svg fill="white" class="js-modal-close modal-popup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
-  </div>
-</div>
-<div class="overlay js-overlay-modal"></div>
-
-<script src="js/modal.js"></script>
+<script src="js/search.js"></script>
 <script>
   $(document).ready(function(){
     $('.slider ul').bxSlider({
