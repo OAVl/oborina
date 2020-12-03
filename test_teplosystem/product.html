@@ -511,7 +511,8 @@
 
           <div class="product-button-wrapper">
             <img class="product__mark" src="img/shopping-cart.svg" width="16" height="16" alt="mark">
-            <button class="product__button-1" type="button">В корзину</button>
+            <a class="product__button-1 product__button-1--mobile1">В корзину</a>
+            <a class="product__button-1 product__button-1--mobile2" href="basket.html">Перейти в корзину</a>
           </div>
           <button class="product__button-2" type="button">Купить в 1 клик</button>
 
@@ -3130,6 +3131,19 @@
   </div>
   <div class="overlay js-overlay-modal"></div>
 
+
+  <script>
+    var button1 = document.querySelector(".product__button-1--mobile1");
+    var button2 = document.querySelector(".product__button-1--mobile2");
+    var buttonImg = document.querySelector(".product__mark");
+
+    button1.addEventListener('click', function (e) {
+      e.preventDefault();
+      buttonImg.classList.add('none');
+      button1.classList.add('none');
+      button2.classList.add('block');
+    })
+  </script>
   <script src="js/modal.js"></script>
   <script>
     $(document).ready(function(){
