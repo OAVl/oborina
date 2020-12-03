@@ -589,7 +589,7 @@
             <div class="product__wrapper-tablet-4">
               <div class="product-button-wrapper">
                 <img class="product__mark" src="img/shopping-cart.svg" width="16" height="16" alt="mark">
-                <button class="product__button-1" type="button">В корзину</button>
+                <button class="product__button-1 js-open-modal" type="button" data-modal="3">В корзину</button>
               </div>
               <button class="product__button-2" type="button">Купить в один клик</button>
             </div>
@@ -2710,6 +2710,7 @@
   </div>
   <div class="mobile_menu_overlay"></div>
 
+  <!-- Попап с формой для отзыва -->
   <div class="modal popup" data-modal="2">
       <div class="popup__background">
         <div class="contacts-form contacts-form--rating">
@@ -2777,6 +2778,355 @@
           </div>
         </div>
       </div>
+  </div>
+
+  <!-- Попап с товаром, добавленным в корзину -->
+  <div class="modal product-basket__popup" data-modal="3">
+      <div class="product-basket">
+        <h2 class="product-basket__header">Товар добавлен в корзину!</h2>
+
+        <div class="product-basket__wrapper">
+          <picture>
+            <source media="(min-width: 1110px)" srcset="img/image16.png">
+            <img class="product-basket__img" src="img/binoculars-menu.png" alt="icon">
+          </picture>
+          <h3 class="product-basket__title">Тепловизор Pulsar Accolade XQ38 LRF</h3>
+          <div class="product-basket__container">
+            <button type="button" class="product-basket__1"></button>
+            <p class="product-basket__2">1</p>
+            <button type="button" class="product-basket__3"></button>
+          </div>
+          <p class="product-basket__cost">879 000 руб.</p>
+        </div>
+
+        <div class="product-basket__wrapper">
+          <div class="product-basket__wrapper-2">
+            <p class="product-basket__text product-basket__text--1">В корзине 9 товаров</p>
+            <p class="product-basket__text">на сумму 1 230 322 руб.</p>
+          </div>
+
+          <a href="basket.html" class="product-basket__button">Перейти в корзину</a>
+
+          <button type="button" class="product-basket__button-2">Продолжить покупки</button>
+
+        </div>
+      </div>
+
+
+
+      <section class="recently-watched-block product-basket__block">
+            <h2 class="product-basket__header">С этим товаром покупают</h2>
+            <div class="recently-watched product-basket-block">
+              <div class="slider slider--recently-watched">
+                <ul>
+                  <li class="slider__item">
+                    <div class="recently-watched__background">
+                      <picture>
+                        <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                        <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+                      </picture>
+                      <div class="recently-watched__stars-list">
+                        <p>
+                          <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                            <img src="img/star-active.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                        <p>
+                          <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                            <img src="img/star-active.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                        <p>
+                          <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                            <img src="img/star-active.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                        <p>
+                          <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                            <img src="img/star-active.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                        <p>
+                          <a class="hit-slider__stars-item">
+                            <img src="img/star.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                      </div>
+                      <div class="recently-watched__wrapper">
+                        <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                        <div class="recently-watched__container">
+                          <img src="img/stock.svg" width="16" height="16" alt="stock">
+                          <p class="recently-watched__stock">В наличии</p>
+                        </div>
+                        <p class="recently-watched__cost">879 000 руб.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item">
+                    <div class="recently-watched__background">
+                      <picture>
+                        <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                        <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+                      </picture>
+                      <div class="recently-watched__stars-list">
+                        <p>
+                          <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                            <img src="img/star-active.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                        <p>
+                          <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                            <img src="img/star-active.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                        <p>
+                          <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                            <img src="img/star-active.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                        <p>
+                          <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                            <img src="img/star-active.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                        <p>
+                          <a class="hit-slider__stars-item">
+                            <img src="img/star.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                      </div>
+                      <div class="recently-watched__wrapper">
+                        <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                        <div class="recently-watched__container">
+                          <img src="img/stock.svg" width="16" height="16" alt="stock">
+                          <p class="recently-watched__stock">В наличии</p>
+                        </div>
+                        <p class="recently-watched__cost">879 000 руб.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item">
+                    <div class="recently-watched__background">
+                      <picture>
+                        <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                        <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+                      </picture>
+                      <div class="recently-watched__stars-list">
+                        <p>
+                          <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                            <img src="img/star-active.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                        <p>
+                          <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                            <img src="img/star-active.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                        <p>
+                          <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                            <img src="img/star-active.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                        <p>
+                          <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                            <img src="img/star-active.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                        <p>
+                          <a class="hit-slider__stars-item">
+                            <img src="img/star.svg" width="14" height="14" alt="star">
+                          </a>
+                        </p>
+                      </div>
+                      <div class="recently-watched__wrapper">
+                        <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                        <div class="recently-watched__container">
+                          <img src="img/stock.svg" width="16" height="16" alt="stock">
+                          <p class="recently-watched__stock">В наличии</p>
+                        </div>
+                        <p class="recently-watched__cost">879 000 руб.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <ul class="recently-watched__list">
+                <li class="recently-watched__item">
+                  <div class="recently-watched__background">
+                    <picture>
+                      <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                      <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+                    </picture>
+                    <div class="recently-watched__stars-list">
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item">
+                          <img src="img/star.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                    </div>
+                    <div class="recently-watched__wrapper">
+                      <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                      <div class="recently-watched__container">
+                        <img src="img/stock.svg" width="16" height="16" alt="stock">
+                        <p class="recently-watched__stock">В наличии</p>
+                      </div>
+                      <p class="recently-watched__cost">879 000 руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="recently-watched__item">
+                  <div class="recently-watched__background">
+                    <picture>
+                      <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                      <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+                    </picture>
+                    <div class="recently-watched__stars-list">
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item">
+                          <img src="img/star.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                    </div>
+                    <div class="recently-watched__wrapper">
+                      <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                      <div class="recently-watched__container">
+                        <img src="img/stock.svg" width="16" height="16" alt="stock">
+                        <p class="recently-watched__stock">В наличии</p>
+                      </div>
+                      <p class="recently-watched__cost">879 000 руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="recently-watched__item">
+                  <div class="recently-watched__background">
+                    <picture>
+                      <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                      <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+                    </picture>
+                    <div class="recently-watched__stars-list">
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item">
+                          <img src="img/star.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                    </div>
+                    <div class="recently-watched__wrapper">
+                      <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                      <div class="recently-watched__container">
+                        <img src="img/stock.svg" width="16" height="16" alt="stock">
+                        <p class="recently-watched__stock">В наличии</p>
+                      </div>
+                      <p class="recently-watched__cost">879 000 руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="recently-watched__item">
+                  <div class="recently-watched__background">
+                    <picture>
+                      <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                      <img class="recently-watched__img" src="img/axion1.png" alt="removebg-preview">
+                    </picture>
+                    <div class="recently-watched__stars-list">
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item hit-slider__stars-item--active">
+                          <img src="img/star-active.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                      <p>
+                        <a class="hit-slider__stars-item">
+                          <img src="img/star.svg" width="14" height="14" alt="star">
+                        </a>
+                      </p>
+                    </div>
+                    <div class="recently-watched__wrapper">
+                      <h1 class="recently-watched__header">Тепловизионный прицел Инфратех ИТ-315</h1>
+                      <div class="recently-watched__container">
+                        <img src="img/stock.svg" width="16" height="16" alt="stock">
+                        <p class="recently-watched__stock">В наличии</p>
+                      </div>
+                      <p class="recently-watched__cost">879 000 руб.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
   </div>
   <div class="overlay js-overlay-modal"></div>
 
