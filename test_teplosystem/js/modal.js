@@ -9,10 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay      = document.querySelector('.js-overlay-modal'),
     closeButtons = document.querySelectorAll('.js-modal-close');
   var body = document.querySelector('.container');
+  // var payButton = document.querySelector('.pay__button');
+
 
 
   /* Перебираем массив кнопок */
-  modalButtons.forEach(function(item){
+  modalButtons.forEach(function(item) {
 
     /* Назначаем каждой кнопке обработчик клика */
     item.addEventListener('click', function(e) {
@@ -37,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }); // end click
 
   }); // end foreach
-
 
   closeButtons.forEach(function(item){
 
@@ -70,3 +71,4 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.container').classList.remove('scroll-hidden');
   });
 });
+
