@@ -290,11 +290,70 @@
             </ul>
           </li>
         </ul>
-        <div class="page-header__search">
-          <a href="#" class="page-header__mobile">
+        <div class="page-header__search search__none-mobile">
+          <a href="search-page.html" class="page-header__mobile">
             <img src="img/search.svg" width="24" height="24" alt="search">
           </a>
         </div>
+
+
+
+        <div class="page-header__search search__none-tablet">
+          <div class="page-header__mobile menu__wrapper">
+            <img class="page-header__img" src="img/search.svg" width="24" height="24" alt="search">
+            <label>
+              <input class="page-header__input" type="search" id="search" placeholder="Поиск по каталогу" autocomplete="off">
+            </label>
+
+            <ul class="menu__list page-header-menu__list">
+              <li class="page-header__menu-item">
+                <a class="page-header__container-1" href="#">
+                  <img src="img/axion.png" width="68" height="44" alt="icon">
+                  <div class="page-header__container-2">
+                    <h3 class="page-header__title">ИК фонарь Pulsar-940</h3>
+                    <p class="page-header__cost">9 500 руб.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="page-header__menu-item">
+                <a class="page-header__container-1" href="#">
+                  <img src="img/axion.png" width="68" height="44" alt="icon">
+                  <div class="page-header__container-2">
+                    <h3 class="page-header__title">Бинокль ночного видения Pulsar<br> Edge GS 2.7x50 (1+ пок.)</h3>
+                    <p class="page-header__cost">9 500 руб.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="page-header__menu-item">
+                <a class="page-header__container-1" href="#">
+                  <img src="img/axion.png" width="68" height="44" alt="icon">
+                  <div class="page-header__container-2">
+                    <h3 class="page-header__title">Монокуляр ночного видения Pulsar<br> Challenger GS 1x20 с маской (1+ пок.) </h3>
+                    <p class="page-header__cost">9 500 руб.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="page-header__menu-item">
+                <a class="page-header__container-1" href="#">
+                  <img src="img/axion.png" width="68" height="44" alt="icon">
+                  <div class="page-header__container-2">
+                    <h3 class="page-header__title">Монокуляр ночного видения Pulsar<br> Challenger GS 1x20 с маской (1+ пок.) </h3>
+                    <p class="page-header__cost">9 500 руб.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="page-header__menu-item page-header__search__show">
+                <a class="search__show" href="result__search.html">Показать все результаты (150)</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+
+
+
+
         <div class="page-header__logo">
           <a href="index.html">
             <img class="page-header__logo-header" src="img/Logotip_bely_3.svg" alt="logo">
@@ -302,27 +361,35 @@
         </div>
         <div class="page-header__icon">
           <div class="page-header__favorites">
-            <a href="#">
+            <a href="favorite.html">
               <img src="img/favorites.svg" width="24" height="24" alt="favorites">
               <span class="page-header__number">10</span>
             </a>
           </div>
           <div class="page-header__chart">
-            <a href="#">
+            <a href="chart.html">
               <img src="img/Tempbar-chart.svg" width="24" height="24" alt="chart">
               <span class="page-header__number">3</span>
             </a>
           </div>
           <div class="page-header__basket">
-            <a href="#">
+            <a href="basket-empty.html">
               <img src="img/shopping-bag.svg" width="24" height="24" alt="basket">
               <span class="page-header__number">6</span>
             </a>
           </div>
           <div class="page-header__user">
-            <a href="#">
-              <img src="img/user.svg" width="24" height="24" alt="user">
-            </a>
+            <div class="menu__wrapper">
+              <a href="#">
+                <img src="img/user.svg" width="24" height="24" alt="user">
+              </a>
+              <ul class="menu__list user__menu">
+                <li class="user__menu-item"><a href="user.html">Мой профиль</a></li>
+                <li class="user__menu-item"><a href="user__orders.html">Мои заказы</a></li>
+                <li class="user__menu-item"><a href="user__favorite.html">Избранное</a></li>
+                <li class="user__menu-item"><a href="user__exit.html">Выйти</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -586,7 +653,7 @@
                 <li class="footer-nav__item"><a href="sale.html">Акции</a></li>
                 <li class="footer-nav__item"><a href="news.html">Новости</a></li>
                 <li class="footer-nav__item"><a href="garanty.html">Обмен и возврат</a></li>
-                <li class="footer-nav__item"><a href="#">Сравнение</a></li>
+                <li class="footer-nav__item"><a href="chart.html">Сравнение</a></li>
               </ul>
             </div>
 
@@ -621,7 +688,7 @@
 
         <div class="footer-desktop">
           <p>Задать вопрос<br> или оформить покупку</p>
-          <a href="#" class="footer-address__tel">8-499-390-50-55</a>
+          <a href="#" class="footer-address__tel">8 (499) 390-50-55</a>
           <button class="page-footer__button" type="button">Обратный звонок</button>
         </div>
       </div>
@@ -675,7 +742,7 @@
     </div>
 
     <div class="page-footer__agreement">
-      <p class="page-footer__agreement__title">Пользовательское соглашение</p>
+      <a href="agreement.html" class="page-footer__agreement__title">Пользовательское соглашение</a>
       <p class="page-footer__agreement__description">Вся информация на сайте о товарах и ценах носит справочный
         характер и не является публичной офертой в соответствии с пунктом 2 статьи 437 ГК РФ. Производитель
         оставляет за собой право изменять характеристики товара, его внешний вид, комплектность и цену без
@@ -1161,21 +1228,21 @@
         <li class="mobile_menu__icon">
           <div class="mobile_menu__icon-wrapper">
             <img src="img/chart_mobile.svg" width="16" height="16" alt="chart">
-            <a href="#">Сравнение</a>
+            <a href="chart.html">Сравнение</a>
             <span>10</span>
           </div>
         </li>
         <li class="mobile_menu__icon">
           <div class="mobile_menu__icon-wrapper">
             <img src="img/favorites_mobile.svg" width="16" height="16" alt="favorites">
-            <a href="#">Избранное</a>
+            <a href="favorite.html">Избранное</a>
             <span>10</span>
           </div>
         </li>
         <li class="mobile_menu__icon mobile_menu__icon--border">
           <div class="mobile_menu__icon-wrapper mobile_menu__icon-wrapper--border">
             <img src="img/user_mobile.svg" width="16" height="16" alt="user">
-            <a href="#">Личный кабинет</a>
+            <a href="user.html">Личный кабинет</a>
           </div>
         </li>
         <li class="mobile_menu__bottom"></li>

@@ -37,7 +37,7 @@ function autocomplete(inp, arr) {
         /*execute a function when someone clicks on the item value (DIV element):*/
         b.addEventListener("click", function(e) {
           /*insert the value for the autocomplete text field:*/
-          inp.value = this.getElementsByTagName(".page-header__search-input")[0].value;
+          inp.value = this.getElementsByTagName(".search__window")[0].value;
           /*close the list of autocompleted values,
           (or any other open lists of autocompleted values:*/
           closeAllLists();
@@ -45,6 +45,7 @@ function autocomplete(inp, arr) {
         a.appendChild(b);
       }
     }
+
   });
   /*execute a function presses a key on the keyboard:*/
   inp.addEventListener("keydown", function(e) {
