@@ -441,7 +441,7 @@
                   <img class="page-footer__logo-header" src="img/Logotip_bely_3.svg" alt="logo">
                 </a>
               </div>
-              <button class="page-footer__button desktop-none" type="button">Обратный звонок</button>
+              <button class="page-footer__button desktop-none js-open-modal" type="button" data-modal="1">Обратный звонок</button>
             </div>
           </div>
 
@@ -502,7 +502,7 @@
         <div class="footer-desktop">
           <p>Задать вопрос<br> или оформить покупку</p>
           <a href="#" class="footer-address__tel">8 (499) 390-50-55</a>
-          <button class="page-footer__button" type="button">Обратный звонок</button>
+          <button class="page-footer__button js-open-modal" type="button" data-modal="1">Обратный звонок</button>
         </div>
       </div>
     </div>
@@ -562,6 +562,32 @@
         предварительного уведомления продавца.</p>
     </div>
   </footer>
+
+  <div class="modal popup pay" data-modal="1">
+    <div class="contacts-form contacts-form--rating pay__container">
+      <div class="contacts-form__block-wrapper contacts-form__block-wrapper--rating">
+        <h2 class="pay__header">Обратный звонок</h2>
+
+        <p class="pay__description">Оставьте Ваши данные<br> и наш консультант с вами свяжется.</p>
+
+        <form class="contacts-form__form" id="form-pay" action=" " method="POST">
+          <div class="contacts-form__container">
+            <label class="contacts-form__wrapper" for="name1">Ваше имя<span>*</span></label>
+            <input class="contacts-form__window contacts-form__window--2 pay__window" type="text" name="name" id="name1" placeholder="Иван">
+          </div>
+          <div class="contacts-form__container">
+            <label class="contacts-form__wrapper" for="tel1">Ваш телефон<span>*</span></label>
+            <input class="contacts-form__window contacts-form__window-ordering pay__window" type="tel" name="tel" id="tel1" placeholder="+7">
+            <img class="ordering__img" src="img/arrow-down.svg" width="9" height="6" alt="icon">
+          </div>
+
+          <button class="contacts-form__button contacts-form__button--rating" type="submit">Отправить</button>
+          <p class="pay__description-1">Нажимая кнопку «Отправить» я соглашаюсь с обработкой персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="overlay js-overlay-modal"></div>
 
   <!-- Меню -->
   <div class="mobile_menu_container">
@@ -1064,6 +1090,7 @@
   </div>
   <div class="mobile_menu_overlay"></div>
 
+  <script src="js/modal.js"></script>
   <script src="js/menu.js"></script>
   </body>
 </html>

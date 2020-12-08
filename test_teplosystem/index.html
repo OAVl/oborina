@@ -2126,70 +2126,36 @@
     <div class="brand__block-wrapper">
       <ul class="brand__block__list">
         <li class="brand__block__item">
-          <a class="brand__img">
-            <img class="brand__image brand__image--flir" src="img/FLIR_logo.svg" width="100" height="24" alt="FLIR">
-          </a>
+          <a class="brand__img brand__image--flir"></a>
         </li>
         <li class="brand__block__item">
-          <a class="brand__img">
-            <img class="brand__image brand__image--atn" src="img/atn-corp-vector-logo.svg" width="40" height="27" alt="atn">
-          </a>
+          <a class="brand__img brand__image--atn"></a>
         </li>
         <li class="brand__block__item slider__item--fluke brand__item--fluke">
-          <a class="brand__img">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/Fluke_logo-tablet.svg">
-              <img class="brand__image brand__image--fluke" src="img/Fluke_logo.svg" alt="fluke">
-            </picture>
-          </a>
+          <a class="brand__img brand__image--fluke"></a>
         </li>
         <li class="brand__block__item">
-          <a class="brand__img">
-            <img class="brand__image brand__image--testo" src="img/testo_logo.svg" width="60" height="27" alt="testo">
-          </a>
+          <a class="brand__img brand__image--testo"></a>
         </li>
         <li class="brand__block__item brand__item--guide">
-          <a class="brand__img">
-            <img class="brand__image brand__image--guide" src="img/guide_logo.svg" width="63" height="18" alt="guide">
-          </a>
+          <a class="brand__img brand__image--guide"></a>
         </li>
         <li class="brand__block__item slider__item--pulsar brand__item--pulsar">
-          <a class="brand__img">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/pulsar-logo-desktop.svg">
-              <img class="brand__image brand__image--pulsar" src="img/pulsar-logo.svg" alt="pulsar">
-            </picture>
-          </a>
+          <a class="brand__img brand__image--pulsar"></a>
         </li>
         </ul>
       <ul class="brand__block__list-second">
         <li class="brand__block__item ">
-          <a class="brand__img">
-            <picture>
-              <img class="brand__image brand__image--iray" src="img/iray_logo.svg" alt="iray">
-            </picture>
-          </a>
+          <a class="brand__img brand__image--iray"></a>
         </li>
         <li class="brand__block__item">
-          <a class="brand__img">
-            <picture>
-              <img class="brand__image brand__image--dedal" src="img/dedal_logo.svg" alt="dedal">
-            </picture>
-          </a>
+          <a class="brand__img brand__image--dedal"></a>
         </li>
         <li class="brand__block__item ">
-          <a class="brand__img">
-            <picture>
-              <img class="brand__image brand__image--seek" src="img/seek_logo.svg" alt="seek">
-            </picture>
-          </a>
+          <a class="brand__img brand__image--seek"></a>
         </li>
         <li class="brand__block__item slider__item--fortuna">
-          <a class="brand__img">
-            <picture>
-              <img class="brand__image brand__image--fortuna" src="img/fortuna_logo.svg" alt="fortuna">
-            </picture>
-          </a>
+          <a class="brand__img brand__image--fortuna"></a>
         </li>
       </ul>
     </div>
@@ -2225,7 +2191,7 @@
                   <img class="page-footer__logo-header" src="img/Logotip_bely_3.svg" alt="logo">
               </a>
             </div>
-            <button class="page-footer__button desktop-none" type="button">Обратный звонок</button>
+            <button class="page-footer__button desktop-none js-open-modal" type="button" data-modal="1">Обратный звонок</button>
           </div>
         </div>
 
@@ -2286,7 +2252,7 @@
       <div class="footer-desktop">
         <p>Задать вопрос<br> или оформить покупку</p>
         <a href="#" class="footer-address__tel">8-499-390-50-55</a>
-        <button class="page-footer__button" type="button">Обратный звонок</button>
+        <button class="page-footer__button js-open-modal" type="button" data-modal="1">Обратный звонок</button>
       </div>
     </div>
   </div>
@@ -2846,48 +2812,31 @@
     </ul>
   </div>
 </div>
-
 <div class="mobile_menu_overlay"></div>
 
 
-<div class="modal popup" data-modal="2">
-  <div class="application__wrapper popup__wrapper">
-    <div class="popup__background">
-      <h1 class="application__header popup__header">Оставить заявку</h1>
-      <div class="form__description popup__description">
-        <p class="application__description popup__description--color">Или позвоните по номеру телефона:</p>
-        <div class="application__item popup__item">
-          <img src="img/forma1.png" alt="phone" height="19" width="19">
-          <a>+7 (499) 403 15 23</a>
-        </div>
-      </div>
+<div class="modal popup pay" data-modal="1">
+  <div class="contacts-form contacts-form--rating pay__container">
+    <div class="contacts-form__block-wrapper contacts-form__block-wrapper--rating">
+      <h2 class="pay__header">Обратный звонок</h2>
 
-      <form class="form" id="form" action=" " method="POST">
-        <div class="form__wrapper">
-          <ul class="form__list">
-            <li class="form__item form__item--1">
-              <input class="form__window" type="text" name="from_name" placeholder="Ваше имя">
-            </li>
-            <li class="form__item form__item--2 popup__item--2">
-              <input class="form__window" type="tel" name="tel" placeholder="Номер телефона">
-            </li>
-          </ul>
+      <p class="pay__description">Оставьте Ваши данные<br> и наш консультант с вами свяжется.</p>
+
+      <form class="contacts-form__form" id="form-pay" action=" " method="POST">
+        <div class="contacts-form__container">
+          <label class="contacts-form__wrapper" for="name1">Ваше имя<span>*</span></label>
+          <input class="contacts-form__window contacts-form__window--2 pay__window" type="text" name="name" id="name1" placeholder="Иван">
         </div>
-        <div class="form__block popup__block">
-          <div class="form__button-container">
-            <button class="form__button popup__button" type="submit">Подробнее</button>
-          </div>
-          <div class="form__information popup__information">
-            <div>
-              <input type="checkbox" class="option-input checkbox" name="sugar" checked="">
-              <label class="form-list__value form-list__value--popup">Отправляя заявку даю согласие на «Обработку персональных данных»</label>
-            </div>
-          </div>
+        <div class="contacts-form__container">
+          <label class="contacts-form__wrapper" for="tel1">Ваш телефон<span>*</span></label>
+          <input class="contacts-form__window contacts-form__window-ordering pay__window" type="tel" name="tel" id="tel1" placeholder="+7">
+          <img class="ordering__img" src="img/arrow-down.svg" width="9" height="6" alt="icon">
         </div>
+
+        <button class="contacts-form__button contacts-form__button--rating" type="submit">Отправить</button>
+        <p class="pay__description-1">Нажимая кнопку «Отправить» я соглашаюсь с обработкой персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>.</p>
       </form>
     </div>
-
-    <svg fill="white" class="js-modal-close modal-popup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
   </div>
 </div>
 <div class="overlay js-overlay-modal"></div>

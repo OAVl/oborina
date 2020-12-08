@@ -656,7 +656,18 @@
 
             <div class="product__wrapper-tablet-4">
               <div class="product-button-wrapper">
-                <img class="product__mark" src="img/shopping-cart.svg" width="16" height="16" alt="mark">
+                <svg class="product__mark" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path d="M6.00065 15.1663C6.36884 15.1663 6.66732 14.8679 6.66732 14.4997C6.66732 14.1315 6.36884 13.833 6.00065 13.833C5.63246 13.833 5.33398 14.1315 5.33398 14.4997C5.33398 14.8679 5.63246 15.1663 6.00065 15.1663Z" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M13.3327 15.1663C13.7009 15.1663 13.9993 14.8679 13.9993 14.4997C13.9993 14.1315 13.7009 13.833 13.3327 13.833C12.9645 13.833 12.666 14.1315 12.666 14.4997C12.666 14.8679 12.9645 15.1663 13.3327 15.1663Z" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M0.666016 1.16699H3.33268L5.11935 10.0937C5.18031 10.4006 5.34729 10.6763 5.59105 10.8725C5.8348 11.0688 6.13981 11.173 6.45268 11.167H12.9327C13.2455 11.173 13.5506 11.0688 13.7943 10.8725C14.0381 10.6763 14.2051 10.4006 14.266 10.0937L15.3327 4.50033H3.99935" stroke="#F2F2F2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
                 <button class="product__button-1 js-open-modal" type="button" data-modal="3">В корзину</button>
               </div>
               <button class="product__button-2 js-open-modal" type="button" data-modal="4">Купить в один клик</button>
@@ -711,19 +722,19 @@
 
         <ul class="list__product">
           <li class="item__product">
-            <p class="product__description product__description--4">О товаре</p>
+            <a href="#product" class="product__description product__description--4">О товаре</a>
             <img class="list__product-img" src="img/arrow-down.svg" width="10" height="6" alt="arrow">
           </li>
           <li class="item__product">
-            <p class="product__description product__description--4">Характеристики</p>
+            <a href="#characteristics" class="product__description product__description--4">Характеристики</a>
             <img class="list__product-img" src="img/arrow-down.svg" width="10" height="6" alt="arrow">
           </li>
           <li class="item__product">
-            <p class="product__description product__description--4">Отзывы и оценки</p>
+            <a href="#reviews" class="product__description product__description--4">Отзывы и оценки</a>
             <img class="list__product-img" src="img/arrow-down.svg" width="10" height="6" alt="arrow">
           </li>
           <li class="item__product">
-            <p class="product__description product__description--4">Аксессуары</p>
+            <a href="#title" class="product__description product__description--4">Аксессуары</a>
             <img class="list__product-img" src="img/arrow-down.svg" width="10" height="6" alt="arrow">
           </li>
         </ul>
@@ -731,6 +742,7 @@
 
         <ul class="product__list">
           <li class="product__item">
+            <a name="product"></a>
             <input type="checkbox" name="group-1" id="group-1" checked="">
             <label class="product__title" for="group-1">О товаре</label>
 
@@ -852,6 +864,7 @@
           </li>
 
           <li class="product__item">
+            <a name="characteristics"></a>
             <input type="checkbox" name="group-2" id="group-2">
             <label class="product__title" for="group-2">Характеристики</label>
 
@@ -957,6 +970,7 @@
           </li>
 
           <li class="product__item">
+            <a name="reviews"></a>
             <input type="checkbox" name="group-3" id="group-3">
             <label class="product__title" for="group-3">Отзывы и оценки</label>
 
@@ -1203,6 +1217,7 @@
     </div>
 
     <div class="reviews__container-5 reviews__container-5--mobile">
+      <a name="title"></a>
       <h2 class="reviews__title">Акссесуары для этого товара</h2>
       <div class="reviews__container-5">
         <div class="slider slider--recently-watched">
@@ -1953,6 +1968,7 @@
     </section>
 
     <div class="reviews__container-5 reviews__container-5--tablet">
+      <a name="title"></a>
       <h2 class="reviews__title">Акссесуары для этого товара</h2>
       <div class="reviews__container-5">
         <div class="slider slider--recently-watched">
@@ -2154,7 +2170,7 @@
                   <img class="page-footer__logo-header" src="img/Logotip_bely_3.svg" alt="logo">
                 </a>
               </div>
-              <button class="page-footer__button desktop-none" type="button">Обратный звонок</button>
+              <button class="page-footer__button desktop-none js-open-modal" type="button" data-modal="1">Обратный звонок</button>
             </div>
           </div>
 
@@ -2215,7 +2231,7 @@
         <div class="footer-desktop">
           <p>Задать вопрос<br> или оформить покупку</p>
           <a href="#" class="footer-address__tel">8 (499) 390-50-55</a>
-          <button class="page-footer__button" type="button">Обратный звонок</button>
+          <button class="page-footer__button js-open-modal" type="button" data-modal="1">Обратный звонок</button>
         </div>
       </div>
     </div>
@@ -2275,6 +2291,32 @@
         предварительного уведомления продавца.</p>
     </div>
   </footer>
+
+  <div class="modal popup pay" data-modal="1">
+    <div class="contacts-form contacts-form--rating pay__container">
+      <div class="contacts-form__block-wrapper contacts-form__block-wrapper--rating">
+        <h2 class="pay__header">Обратный звонок</h2>
+
+        <p class="pay__description">Оставьте Ваши данные<br> и наш консультант с вами свяжется.</p>
+
+        <form class="contacts-form__form" id="form-pay1" action=" " method="POST">
+          <div class="contacts-form__container">
+            <label class="contacts-form__wrapper" for="name2">Ваше имя<span>*</span></label>
+            <input class="contacts-form__window contacts-form__window--2 pay__window" type="text" name="name" id="name2" placeholder="Иван">
+          </div>
+          <div class="contacts-form__container">
+            <label class="contacts-form__wrapper" for="tel2">Ваш телефон<span>*</span></label>
+            <input class="contacts-form__window contacts-form__window-ordering pay__window" type="tel" name="tel" id="tel2" placeholder="+7">
+            <img class="ordering__img" src="img/arrow-down.svg" width="9" height="6" alt="icon">
+          </div>
+
+          <button class="contacts-form__button contacts-form__button--rating" type="submit">Отправить</button>
+          <p class="pay__description-1">Нажимая кнопку «Отправить» я соглашаюсь с обработкой персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="overlay js-overlay-modal"></div>
 
   <!-- Меню -->
   <div class="mobile_menu_container">
