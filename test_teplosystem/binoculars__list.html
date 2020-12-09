@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://atuin.ru/demo/ui-slider/jquery-ui.min.js"></script>
+    <script src="https://atuin.ru/demo/ui-slider/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://atuin.ru/demo/ui-slider/jquery-ui.css"></script>
 
 
   </head>
@@ -553,11 +556,14 @@
                         <input class="binoculars-form__window binoculars-form__window--active" type="text" name="do" id="do0" placeholder="1 200 000">
                       </div>
                     </div>
-                    <div class="binoculars__line binoculars__line--active">
-                      <p class="line__active">
-                        <span class="line__prev"></span>
-                        <span class="line__next"></span>
-                      </p>
+                    <div class="polzunok-container-5 ">
+                      <label class="">
+                        <input type="text" class="polzunok-input-5-left binoculars-form__window">
+                      </label>
+                      <label class="">
+                        <input type="text" class="polzunok-input-5-right binoculars-form__window">
+                      </label>
+                      <div class="polzunok-5"></div>
                     </div>
                   </li>
                 </ul>
@@ -579,11 +585,14 @@
                         <input class="binoculars-form__window" type="text" name="do-2" id="do-02" placeholder="75">
                       </div>
                     </div>
-                    <div class="binoculars__line binoculars__line--2 binoculars__line--active">
-                      <p class="line__active line__active--2">
-                        <span class="line__prev"></span>
-                        <span class="line__next line__next--2"></span>
-                      </p>
+                    <div class="polzunok-container-1 ">
+                      <label class="">
+                        <input type="text" class="polzunok-input-1-left binoculars-form__window">
+                      </label>
+                      <label class="">
+                        <input type="text" class="polzunok-input-1-right binoculars-form__window">
+                      </label>
+                      <div class="polzunok-1"></div>
                     </div>
                   </li>
                 </ul>
@@ -773,11 +782,14 @@
                         <input class="binoculars-form__window" type="text" name="do-2" id="do-021" placeholder="75">
                       </div>
                     </div>
-                    <div class="binoculars__line binoculars__line--2 binoculars__line--active">
-                      <p class="line__active line__active--2">
-                        <span class="line__prev"></span>
-                        <span class="line__next line__next--2"></span>
-                      </p>
+                    <div class="polzunok-container-2 ">
+                      <label class="">
+                        <input type="text" class="polzunok-input-2-left binoculars-form__window">
+                      </label>
+                      <label class="">
+                        <input type="text" class="polzunok-input-2-right binoculars-form__window">
+                      </label>
+                      <div class="polzunok-2"></div>
                     </div>
                   </li>
                 </ul>
@@ -787,7 +799,7 @@
           </div>
           <div class="button-filter__wrapper">
             <button class="filter__button filter__button--1" type="submit" name="button-filter">Показать 72 товара</button>
-            <button class="filter__button filter__button--2" type="submit" name="button-filter">Сбросить </button>
+            <button class="filter__button filter__button--2" type="button" name="button-filter">Сбросить </button>
           </div>
 
         </form>
@@ -806,56 +818,66 @@
 
     <ul class="sale__list sale__list--mobile sale__list--sort">
       <li class="sale__item">
-        <div class="sale__wrapper">
-          <div class="sale__background">
-            <div class="sale__stars-list">
-              <p>
-                <a class="sale__stars-item sale__stars-item--active">
-                  <img src="img/star-active.svg" width="14" height="14" alt="star">
-                </a>
-              </p>
-              <p>
-                <a class="sale__stars-item sale__stars-item--active">
-                  <img src="img/star-active.svg" width="14" height="14" alt="star">
-                </a>
-              </p>
-              <p>
-                <a class="sale__stars-item sale__stars-item--active">
-                  <img src="img/star-active.svg" width="14" height="14" alt="star">
-                </a>
-              </p>
-              <p>
-                <a class="sale__stars-item sale__stars-item--active">
-                  <img src="img/star-active.svg" width="14" height="14" alt="star">
-                </a>
-              </p>
-              <p>
-                <a class="sale__stars-item">
-                  <img src="img/star.svg" width="14" height="14" alt="star">
-                </a>
-              </p>
+
+          <div class="sale__wrapper">
+
+            <div class="sale__background">
+              <div class="sale__stars-list">
+                <p>
+                  <a class="sale__stars-item sale__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="sale__stars-item sale__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="sale__stars-item sale__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="sale__stars-item sale__stars-item--active">
+                    <img src="img/star-active.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+                <p>
+                  <a class="sale__stars-item">
+                    <img src="img/star.svg" width="14" height="14" alt="star">
+                  </a>
+                </p>
+              </div>
+              <a href="product.html">
+                <picture>
+                  <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
+                  <img class="sale__img-header sale__img-header--1" src="img/axion1.png" alt="axios">
+                </picture>
+              </a>
             </div>
-            <picture>
-              <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
-              <img class="sale__img-header sale__img-header--1" src="img/axion1.png" alt="axios">
-            </picture>
-          </div>
-          <div class="sale__wrapper-title">
-            <div class="recently-watched__container">
-              <img src="img/stock.svg" width="16" height="16" alt="stock">
-              <p class="recently-watched__stock">В наличии</p>
+
+            <div class="sale__wrapper-title">
+              <div class="recently-watched__container">
+                <img src="img/stock.svg" width="16" height="16" alt="stock">
+                <p class="recently-watched__stock">В наличии</p>
+              </div>
+              <h1 class="sale__header-list">Тепловизионный прицел Инфратех ИТ-315</h1>
+              <p class="sale__cost">879 000 руб.</p>
             </div>
-            <h1 class="sale__header-list">Тепловизионный прицел Инфратех ИТ-315</h1>
-            <p class="sale__cost">879 000 руб.</p>
           </div>
-        </div>
+
         <div class="sale__container">
           <button class="sale__button" type="button">В корзину</button>
           <a class="sale__icon">
-            <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
+            <svg class="active__icon" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 16.6666V8.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15 16.6666V3.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M5 16.6666V13.3333" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
           </a>
           <a class="sale__icon">
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="active__icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.8933 2.07333C13.5528 1.73267 13.1485 1.46243 12.7036 1.27805C12.2586 1.09368 11.7817 0.998779 11.3 0.998779C10.8183 0.998779 10.3414 1.09368 9.89643 1.27805C9.45146 1.46243 9.04717 1.73267 8.70667 2.07333L8 2.78L7.29333 2.07333C6.60554 1.38554 5.67269 0.999136 4.7 0.999136C3.72731 0.999136 2.79446 1.38554 2.10667 2.07333C1.41887 2.76112 1.03247 3.69397 1.03247 4.66666C1.03247 5.63935 1.41887 6.5722 2.10667 7.26L2.81333 7.96666L8 13.1533L13.1867 7.96666L13.8933 7.26C14.234 6.91949 14.5042 6.51521 14.6886 6.07023C14.873 5.62526 14.9679 5.14832 14.9679 4.66666C14.9679 4.185 14.873 3.70807 14.6886 3.26309C14.5042 2.81812 14.234 2.41383 13.8933 2.07333V2.07333Z" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
           </a>
@@ -893,10 +915,12 @@
                 </a>
               </p>
             </div>
+            <a href="product.html">
             <picture>
               <source srcset="img/sale2@2x.png 2x, img/sale2.png 1x">
               <img class="sale__img-header" src="img/sale2.png" alt="axios">
             </picture>
+            </a>
           </div>
           <div class="sale__wrapper-title">
             <div class="recently-watched__container">
@@ -911,10 +935,14 @@
         <div class="sale__container">
           <button class="sale__button" type="button">В корзину</button>
           <a class="sale__icon">
-            <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
+            <svg class="active__icon" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 16.6666V8.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15 16.6666V3.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M5 16.6666V13.3333" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
           </a>
           <a class="sale__icon">
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="active__icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.8933 2.07333C13.5528 1.73267 13.1485 1.46243 12.7036 1.27805C12.2586 1.09368 11.7817 0.998779 11.3 0.998779C10.8183 0.998779 10.3414 1.09368 9.89643 1.27805C9.45146 1.46243 9.04717 1.73267 8.70667 2.07333L8 2.78L7.29333 2.07333C6.60554 1.38554 5.67269 0.999136 4.7 0.999136C3.72731 0.999136 2.79446 1.38554 2.10667 2.07333C1.41887 2.76112 1.03247 3.69397 1.03247 4.66666C1.03247 5.63935 1.41887 6.5722 2.10667 7.26L2.81333 7.96666L8 13.1533L13.1867 7.96666L13.8933 7.26C14.234 6.91949 14.5042 6.51521 14.6886 6.07023C14.873 5.62526 14.9679 5.14832 14.9679 4.66666C14.9679 4.185 14.873 3.70807 14.6886 3.26309C14.5042 2.81812 14.234 2.41383 13.8933 2.07333V2.07333Z" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
           </a>
@@ -952,10 +980,12 @@
                 </a>
               </p>
             </div>
+            <a href="product.html">
             <picture>
               <source srcset="img/sale3@2x.png 2x, img/sale3.png 1x">
               <img class="sale__img-header sale__img-header--1" src="img/sale3.png" alt="sale">
             </picture>
+            </a>
           </div>
           <div class="sale__wrapper-title">
             <div class="recently-watched__container recently-watched__container--order">
@@ -969,10 +999,14 @@
         <div class="sale__container">
           <button class="sale__button" type="button">В корзину</button>
           <a class="sale__icon">
-            <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
+            <svg class="active__icon" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 16.6666V8.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15 16.6666V3.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M5 16.6666V13.3333" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
           </a>
           <a class="sale__icon">
-            <svg class="sale__favorite--1--active" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="active__icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.8933 2.07333C13.5528 1.73267 13.1485 1.46243 12.7036 1.27805C12.2586 1.09368 11.7817 0.998779 11.3 0.998779C10.8183 0.998779 10.3414 1.09368 9.89643 1.27805C9.45146 1.46243 9.04717 1.73267 8.70667 2.07333L8 2.78L7.29333 2.07333C6.60554 1.38554 5.67269 0.999136 4.7 0.999136C3.72731 0.999136 2.79446 1.38554 2.10667 2.07333C1.41887 2.76112 1.03247 3.69397 1.03247 4.66666C1.03247 5.63935 1.41887 6.5722 2.10667 7.26L2.81333 7.96666L8 13.1533L13.1867 7.96666L13.8933 7.26C14.234 6.91949 14.5042 6.51521 14.6886 6.07023C14.873 5.62526 14.9679 5.14832 14.9679 4.66666C14.9679 4.185 14.873 3.70807 14.6886 3.26309C14.5042 2.81812 14.234 2.41383 13.8933 2.07333V2.07333Z" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
           </a>
@@ -1010,10 +1044,12 @@
                 </a>
               </p>
             </div>
+            <a href="product.html">
             <picture>
               <source srcset="img/sale4@2x.png 2x, img/sale4.png 1x">
               <img class="sale__img-header sale__img-header--1" src="img/sale4.png" alt="axios">
             </picture>
+            </a>
           </div>
           <div class="sale__wrapper-title">
             <div class="recently-watched__container recently-watched__container--not">
@@ -1025,17 +1061,21 @@
           </div>
         </div>
         <div class="sale__container">
-          <button class="sale__button sale__button--not" type="button">В корзину</button>
+          <button class="sale__button sale__button--not js-open-modal" type="button" data-modal="1">Уведомить</button>
           <a class="sale__icon">
-            <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
+            <svg class="active__icon" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 16.6666V8.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15 16.6666V3.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M5 16.6666V13.3333" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
           </a>
           <a class="sale__icon">
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="active__icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.8933 2.07333C13.5528 1.73267 13.1485 1.46243 12.7036 1.27805C12.2586 1.09368 11.7817 0.998779 11.3 0.998779C10.8183 0.998779 10.3414 1.09368 9.89643 1.27805C9.45146 1.46243 9.04717 1.73267 8.70667 2.07333L8 2.78L7.29333 2.07333C6.60554 1.38554 5.67269 0.999136 4.7 0.999136C3.72731 0.999136 2.79446 1.38554 2.10667 2.07333C1.41887 2.76112 1.03247 3.69397 1.03247 4.66666C1.03247 5.63935 1.41887 6.5722 2.10667 7.26L2.81333 7.96666L8 13.1533L13.1867 7.96666L13.8933 7.26C14.234 6.91949 14.5042 6.51521 14.6886 6.07023C14.873 5.62526 14.9679 5.14832 14.9679 4.66666C14.9679 4.185 14.873 3.70807 14.6886 3.26309C14.5042 2.81812 14.234 2.41383 13.8933 2.07333V2.07333Z" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
           </a>
         </div>
-        <button class="sale__button-pay sale__button-pay--not" type="button">Купить в 1 клик</button>
+        <button class="sale__button-pay sale__button-pay--not" type="button" disabled="">Купить в 1 клик</button>
 
       </li>
       <li class="sale__item">
@@ -1068,10 +1108,12 @@
                 </a>
               </p>
             </div>
+            <a href="product.html">
             <picture>
               <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
               <img class="sale__img-header sale__img-header--1" src="img/axion1.png" alt="axios">
             </picture>
+            </a>
           </div>
           <div class="sale__wrapper-title">
             <div class="recently-watched__container">
@@ -1086,10 +1128,14 @@
         <div class="sale__container">
           <button class="sale__button" type="button">В корзину</button>
           <a class="sale__icon">
-            <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
+            <svg class="active__icon" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 16.6666V8.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15 16.6666V3.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M5 16.6666V13.3333" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
           </a>
           <a class="sale__icon">
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="active__icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.8933 2.07333C13.5528 1.73267 13.1485 1.46243 12.7036 1.27805C12.2586 1.09368 11.7817 0.998779 11.3 0.998779C10.8183 0.998779 10.3414 1.09368 9.89643 1.27805C9.45146 1.46243 9.04717 1.73267 8.70667 2.07333L8 2.78L7.29333 2.07333C6.60554 1.38554 5.67269 0.999136 4.7 0.999136C3.72731 0.999136 2.79446 1.38554 2.10667 2.07333C1.41887 2.76112 1.03247 3.69397 1.03247 4.66666C1.03247 5.63935 1.41887 6.5722 2.10667 7.26L2.81333 7.96666L8 13.1533L13.1867 7.96666L13.8933 7.26C14.234 6.91949 14.5042 6.51521 14.6886 6.07023C14.873 5.62526 14.9679 5.14832 14.9679 4.66666C14.9679 4.185 14.873 3.70807 14.6886 3.26309C14.5042 2.81812 14.234 2.41383 13.8933 2.07333V2.07333Z" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
           </a>
@@ -1116,10 +1162,12 @@
         <li class="sale-tablet__item">
           <div class="sale__item--tablet--wrapper bin__list-wrapper sale-tablet__item-1">
             <div class="bin__list__background">
+              <a href="product.html">
               <picture>
                 <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
                 <img class="sale__img-header" src="img/axion1.png" alt="axios">
               </picture>
+              </a>
             </div>
 
             <div class="bin__list__wrapper-title sort-tablet-wrapper">
@@ -1188,10 +1236,12 @@
         <li class="sale-tablet__item">
           <div class="sale__item--tablet--wrapper bin__list-wrapper sale-tablet__item-1">
             <div class="bin__list__background">
+              <a href="product.html">
               <picture>
                 <source srcset="img/img2@2x.png 2x, img/img2.png 1x">
                 <img class="sale__img-header" src="img/img2.png" alt="axios">
               </picture>
+              </a>
             </div>
 
             <div class="bin__list__wrapper-title sort-tablet-wrapper">
@@ -1261,10 +1311,12 @@
         <li class="sale-tablet__item">
           <div class="sale__item--tablet--wrapper bin__list-wrapper sale-tablet__item-1">
             <div class="bin__list__background">
+              <a href="product.html">
               <picture>
                 <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
                 <img class="sale__img-header" src="img/axion1.png" alt="axios">
               </picture>
+              </a>
             </div>
 
             <div class="bin__list__wrapper-title sort-tablet-wrapper">
@@ -1321,8 +1373,8 @@
                 </a>
               </div>
               <div class="bin__list-button-wrapper sort-tablet-wrapper-2 sort-tablet-wrapper-2--1">
-                <button class="sale__button sale__button--tablet sale__button--notify" type="button">Уведомить</button>
-                <button class="sale__button-pay--tablet sale__button-pay--tablet--bin bin__list-pay sort-tablet-button-2" type="button">Купить в 1 клик</button>
+                <button class="sale__button sale__button--tablet sale__button--notify js-open-modal" type="button" data-modal="1">Уведомить</button>
+                <button class="sale__button-pay--tablet sale__button-pay--tablet--bin bin__list-pay sort-tablet-button-2" type="button" disabled="">Купить в 1 клик</button>
               </div>
 
             </div>
@@ -1333,10 +1385,12 @@
         <li class="sale-tablet__item">
           <div class="sale__item--tablet--wrapper bin__list-wrapper sale-tablet__item-1">
             <div class="bin__list__background">
+              <a href="product.html">
               <picture>
                 <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
                 <img class="sale__img-header" src="img/axion1.png" alt="axios">
               </picture>
+              </a>
               <p class="bin-news">Новинка</p>
             </div>
 
@@ -1406,10 +1460,12 @@
         <li class="sale-tablet__item">
           <div class="sale__item--tablet--wrapper bin__list-wrapper sale-tablet__item-1">
             <div class="bin__list__background">
+              <a href="product.html">
               <picture>
                 <source srcset="img/img2@2x.png 2x, img/img2.png 1x">
                 <img class="sale__img-header" src="img/img2.png" alt="axios">
               </picture>
+              </a>
             </div>
 
             <div class="bin__list__wrapper-title sort-tablet-wrapper">
@@ -1595,11 +1651,15 @@
                         <input class="binoculars-form__window binoculars-form__window--active" type="text" name="do" id="do" placeholder="1 200 000">
                       </div>
                     </div>
-                    <div class="binoculars__line binoculars__line--active">
-                      <p class="line__active">
-                        <span class="line__prev"></span>
-                        <span class="line__next"></span>
-                      </p>
+
+                    <div class="polzunok-container-5 ">
+                      <label class="">
+                        <input type="text" class="polzunok-input-5-left binoculars-form__window">
+                      </label>
+                      <label class="">
+                        <input type="text" class="polzunok-input-5-right binoculars-form__window">
+                      </label>
+                      <div class="polzunok-5"></div>
                     </div>
                   </li>
                 </ul>
@@ -1621,11 +1681,15 @@
                         <input class="binoculars-form__window" type="text" name="do-2" id="do-2" placeholder="75">
                       </div>
                     </div>
-                    <div class="binoculars__line binoculars__line--2 binoculars__line--active">
-                      <p class="line__active line__active--2">
-                        <span class="line__prev"></span>
-                        <span class="line__next line__next--2"></span>
-                      </p>
+
+                    <div class="polzunok-container-1 ">
+                      <label class="">
+                        <input type="text" class="polzunok-input-1-left binoculars-form__window">
+                      </label>
+                      <label class="">
+                        <input type="text" class="polzunok-input-1-right binoculars-form__window">
+                      </label>
+                      <div class="polzunok-1"></div>
                     </div>
                   </li>
                 </ul>
@@ -1789,7 +1853,7 @@
               </li>
 
               <li class="binoculars__item">
-                <input type="checkbox" name="group-6" id="group-6" checked="">
+                <input type="checkbox" name="group-6" id="group-6">
                 <label class="binoculars__title" for="group-6">Скрытая категория</label>
 
                 <ul class="binoculars__list-second">
@@ -1815,11 +1879,14 @@
                         <input class="binoculars-form__window" type="text" name="do-2" id="do-21" placeholder="75">
                       </div>
                     </div>
-                    <div class="binoculars__line binoculars__line--2 binoculars__line--active">
-                      <p class="line__active line__active--2">
-                        <span class="line__prev"></span>
-                        <span class="line__next line__next--2"></span>
-                      </p>
+                    <div class="polzunok-container-2 ">
+                      <label class="">
+                        <input type="text" class="polzunok-input-2-left binoculars-form__window">
+                      </label>
+                      <label class="">
+                        <input type="text" class="polzunok-input-2-right binoculars-form__window">
+                      </label>
+                      <div class="polzunok-2"></div>
                     </div>
                   </li>
                 </ul>
@@ -1834,10 +1901,12 @@
             <li class="sale__item sale__item--tablet sale__item--binoculars sale__item__bin__list">
               <div class="sale__item--tablet--wrapper bin__list-wrapper">
                 <div class="bin__list__background">
+                  <a href="product.html">
                   <picture>
                     <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
                     <img class="sale__img-header sale__img-header--tablet sale__img-header--bin__list" src="img/axion1.png" alt="axios">
                   </picture>
+                  </a>
                   <div class="sale__stars-list sale__stars-list--bin">
                     <p>
                       <a class="sale__stars-item sale__stars-item--active">
@@ -1895,18 +1964,18 @@
 
                 <div class="sale__container bin__container">
                   <div class="sale__chart sale__chart--bin">
-                    <svg class="bin__list__favorite--svg bin__list__favorite--svg--active" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="bin__list__favorite--svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10 16.6666V8.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
                       <path d="M15 16.6666V3.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
                       <path d="M5 16.6666V13.3333" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
-                    <p class="sale__chart-title sale__chart-title--active">Сравнение</p>
+                    <p class="sale__chart-title">Сравнение</p>
                   </div>
                   <a class="bin__list__favorite">
-                    <svg class="bin__list__favorite--svg bin__list__favorite--svg--active" width="20" height="18" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="bin__list__favorite--svg" width="20" height="18" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M13.8933 2.07333C13.5528 1.73267 13.1485 1.46243 12.7036 1.27805C12.2586 1.09368 11.7817 0.998779 11.3 0.998779C10.8183 0.998779 10.3414 1.09368 9.89643 1.27805C9.45146 1.46243 9.04717 1.73267 8.70667 2.07333L8 2.78L7.29333 2.07333C6.60554 1.38554 5.67269 0.999136 4.7 0.999136C3.72731 0.999136 2.79446 1.38554 2.10667 2.07333C1.41887 2.76112 1.03247 3.69397 1.03247 4.66666C1.03247 5.63935 1.41887 6.5722 2.10667 7.26L2.81333 7.96666L8 13.1533L13.1867 7.96666L13.8933 7.26C14.234 6.91949 14.5042 6.51521 14.6886 6.07023C14.873 5.62526 14.9679 5.14832 14.9679 4.66666C14.9679 4.185 14.873 3.70807 14.6886 3.26309C14.5042 2.81812 14.234 2.41383 13.8933 2.07333V2.07333Z" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
-                    <p class="bin__list-fav bin__list-fav--active">В избранном</p>
+                    <p class="bin__list-fav">В избранном</p>
                   </a>
                   <div class="bin__list-button-wrapper">
                     <img class="bin__mark" src="img/checkmark.svg" width="13" height="11" alt="mark">
@@ -1922,10 +1991,12 @@
             <li class="sale__item sale__item--tablet sale__item--binoculars sale__item__bin__list">
               <div class="sale__item--tablet--wrapper bin__list-wrapper">
                 <div class="bin__list__background">
+                  <a href="product.html">
                   <picture>
                     <source srcset="img/img2@2x.png 2x, img/img2.png 1x">
                     <img class="sale__img-header sale__img-header--binoculars sale__img-header--bin__list" src="img/img2.png" alt="axios">
                   </picture>
+                  </a>
                   <div class="sale__stars-list sale__stars-list--bin">
                     <p>
                       <a class="sale__stars-item sale__stars-item--active">
@@ -2012,10 +2083,12 @@
             <li class="sale__item sale__item--tablet sale__item--binoculars sale__item__bin__list">
               <div class="sale__item--tablet--wrapper bin__list-wrapper">
                 <div class="bin__list__background">
+                  <a href="product.html">
                   <picture>
                     <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
                     <img class="sale__img-header sale__img-header--tablet sale__img-header--bin__list" src="img/axion1.png" alt="axios">
                   </picture>
+                  </a>
                   <div class="sale__stars-list sale__stars-list--bin">
                     <p>
                       <a class="sale__stars-item sale__stars-item--active">
@@ -2087,8 +2160,8 @@
                     <p class="bin__list-fav">В избранном</p>
                   </a>
                   <div class="bin__list-button-wrapper">
-                    <button class="sale__button sale__button--tablet sale__button--notify" type="button">Уведомить</button>
-                    <button class="sale__button-pay--tablet sale__button-pay--tablet--bin bin__list-pay" type="button">Купить в один клик</button>
+                    <button class="sale__button sale__button--tablet sale__button--notify js-open-modal" type="button" data-modal="1">Уведомить</button>
+                    <button class="sale__button-pay--tablet sale__button-pay--tablet--bin bin__list-pay" type="button" disabled="">Купить в один клик</button>
                   </div>
 
                 </div>
@@ -2099,10 +2172,12 @@
             <li class="sale__item sale__item--tablet sale__item--binoculars sale__item__bin__list">
               <div class="sale__item--tablet--wrapper bin__list-wrapper">
                 <div class="bin__list__background">
+                  <a href="product.html">
                   <picture>
                     <source srcset="img/bin-4@2x.png 2x, img/bin-4.png 1x">
                     <img class="sale__img-header sale__img-header--binoculars sale__img-header--bin__list" src="img/bin-4.png" alt="axios">
                   </picture>
+                  </a>
                   <div class="sale__stars-list sale__stars-list--bin">
                     <p>
                       <a class="sale__stars-item sale__stars-item--active">
@@ -2187,10 +2262,12 @@
             <li class="sale__item sale__item--tablet sale__item--binoculars sale__item__bin__list">
               <div class="sale__item--tablet--wrapper bin__list-wrapper">
                 <div class="bin__list__background">
+                  <a href="product.html">
                   <picture>
                     <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
                     <img class="sale__img-header sale__img-header--tablet sale__img-header--bin__list" src="img/axion1.png" alt="axios">
                   </picture>
+                  </a>
                   <div class="sale__stars-list sale__stars-list--bin">
                     <p>
                       <a class="sale__stars-item sale__stars-item--active">
@@ -2276,10 +2353,12 @@
             <li class="sale__item sale__item--tablet sale__item--binoculars sale__item__bin__list">
               <div class="sale__item--tablet--wrapper bin__list-wrapper">
                 <div class="bin__list__background">
+                  <a href="product.html">
                   <picture>
                     <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
                     <img class="sale__img-header sale__img-header--tablet sale__img-header--bin__list" src="img/axion1.png" alt="axios">
                   </picture>
+                  </a>
                   <div class="sale__stars-list sale__stars-list--bin">
                     <p>
                       <a class="sale__stars-item sale__stars-item--active">
@@ -2364,10 +2443,12 @@
             <li class="sale__item sale__item--tablet sale__item--binoculars sale__item__bin__list">
               <div class="sale__item--tablet--wrapper bin__list-wrapper">
                 <div class="bin__list__background">
+                  <a href="product.html">
                   <picture>
                     <source srcset="img/axion1@2x.png 2x, img/axion1.png 1x">
                     <img class="sale__img-header sale__img-header--tablet sale__img-header--bin__list" src="img/axion1.png" alt="axios">
                   </picture>
+                  </a>
                   <div class="sale__stars-list sale__stars-list--bin">
                     <p>
                       <a class="sale__stars-item sale__stars-item--active">
@@ -3892,6 +3973,12 @@
   <div class="overlay js-overlay-modal"></div>
 
 
+  <script>
+   
+  </script>
+  <script src="js/filter.js"></script>
+  <script src="js/filter2.js"></script>
+  <script src="js/filter3.js"></script>
   <script src="js/modal.js"></script>
   <script>
     $(document).ready(function(){

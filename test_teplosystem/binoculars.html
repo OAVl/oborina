@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://atuin.ru/demo/ui-slider/jquery-ui.min.js"></script>
+    <script src="https://atuin.ru/demo/ui-slider/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://atuin.ru/demo/ui-slider/jquery-ui.css"></script>
+
 
 
   </head>
@@ -553,11 +557,14 @@
                         <input class="binoculars-form__window binoculars-form__window--active" type="text" name="do" id="do0" placeholder="1 200 000">
                       </div>
                     </div>
-                    <div class="binoculars__line binoculars__line--active">
-                      <p class="line__active">
-                        <span class="line__prev"></span>
-                        <span class="line__next"></span>
-                      </p>
+                    <div class="polzunok-container-5 ">
+                      <label class="">
+                        <input type="text" class="polzunok-input-5-left binoculars-form__window">
+                      </label>
+                      <label class="">
+                        <input type="text" class="polzunok-input-5-right binoculars-form__window">
+                      </label>
+                      <div class="polzunok-5"></div>
                     </div>
                   </li>
                 </ul>
@@ -579,11 +586,14 @@
                         <input class="binoculars-form__window" type="text" name="do-2" id="do-02" placeholder="75">
                       </div>
                     </div>
-                    <div class="binoculars__line binoculars__line--2 binoculars__line--active">
-                      <p class="line__active line__active--2">
-                        <span class="line__prev"></span>
-                        <span class="line__next line__next--2"></span>
-                      </p>
+                    <div class="polzunok-container-1 ">
+                      <label class="">
+                        <input type="text" class="polzunok-input-1-left binoculars-form__window">
+                      </label>
+                      <label class="">
+                        <input type="text" class="polzunok-input-1-right binoculars-form__window">
+                      </label>
+                      <div class="polzunok-1"></div>
                     </div>
                   </li>
                 </ul>
@@ -773,11 +783,14 @@
                         <input class="binoculars-form__window" type="text" name="do-2" id="do-021" placeholder="75">
                       </div>
                     </div>
-                    <div class="binoculars__line binoculars__line--2 binoculars__line--active">
-                      <p class="line__active line__active--2">
-                        <span class="line__prev"></span>
-                        <span class="line__next line__next--2"></span>
-                      </p>
+                    <div class="polzunok-container-2 ">
+                      <label class="">
+                        <input type="text" class="polzunok-input-2-left binoculars-form__window">
+                      </label>
+                      <label class="">
+                        <input type="text" class="polzunok-input-2-right binoculars-form__window">
+                      </label>
+                      <div class="polzunok-2"></div>
                     </div>
                   </li>
                 </ul>
@@ -787,7 +800,7 @@
           </div>
           <div class="button-filter__wrapper">
             <button class="filter__button filter__button--1" type="submit" name="button-filter">Показать 72 товара</button>
-            <button class="filter__button filter__button--2" type="submit" name="button-filter">Сбросить </button>
+            <button class="filter__button filter__button--2" type="button" name="button-filter">Сбросить </button>
           </div>
 
         </form>
@@ -1095,7 +1108,7 @@
             <p class="sale__cost sale__cost--tablet">879 000 руб.</p>
           </div>
           <div class="sale__container">
-            <button class="sort__button-bag sort__button-bag--notify" type="button">Уведомить</button>
+            <button class="sort__button-bag sort__button-bag--notify js-open-modal" type="button" data-modal="1">Уведомить</button>
             <a class="sale__favorite">
               <svg class="sale__favorite--svg" width="14" height="12" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.8933 2.07333C13.5528 1.73267 13.1485 1.46243 12.7036 1.27805C12.2586 1.09368 11.7817 0.998779 11.3 0.998779C10.8183 0.998779 10.3414 1.09368 9.89643 1.27805C9.45146 1.46243 9.04717 1.73267 8.70667 2.07333L8 2.78L7.29333 2.07333C6.60554 1.38554 5.67269 0.999136 4.7 0.999136C3.72731 0.999136 2.79446 1.38554 2.10667 2.07333C1.41887 2.76112 1.03247 3.69397 1.03247 4.66666C1.03247 5.63935 1.41887 6.5722 2.10667 7.26L2.81333 7.96666L8 13.1533L13.1867 7.96666L13.8933 7.26C14.234 6.91949 14.5042 6.51521 14.6886 6.07023C14.873 5.62526 14.9679 5.14832 14.9679 4.66666C14.9679 4.185 14.873 3.70807 14.6886 3.26309C14.5042 2.81812 14.234 2.41383 13.8933 2.07333V2.07333Z" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1103,7 +1116,7 @@
             </a>
           </div>
         </a>
-        <button class="sort__button sort__button--notify" type="button">Купить в 1 клик</button>
+        <button class="sort__button sort__button--notify" type="button" disabled="">Купить в 1 клик</button>
 
       </li>
       <li class="sort__item">
@@ -1309,7 +1322,7 @@
             <div class="sale__background">
               <div class="sale__chart">
                 <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                <p class="sale__chart-title">Сравнить</p>
+                <a class="sale__chart-title">Сравнить</a>
               </div>
 
               <picture>
@@ -1370,7 +1383,7 @@
             <div class="sale__background">
               <div class="sale__chart">
                 <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                <p class="sale__chart-title">Сравнить</p>
+                <a class="sale__chart-title">Сравнить</a>
               </div>
 
               <picture>
@@ -1431,7 +1444,7 @@
             <div class="sale__background">
               <div class="sale__chart">
                 <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                <p class="sale__chart-title">Сравнить</p>
+                <a class="sale__chart-title">Сравнить</a>
               </div>
 
               <picture>
@@ -1492,7 +1505,7 @@
             <div class="sale__background">
               <div class="sale__chart">
                 <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                <p class="sale__chart-title">Сравнить</p>
+                <a class="sale__chart-title">Сравнить</a>
               </div>
 
               <picture>
@@ -1557,7 +1570,7 @@
             <div class="sale__background">
               <div class="sale__chart">
                 <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                <p class="sale__chart-title">Сравнить</p>
+                <a class="sale__chart-title">Сравнить</a>
               </div>
               <picture>
                 <source media="(min-width: 1110px)" srcset="img/1-desktop@2x.png 2x, img/1-desktop.png 1x">
@@ -1618,7 +1631,7 @@
             <div class="sale__background">
               <div class="sale__chart">
                 <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                <p class="sale__chart-title">Сравнить</p>
+                <a class="sale__chart-title">Сравнить</a>
               </div>
               <picture>
                 <source srcset="img/img3@2x.png 2x, img/img3.png 1x">
@@ -1662,7 +1675,7 @@
               <p class="sale__cost sale__cost--tablet">879 000 руб.</p>
             </a>
             <div class="sale__container">
-              <button class="sale__button sale__button--tablet sale__button--notify" type="button">Уведомить</button>
+              <button class="sale__button sale__button--tablet sale__button--notify js-open-modal" type="button" data-modal="1">Уведомить</button>
               <a class="sale__favorite">
                 <svg class="sale__favorite--svg" width="20" height="18" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M13.8933 2.07333C13.5528 1.73267 13.1485 1.46243 12.7036 1.27805C12.2586 1.09368 11.7817 0.998779 11.3 0.998779C10.8183 0.998779 10.3414 1.09368 9.89643 1.27805C9.45146 1.46243 9.04717 1.73267 8.70667 2.07333L8 2.78L7.29333 2.07333C6.60554 1.38554 5.67269 0.999136 4.7 0.999136C3.72731 0.999136 2.79446 1.38554 2.10667 2.07333C1.41887 2.76112 1.03247 3.69397 1.03247 4.66666C1.03247 5.63935 1.41887 6.5722 2.10667 7.26L2.81333 7.96666L8 13.1533L13.1867 7.96666L13.8933 7.26C14.234 6.91949 14.5042 6.51521 14.6886 6.07023C14.873 5.62526 14.9679 5.14832 14.9679 4.66666C14.9679 4.185 14.873 3.70807 14.6886 3.26309C14.5042 2.81812 14.234 2.41383 13.8933 2.07333V2.07333Z" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1670,7 +1683,7 @@
               </a>
             </div>
           </div>
-          <button class="sale__button-pay--tablet sale__button-pay--tablet--bin sort-tablet__button" type="button">Купить в один клик</button>
+          <button class="sale__button-pay--tablet sale__button-pay--tablet--bin sort-tablet__button" type="button" disabled="">Купить в один клик</button>
 
         </li>
         <li class="sale__item sale__item--tablet sort__item--tablet">
@@ -1678,7 +1691,7 @@
             <div class="sale__background">
               <div class="sale__chart">
                 <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                <p class="sale__chart-title">Сравнить</p>
+                <a class="sale__chart-title">Сравнить</a>
               </div>
 
               <picture>
@@ -1740,7 +1753,7 @@
             <div class="sale__background">
               <div class="sale__chart">
                 <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                <p class="sale__chart-title">Сравнить</p>
+                <a class="sale__chart-title">Сравнить</a>
               </div>
 
               <picture>
@@ -1802,7 +1815,7 @@
             <div class="sale__background">
               <div class="sale__chart">
                 <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                <p class="sale__chart-title">Сравнить</p>
+                <a class="sale__chart-title">Сравнить</a>
               </div>
 
               <picture>
@@ -1979,11 +1992,15 @@
                         <input class="binoculars-form__window binoculars-form__window--active" type="text" name="do" id="do" placeholder="1 200 000">
                       </div>
                     </div>
-                    <div class="binoculars__line binoculars__line--active">
-                      <p class="line__active">
-                        <span class="line__prev"></span>
-                        <span class="line__next"></span>
-                      </p>
+
+                    <div class="polzunok-container-5 ">
+                      <label class="">
+                        <input type="text" class="polzunok-input-5-left binoculars-form__window">
+                      </label>
+                      <label class="">
+                        <input type="text" class="polzunok-input-5-right binoculars-form__window">
+                      </label>
+                      <div class="polzunok-5"></div>
                     </div>
                   </li>
                 </ul>
@@ -2005,11 +2022,15 @@
                         <input class="binoculars-form__window" type="text" name="do-2" id="do-2" placeholder="75">
                       </div>
                     </div>
-                    <div class="binoculars__line binoculars__line--2 binoculars__line--active">
-                      <p class="line__active line__active--2">
-                        <span class="line__prev"></span>
-                        <span class="line__next line__next--2"></span>
-                      </p>
+
+                    <div class="polzunok-container-1 ">
+                      <label class="">
+                        <input type="text" class="polzunok-input-1-left binoculars-form__window">
+                      </label>
+                      <label class="">
+                        <input type="text" class="polzunok-input-1-right binoculars-form__window">
+                      </label>
+                      <div class="polzunok-1"></div>
                     </div>
                   </li>
                 </ul>
@@ -2173,7 +2194,7 @@
               </li>
 
               <li class="binoculars__item">
-                <input type="checkbox" name="group-6" id="group-6" checked="">
+                <input type="checkbox" name="group-6" id="group-6">
                 <label class="binoculars__title" for="group-6">Скрытая категория</label>
 
                 <ul class="binoculars__list-second">
@@ -2199,11 +2220,14 @@
                         <input class="binoculars-form__window" type="text" name="do-2" id="do-21" placeholder="75">
                       </div>
                     </div>
-                    <div class="binoculars__line binoculars__line--2 binoculars__line--active">
-                      <p class="line__active line__active--2">
-                        <span class="line__prev"></span>
-                        <span class="line__next line__next--2"></span>
-                      </p>
+                    <div class="polzunok-container-2 ">
+                      <label class="">
+                        <input type="text" class="polzunok-input-2-left binoculars-form__window">
+                      </label>
+                      <label class="">
+                        <input type="text" class="polzunok-input-2-right binoculars-form__window">
+                      </label>
+                      <div class="polzunok-2"></div>
                     </div>
                   </li>
                 </ul>
@@ -2220,7 +2244,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -2281,7 +2305,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -2345,8 +2369,12 @@
               <div class="sale__item--tablet--wrapper">
                 <div class="sale__background">
                   <div class="sale__chart">
-                    <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <svg class="sale__chart-svg" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 16.6666V8.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M15 16.6666V3.33325" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M5 16.6666V13.3333" stroke="#333333" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
                   <picture>
                     <source srcset="img/img3@2x.png 2x, img/img3.png 1x">
@@ -2390,7 +2418,7 @@
                   <p class="sale__cost sale__cost--tablet">879 000 руб.</p>
                 </a>
                 <div class="sale__container">
-                  <button class="sale__button sale__button--tablet sale__button--notify" type="button">Уведомить</button>
+                  <button class="sale__button sale__button--tablet sale__button--notify js-open-modal" type="button" data-modal="1">Уведомить</button>
                   <a class="sale__favorite">
                     <svg class="sale__favorite--svg" width="20" height="18" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M13.8933 2.07333C13.5528 1.73267 13.1485 1.46243 12.7036 1.27805C12.2586 1.09368 11.7817 0.998779 11.3 0.998779C10.8183 0.998779 10.3414 1.09368 9.89643 1.27805C9.45146 1.46243 9.04717 1.73267 8.70667 2.07333L8 2.78L7.29333 2.07333C6.60554 1.38554 5.67269 0.999136 4.7 0.999136C3.72731 0.999136 2.79446 1.38554 2.10667 2.07333C1.41887 2.76112 1.03247 3.69397 1.03247 4.66666C1.03247 5.63935 1.41887 6.5722 2.10667 7.26L2.81333 7.96666L8 13.1533L13.1867 7.96666L13.8933 7.26C14.234 6.91949 14.5042 6.51521 14.6886 6.07023C14.873 5.62526 14.9679 5.14832 14.9679 4.66666C14.9679 4.185 14.873 3.70807 14.6886 3.26309C14.5042 2.81812 14.234 2.41383 13.8933 2.07333V2.07333Z" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -2406,7 +2434,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -2467,7 +2495,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -2529,7 +2557,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -2591,7 +2619,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -2652,7 +2680,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -2713,7 +2741,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -2774,7 +2802,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -2835,7 +2863,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -2896,7 +2924,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -2957,7 +2985,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -3018,7 +3046,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -3079,7 +3107,7 @@
                 <div class="sale__background">
                   <div class="sale__chart">
                     <img src="img/bar-chart.svg" width="16" height="16" alt="chart">
-                    <p class="sale__chart-title">Сравнить</p>
+                    <a class="sale__chart-title">Сравнить</a>
                   </div>
 
                   <picture>
@@ -4579,7 +4607,9 @@
   </div>
   <div class="overlay js-overlay-modal"></div>
 
-
+<script src="js/filter.js"></script>
+  <script src="js/filter2.js"></script>
+  <script src="js/filter3.js"></script>
   <script src="js/modal.js"></script>
   <script>
     $(document).ready(function(){
