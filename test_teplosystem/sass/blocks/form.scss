@@ -1,0 +1,141 @@
+.form__application {
+  background: #F2F2F2;
+  border-radius: 7px;
+  width: 346px;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: -320px;
+}
+
+.application__header {
+  margin: 0;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  color: #333333;
+  padding-bottom: 15px;
+  padding-top: 30px;
+}
+
+.application__description {
+  margin: 0;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #333333;
+  width: 265px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 346px;
+}
+
+.form__window {
+  padding: 16px 170px 16px 20px;
+  width: 125px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 15px;
+  line-height: 16px;
+  color: #828282;
+}
+
+.form__button {
+  border: none;
+  padding: 14px 89.5px;
+  cursor: pointer;
+  background: #024184;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.35px;
+  color: #F2F2F2;
+  margin-bottom: 20px;
+}
+
+.form-list__value {
+  margin: 0;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #4F4F4F;
+  width: 200px;
+  padding-bottom: 30px;
+  margin-left: 70px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__application {
+    width: 690px;
+    top: -288px;
+  }
+
+  .application__header {
+    font-size: 34px;
+    line-height: 50px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+  }
+
+  .application__description {
+    font-size: 16px;
+    line-height: 26px;
+    width: 488px;
+    margin-left: 101px;
+    margin-bottom: 30px;
+  }
+
+  .form-list__value {
+    font-size: 12px;
+    line-height: 16px;
+    width: 358px;
+    padding-bottom: 50px;
+    margin-left: 167px;
+  }
+
+  .form__wrapper-button {
+    display: flex;
+    margin-left: 75px;
+    width: 600px;
+  }
+
+  .form__button {
+    padding: 14px 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__application {
+    width: 920px;
+    left: 90px;
+  }
+
+  .application__header {
+    padding-bottom: 20px;
+    padding-top: 80px;
+  }
+
+  .application__description {
+    margin-left: 217px;
+  }
+
+  .form-list__value {
+    padding-bottom: 80px;
+    margin-left: 282px;
+  }
+
+  .form__wrapper-button {
+    margin-left: 190px;
+  }
+
+  .form__window {
+    padding-right: 207px;
+  }
+}

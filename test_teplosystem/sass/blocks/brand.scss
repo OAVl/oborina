@@ -1,0 +1,356 @@
+.brand .slider .bx-wrapper .bx-controls-direction a {
+  display: none;
+}
+
+.brand .slider .bx-wrapper .bx-viewport {
+  overflow: initial;
+  margin-left: 15px;
+  height: 61px !important;
+}
+
+.brand .slider .bx-wrapper .bx-pager {
+  bottom: 2px;
+  height: 3px;
+  background-color:  rgba(130.0, 130.0, 130.0, 0.15);
+  width: 346px;
+  padding-top: 0;
+  margin-left: 15px;
+}
+
+.brand .slider .bx-wrapper .bx-pager {
+  display: none;
+}
+
+.brand .slider__item {
+  width: 100px !important;
+}
+
+.brand__block {
+  margin-bottom: 250px;
+}
+
+.brand__item--fluke {
+  margin-left: -40px;
+  margin-top: 5px;
+}
+
+.brand__item--guide {
+  margin-left: -37px;
+  margin-top: 2px;
+}
+
+.brand__item--pulsar {
+  margin-left: -18px;
+}
+
+.brand__image--iray {
+  width: 54px;
+  margin-left: 30px;
+}
+
+.brand__image--dedal {
+  width: 40px;
+  margin-top: -5px;
+  margin-left: 5px;
+}
+
+.brand__image--seek {
+  width: 53px;
+  margin-top: 2px;
+  margin-left: -25px;
+}
+
+.brand__image--fortuna {
+  width: 49px;
+  margin-left: -47px;
+}
+
+.brand__block-wrapper {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .brand__block {
+    margin-bottom: 340px;
+  }
+
+  .brand .slider__item--pulsar {
+    width: 224px !important;
+  }
+
+  .brand .slider__item--fluke {
+    width: 176px !important;
+  }
+
+  .brand .slider .bx-wrapper .bx-viewport {
+    margin-left: 39px;
+  }
+
+  .brand__image {
+
+
+    &--flir {
+      width: 115px;
+      height: 40px;
+    }
+
+    &--atn {
+      width: 57px;
+      height: 44px;
+      margin-left: 30px;
+    }
+
+    &--fluke {
+      width: 176px;
+      height: 35px;
+    }
+
+    &--testo {
+      width: 44px;
+      height: 44px;
+      margin-left: 30px;
+    }
+
+    &--guide {
+      width: 105px;
+      height: 30px;
+    }
+
+    &--pulsar {
+      width: 224px;
+      height: 45px;
+    }
+
+    &--iray {
+      width: 224px;
+      height: 45px;
+    }
+
+    &--dedal {
+      width: 63px;
+      height: 54px;
+    }
+
+    &--seek {
+      width: 98px;
+      height: 45px;
+    }
+
+    &--fortuna {
+      width: 49px;
+      height: 44px;
+    }
+  }
+
+  .brand__item--fluke {
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .brand__item--guide {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .brand__item--pulsar {
+    margin-left: 30px;
+    margin-top: 1px;
+  }
+
+  .brand__image--dedal {
+    width: 63px;
+    margin-left: 50px;
+  }
+
+  .brand__image--seek {
+    width: 98px;
+    margin-left: 35px;
+  }
+
+  .brand__image--fortuna {
+    width: 49px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .brand__block-wrapper {
+    display: block;
+    width: 1110px;
+    margin: 0 auto;
+    margin-bottom: 405px;
+  }
+
+  .brand__img {
+    position: relative;
+    margin-right: -55px;
+  }
+
+  .brand__image--flir {
+    position: absolute;
+    content: " ";
+    background-repeat: no-repeat;
+    width: 115px;
+    height: 40px;
+    background-image: url("../img/FLIR_logo.svg");
+  }
+
+  .brand__image--atn {
+    position: absolute;
+    content: " ";
+    background-repeat: no-repeat;
+    width: 58px;
+    height: 45px;
+    margin-left: 80px;
+    background-image: url("../img/atn-corp-vector-logo.svg");
+  }
+
+  .brand__image--fluke {
+    position: absolute;
+    content: " ";
+    background-repeat: no-repeat;
+    width: 176px;
+    height: 25px;
+    margin-left: 75px;
+    background-image: url("../img/Fluke_logo.svg");
+  }
+
+  .brand__image--testo {
+    position: absolute;
+    content: " ";
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 45px;
+    margin-left: 8px;
+    background-image: url("../img/testo_logo.svg");
+  }
+
+  .brand__image--guide {
+    position: absolute;
+    content: " ";
+    background-repeat: no-repeat;
+    width: 105px;
+    height: 30px;
+    margin-left: -8px;
+    background-image: url("../img/guide_logo.svg");
+  }
+
+  .brand__image--pulsar {
+    position: absolute;
+    content: " ";
+    background-repeat: no-repeat;
+    width: 224px;
+    height: 45px;
+    background-image: url("../img/pulsar-logo.svg");
+  }
+
+  .brand__image--iray {
+    position: absolute;
+    content: " ";
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 45px;
+    background-image: url("../img/iray_logo.svg");
+  }
+
+  .brand__image--dedal {
+    position: absolute;
+    content: " ";
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 55px;
+    background-image: url("../img/dedal_logo.svg");
+  }
+
+  .brand__image--seek {
+    position: absolute;
+    content: " ";
+    background-repeat: no-repeat;
+    width: 98px;
+    height: 45px;
+    margin-left: -100px;
+    background-image: url("../img/seek_logo.svg");
+  }
+
+  .brand__image--fortuna {
+    position: absolute;
+    content: " ";
+    background-repeat: no-repeat;
+    width: 212px;
+    height: 45px;
+    background-image: url("../img/fortuna_logo.svg");
+  }
+
+  .brand__image--flir:hover {
+    background-image: url("../img/FLIR_logo-active.svg");
+  }
+
+  .brand__image--atn:hover {
+    background-image: url("../img/atn-corp-vector-logo-active.svg");
+  }
+
+  .brand__image--fluke:hover {
+    background-image: url("../img/Fluke_logo-active.svg");
+  }
+
+  .brand__image--testo:hover {
+    background-image: url("../img/testo-active.svg");
+  }
+
+  .brand__image--guide:hover {
+    background-image: url("../img/guide-active.svg");
+  }
+
+  .brand__image--pulsar:hover {
+    background-image: url("../img/pulsar-logo-vector-active.svg");
+  }
+
+  .brand__image--iray:hover {
+    background-image: url("../img/iRay-active.svg");
+  }
+
+  .brand__image--dedal:hover {
+    background-image: url("../img/dedal-active.svg");
+  }
+
+  .brand__image--seek:hover {
+    background-image: url("../img/seek-thermal-logo-vector-active.svg");
+  }
+
+  .brand__image--fortuna:hover {
+    background-image: url("../img/fortuna-active.svg");
+  }
+
+  .brand__block {
+    display: none;
+  }
+
+  .brand__block__list,
+  .brand__block__list-second {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .brand__block__list-second {
+    width: 780px;
+    margin: 0 auto;
+    margin-top: 90px;
+  }
+
+  .brand__image--fortuna {
+    width: 211px;
+    margin-left: -160px;
+  }
+
+  .brand__image--iray {
+    margin-left: 50px;
+  }
+
+  .brand__image--dedal {
+    margin-left: 0;
+  }
+}

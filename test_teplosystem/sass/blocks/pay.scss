@@ -1,0 +1,144 @@
+.pay {
+  width: 346px;
+}
+
+.pay__container {
+  width: 280px;
+  padding: 20px 33px;
+}
+
+.pay__header {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  padding-bottom: 18px;
+  border-bottom: 0.7px solid rgba(79, 79, 79, 0.15);
+}
+
+.pay__window {
+  width: 255px;
+  background: #fcfcfd;
+}
+
+.pay__description {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.pay__description-1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  color: #828282;
+}
+
+.pay__description-1 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #024184;
+}
+
+.pay__wrapper {
+  display: flex;
+  padding: 12px 0;
+  margin-bottom: 15px;
+  border-top: 0.7px solid rgba(79, 79, 79, 0.15);
+  border-bottom: 0.7px solid rgba(79, 79, 79, 0.15);
+}
+
+.pay__header-1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.pay__cost {
+  margin: 5px 0 0 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pay__wrapper-2 {
+  margin-left: 26px;
+}
+
+.pay__img {
+  margin-top: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .pay {
+    width: 450px;
+  }
+
+  .pay__container {
+    width: 450px;
+    padding: 25px;
+  }
+
+  .pay__header {
+    font-size: 20px;
+    line-height: 29px;
+    padding-bottom: 20px;
+  }
+
+  .pay__description {
+    padding: 20px 0;
+  }
+
+  .pay__window {
+    width: 375px;
+  }
+
+  .pay__header-1 {
+    font-size: 14px;
+  }
+
+  .pay__wrapper-2 {
+    margin-left: 20px;
+  }
+
+  .pay__wrapper {
+    padding: 22px 0 20px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pay {
+    width: 539px;
+  }
+
+  .pay__container {
+    width: 539px;
+    padding: 30px;
+  }
+
+  .pay__header {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .pay__description {
+    padding: 24px 0 32px 0;
+  }
+
+  .pay__window {
+    width: 452px;
+  }
+
+  .pay__img {
+    margin-top: -3px;
+    margin-left: 0;
+    width: 96px;
+  }
+}

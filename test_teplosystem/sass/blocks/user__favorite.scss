@@ -1,0 +1,32 @@
+.user__favorite__description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.user__orders-empty__button1 {
+  margin-left: 109px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .user__favorite__description {
+    margin: -14px 0 40px;
+  }
+
+  .user__orders-empty__button1 {
+    margin-left: 325px;
+  }
+
+  .favorite__wrapper-user {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .favorite__list-user {
+    width: 790px;
+  }
+}

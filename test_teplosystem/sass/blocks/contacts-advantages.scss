@@ -1,0 +1,83 @@
+.contacts-advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-advantages__item {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding-top: 20px;
+
+  &--top {
+    padding-top: 30px;
+  }
+}
+
+.contacts-advantages__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  padding-bottom: 5px;
+}
+
+.contacts-advantages__description {
+  margin: 0 auto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  width: 252px;
+}
+
+.contacts-advantages__container {
+  margin-left: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-advantages__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+    padding-bottom: 5px;
+  }
+
+  .contacts-advantages__description {
+    width: 450px;
+  }
+
+  .contacts-advantages__item {
+    width: 550px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-advantages__title {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+
+  .contacts-advantages__list {
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts-advantages__description {
+    width: 308px;
+    margin: 0;
+  }
+
+  .contacts-advantages__item {
+    display: block;
+  }
+  .contacts-advantages__container {
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,37 @@
+html,
+body {
+  min-width: 375px;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.container {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  color: black;
+  background-color: rgba(229,229,229, 0.15);
+}
+
+.container--index {
+  background-color: white;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+.page-main {
+  width: 346px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 1110px;
+  }
+
+  .page-main__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

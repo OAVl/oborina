@@ -1,0 +1,124 @@
+.exit__wrapper {
+  margin-top: 40px;
+}
+
+.exit__header {
+  text-align: center;
+  font-weight: 700;
+}
+
+.exit__description {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 20px;
+  color: #4F4F4F;
+  margin: 15px 15px 0 15px;
+  padding-top: 15px;
+  text-align: center;
+  border-top: 0.7px solid rgba(79, 79, 79, 0.15);
+}
+
+.exit__description a {
+  text-decoration: none;
+  color: #01274f;
+  font-weight: bold;
+}
+
+.registration__button {
+  padding: 14px 80px;
+}
+
+.registration__text {
+  border-top: 0.7px solid rgba(79, 79, 79, 0.15);
+  padding-top: 15px;
+  margin-top: 0;
+}
+
+.password__button {
+  padding: 12px 127px;
+}
+
+@media (min-width: $tablet-width) {
+  .exit__header {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .password__button {
+    padding: 12px 176px;
+    margin-top: 15px;
+  }
+
+  .password__form {
+    padding-bottom: 0 !important;
+    height: 335px;
+  }
+
+  .exit__form {
+    width: 415px;
+    padding: 0 25px 88px;
+  }
+
+  .exit__window {
+    width: 390px;
+  }
+
+  .registration__button {
+    padding: 14px 128px;
+  }
+
+  .registration__text {
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+
+  .exit__button {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 14px 32px;
+    margin-top: 15px;
+  }
+
+  .exit__password {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 30px;
+  }
+
+  .exit__description {
+    font-size: 12px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .exit__form {
+    width: 506px;
+    padding: 0 25px 105px;
+  }
+
+  .password__button {
+    padding: 14px 32px;
+  }
+
+  .password__form {
+    height: 380px;
+  }
+
+  .registration__button {
+    padding: 14px 32px;
+  }
+
+  .exit__window {
+    width: 479px;
+  }
+
+  .registration__form {
+    padding-bottom: 125px;
+  }
+
+  .exit__description {
+    text-align: left;
+  }
+}
