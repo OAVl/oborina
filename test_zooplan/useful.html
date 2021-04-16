@@ -18,9 +18,9 @@
             <div class="nav-first">
                 <ul class="nav-first__list nav-first__list--left">
                     <li class="nav-first__item"><a href="contact.html">О нас</a></li>
-                    <li class="nav-first__item"><a href="#">Бренды</a></li>
+                    <li class="nav-first__item"><a href="brand.html">Бренды</a></li>
                     <li class="nav-first__item"><a href="pay.html">Доставка и оплата</a></li>
-                    <li class="nav-first__item"><a href="useful.html">Полезные статьи</a></li>
+                    <li class="nav-first__item"><a>Полезные статьи</a></li>
                     <li class="nav-first__item"><a href="#">Контакты</a></li>
                 </ul>
                 <ul class="nav-first__list nav-first__list--right">
@@ -256,7 +256,7 @@
     </header>
 
     <main class="">
-        <div class="brand">
+
             <div class="contacts__wrapper">
                 <div class="breadcrumbs">
                     <ul class="breadcrumbs__wrapper">
@@ -264,70 +264,87 @@
                             <a href="index.html">Главная</a>
                             <span class="breadcrumbs__arrow"></span>
                         </li>
-                        <li class="breadcrumbs__current">Бренды</li>
+                        <li class="breadcrumbs__current">Полезные статьи</li>
                     </ul>
                 </div>
 
-                <h1 class="contacts__header">Бренды</h1>
+                <h2 class="contacts__header">Полезные статьи</h2>
 
-                <div class="brand__search">
-                    <form class="search__form" method="post" action="#">
-                        <label for="search1"></label>
-                        <input class="search__window search__window--1" type="search" id="search1" placeholder="Введите название" size="40">
-                        <button class="search__button search__button--1" type="submit" name="button">
-                            <img src="img/seacher.svg" width="17" height="17" alt="search">
-                        </button>
-                    </form>
-                </div>
+                <section class="useful">
+                    <div class="useful__wrapper">
+                        <ul class="description__list description__list--1">
+                            <li class="description__item">
+                                <div class="description__container">
+                                    <div class="description__block">
+                                        <img class="description__image" src="img/11.svg" height="41" width="41" alt="photo">
+                                        <h3 class="description__header">О кошках</h3>
+                                    </div>
 
-                <div class="brand__tabs">
-                    <div class="tabs">
-                        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked="">
-                        <label for="tab-btn-1">ВСЕ</label>
-                        <input type="radio" name="tab-btn" id="tab-btn-2" value="">
-                        <label for="tab-btn-2">Популярные бренды</label>
+                                    <p class="description__text">Основу рациона домашних любимцев на 60-70% должны составлять мясные продукты,
+                                        которые являются основным источником белка, жирных кислот, фосфора, витаминов группы В</p>
 
-                        <div id="content-1">
-                            <ul class="brand__list">
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                            </ul>
-                        </div>
-                        <div id="content-2">
-                            <ul class="brand__list">
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                                <li class="brand__item"><a href="#"></a></li>
-                            </ul>
-                        </div>
+                                    <a class="description__button" href="#">Читать дальше</a>
+                                </div>
+                            </li>
+                            <li class="description__item">
+                                <div class="description__container">
+                                    <div class="description__block">
+                                        <img class="description__image" src="img/12.svg" height="41" width="41" alt="photo">
+                                        <h3 class="description__header">О собаках</h3>
+                                    </div>
+
+                                    <p class="description__text">Даже небольшая разница в пищевой ценности кормов может значительно
+                                        влиять на жизнь и здоровье вашего питомца</p>
+
+                                    <a class="description__button" href="#">Читать дальше</a>
+                                </div>
+                            </li>
+                            <li class="description__item">
+                                <div class="description__container">
+                                    <div class="description__block">
+                                        <img class="description__image" src="img/clown-fish.svg" height="41" width="41" alt="photo">
+                                        <h3 class="description__header">О рыбках</h3>
+                                    </div>
+
+                                    <p class="description__text">Даже небольшая разница в пищевой ценности кормов может значительно влиять на жизнь и здоровье вашего питомца</p>
+
+                                    <a class="description__button" href="#">Читать дальше</a>
+                                </div>
+                            </li>
+                            <li class="description__item">
+                                <div class="description__container">
+                                    <div class="description__block">
+                                        <img class="description__image" src="img/14.svg" height="41" width="41" alt="photo">
+                                        <h3 class="description__header">О грызунах</h3>
+                                    </div>
+
+                                    <p class="description__text">В дикой природе крысы съедают все, что «попадется под руку»:
+                                        орехи, семена, зерно, овощи, плоды, птичьи яйца. Дополняет «зерновой» рацион крыс все,
+                                        что они смогут поймать и убить: насекомые, рептилии, и даже мелкие птицы и...</p>
+
+                                    <a class="description__button" href="#">Читать дальше</a>
+                                </div>
+                            </li>
+                            <li class="description__item">
+                                <div class="description__container">
+                                    <div class="description__block">
+                                        <img class="description__image" src="img/13.svg" height="41" width="41" alt="photo">
+                                        <h3 class="description__header">О птицах</h3>
+                                    </div>
+
+                                    <p class="description__text">Качественные смеси подходят для ежедневного кормления попугая,
+                                        т. к. в полной мере удовлетворяют его основные потребности в полезных веществах</p>
+
+                                    <a class="description__button" href="#">Читать дальше</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-
-
-
-
+                </section>
             </div>
-        </div>
 
 
+        <div class="main main--1">
         <section class="contacts__slider">
             <div class="stock__wrapper">
                 <h2 class="stock__header">Акции</h2>
@@ -570,6 +587,7 @@
                 </div>
             </div>
         </section>
+        </div>
 
     </main>
 
@@ -596,8 +614,8 @@
                     <ul class="page-footer__list">
                         <li class="page-footer__item page-footer__item--1">Покупателям</li>
                         <li class="page-footer__item"><a href="#">Акции</a></li>
-                        <li class="page-footer__item"><a>Бренды</a></li>
-                        <li class="page-footer__item"><a href="useful.html">Полезные статьи</a></li>
+                        <li class="page-footer__item"><a href="brand.html">Бренды</a></li>
+                        <li class="page-footer__item"><a>Полезные статьи</a></li>
                     </ul>
 
                     <ul class="page-footer__list">
